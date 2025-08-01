@@ -38,7 +38,7 @@ export const SuccessFormula = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Darum schaffst du mehr als 99% aller Studenten</h2>
           <p className="text-xl text-gray-600 mb-6">Die Studium-Erfolgsformel</p>
           <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
-            Die Erfolgsformel ist ein Videokurs, in dem wir gemeinsam die exklusiven Schritte durcharbeiten, um erfolgreich zu studieren. Du erhältst somit nicht nur ein System, sondern einen Schritt-für-Schritt Plan für deinen Studienerfolg - <span className="bg-amber-100">Egal welcher Studiengang oder wo du aktuell stehst.</span>
+            In der Erfolgsformel erarbeiten wir gemeinsam die genauen Schritte, um erfolgreich zu studieren. Sie ist die perfekte Ergänzung zum Study System und bietet einen Schritt-für-Schritt-Plan für deinen persönlichen Erfolg im Studium - <span className="bg-amber-100">Egal welcher Studiengang oder welche Studienform.</span>
           </p>
           <Button size="lg" className="bg-amber-400 hover:bg-amber-500 mb-16" onClick={scrollToPricing}>
             JETZT STARTEN
