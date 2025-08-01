@@ -12,7 +12,7 @@ const problems = [{
 }, {
   icon: HelpCircle,
   title: "Selbstzweifel",
-  description: "Ständiges Hinterfragen deiner Fähigkeiten und ob du fürs Studieren gemacht bist."
+  description: "Ständiges Hinterfragen deiner Fähigkeiten und deines Potenzials."
 }];
 export const Problems = () => {
   const isMobile = useIsMobile();
