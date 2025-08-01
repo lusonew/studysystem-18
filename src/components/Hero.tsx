@@ -106,6 +106,30 @@ export const Hero = () => {
             />
           </motion.div>
         </div>
+        
+        {/* Testimonials */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+        >
+          <div className="text-center">
+            <p className="text-gray-500 italic text-sm md:text-base">
+              "Für Studenten einfach perfekt!"
+            </p>
+          </div>
+          <div className="text-center">
+            <p className="text-gray-500 italic text-sm md:text-base">
+              "Sehr hilfreiches System, erleichtert die Organisation des Studiums sehr"
+            </p>
+          </div>
+          <div className="text-center">
+            <p className="text-gray-500 italic text-sm md:text-base">
+              "Feiner Typ. Funktionaler Aufbau. Klare Kaufempfehlung."
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
