@@ -4,6 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
 export const VideoFeature = () => {
   const isMobile = useIsMobile();
-  return;
+  
+  return (
+    <div>
+      {/* VideoFeature component content will be added here */}
+    </div>
+  );
 };
 export default VideoFeature;
