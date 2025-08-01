@@ -126,7 +126,7 @@ export const Hero = () => {
           </div>
           <div className="text-center">
             <p className="text-gray-500 italic text-sm md:text-base">
-              "Feiner Typ. Funktionaler Aufbau. Klare Kaufempfehlung."
+              "Simpel und Effektiv. Man kennt sich schnell aus - alles top"
             </p>
           </div>
         </motion.div>
