@@ -21,7 +21,7 @@ export const Story = () => {
             <p className="text-gray-600 mb-4">Wie alle Studierenden hatte ich am Anfang große Probleme im Studium.</p>
             <p className="text-gray-600 mb-4">Durch das Study System bin ich nicht nur 1er-Student geworden, sondern hatte genug Zeit um zusätzlich Content Creator und Werkstudent zu sein. Alles mit einem ausgeglichenen Privatleben.</p>
             <p className="text-gray-600 mb-4">
-              Ein verlässliches System macht es möglich, <span className="bg-amber-100">stressfrei mehr zu schaffen</span>. Das habe ich selbst gemerkt.
+              Ein verlässliches System ist im Studium kein Nice-to-have. Es ist Grundvoraussetzung für alle, die ihr Studium ernst nehmen.
             </p>
             <p className="font-semibold">Das Study System macht studieren nicht nur einfacher, sondern ermöglicht durch seine erprobten Strukturen mehr zu schaffen.</p>
           </div>
