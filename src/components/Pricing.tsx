@@ -70,6 +70,14 @@ export const Pricing = () => {
               />
             </span>
           </motion.div>
+          
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-32 h-0.5 bg-amber-500 mx-auto mt-4 origin-left"
+          />
         </motion.div>
 
         <div className="max-w-4xl mx-auto flex justify-center">
