@@ -53,14 +53,16 @@ export const Pricing = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex items-center justify-center gap-3"
+            className="flex flex-col md:flex-row items-center justify-center gap-3"
           >
-            <span className="text-lg font-semibold text-gray-900">4,9</span>
-            <img 
-              src="/lovable-uploads/45fd89e4-90b7-463a-8832-956858deec36.png" 
-              alt="5 Sterne Bewertung" 
-              className="h-6"
-            />
+            <div className="flex items-center gap-3">
+              <span className="text-lg font-semibold text-gray-900">4,9</span>
+              <img 
+                src="/lovable-uploads/45fd89e4-90b7-463a-8832-956858deec36.png" 
+                alt="5 Sterne Bewertung" 
+                className="h-6"
+              />
+            </div>
             <span className="text-lg text-gray-600">
               bei 159 Rezensionen auf{" "}
               <img 
@@ -75,8 +77,8 @@ export const Pricing = () => {
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="w-32 h-0.5 bg-amber-500 mx-auto mt-4 origin-left"
+            transition={{ duration: 0.8, delay: 1.9 }}
+            className="w-64 h-0.5 bg-amber-500 mx-auto mt-4 origin-left"
           />
         </motion.div>
 
