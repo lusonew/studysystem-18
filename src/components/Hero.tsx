@@ -63,7 +63,7 @@ export const Hero = () => {
             <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6">Mehr Produktivität & Bessere Ergebnisse</h2>
             
             <p className="text-gray-600 mb-8">
-              Das Study System liefert alles, um dein Studium zu meistern. <em>Mehr Struktur, mehr Produktivität, weniger Lernen und bessere Ergebnisse.</em> Schließ dich 4.000+ Studierenden an und bring System in dein Studium.
+              Das Study System PRO liefert alles, um dein Studium zu meistern. <em>Mehr Struktur, mehr Produktivität, weniger Lernen und bessere Ergebnisse.</em> Schließ dich 4.000+ Studierenden an und mach dein Studium klarer und erfolgreicher.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
