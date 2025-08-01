@@ -149,7 +149,7 @@ export const SystemFeatures = () => {
           once: true
         }} transition={{
           duration: 0.6
-        }} src="/lovable-uploads/4fbd1bd6-3dc9-47ae-b126-b3cfe05e0a04.png" alt="Study System 2.0 Dashboard" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity" onClick={() => handleImageClick("/lovable-uploads/4fbd1bd6-3dc9-47ae-b126-b3cfe05e0a04.png")} />
+        }} src="/Demo1.gif" alt="Study System Demo" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity" onClick={() => handleImageClick("/Demo1.gif")} />
           
           {/* Existing product images */}
           <motion.img initial={{
