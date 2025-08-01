@@ -4,7 +4,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const problems = [{
   icon: AlarmClock,
   title: "Stress",
-  description: "Schlaflose Nächte und ständige Anspannung."
+  description: "Schlaflose Nächte vor Klausuren und ständige Anspannung im Semester."
 }, {
   icon: Frown,
   title: "Schlechte Leistung",
