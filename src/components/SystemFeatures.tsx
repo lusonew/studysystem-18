@@ -149,7 +149,7 @@ export const SystemFeatures = () => {
           once: true
         }} transition={{
           duration: 0.6
-        }} src="/Demo1.gif" alt="Study System Demo" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity" onClick={() => handleImageClick("/Demo1.gif")} />
+        }} src="/Demo1.gif" alt="Study System Demo" className="max-w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity mx-auto" onClick={() => handleImageClick("/Demo1.gif")} />
           
           {/* Existing product images */}
           <motion.img initial={{
