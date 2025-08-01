@@ -23,7 +23,7 @@ export const Story = () => {
             <p className="text-gray-600 mb-4">
               Ein verlässliches System macht es möglich, <span className="bg-amber-100">stressfrei mehr zu schaffen</span>. Das habe ich selbst gemerkt.
             </p>
-            <p className="font-semibold">Das Study System macht studieren insgesamt einfacher.</p>
+            <p className="font-semibold">Das Study System macht studieren nicht nur einfacher, sondern ermöglicht durch seine erprobten Strukturen mehr zu schaffen.</p>
           </div>
           <div className="lg:w-1/2">
             <img src="/lovable-uploads/a068a710-86cc-4a74-b7b7-dbd20cc44132.png" alt="Student Portrait" className="w-1/2 h-auto rounded-xl mx-auto" loading="lazy" />
