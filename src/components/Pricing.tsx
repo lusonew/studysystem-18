@@ -49,19 +49,7 @@ export const Pricing = () => {
           <p className="text-xl text-gray-600">Die Möglichkeit, dein Studium zu revolutionieren</p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <PricingCard 
-            title="Study System" 
-            price={<div className="flex items-center gap-2"><span className="text-2xl font-medium">49€</span> <span className="text-sm text-gray-500">Einmalig</span></div>}
-            features={basicPricingFeatures} 
-            imageUrl="/lovable-uploads/c34105f7-c232-4b70-9d78-f9070f713764.png" 
-            ctaUrl="https://www.luisnewton.de/system/buy" 
-            className="bg-gradient-to-br from-gray-50 to-white border-gray-200" 
-            additionalLink={{
-              text: "Hier klicken für Kauf mit Klarna oder Apple/Google Pay",
-              url: "https://buy.stripe.com/5kA4jidr45Lz0jmdQQ"
-            }}
-          />
+        <div className="max-w-4xl mx-auto flex justify-center">
           <PricingCard 
             title="Study System PRO" 
             price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-green-600">96€</span> <span className="text-sm text-gray-500">Einmalig</span></div>}
