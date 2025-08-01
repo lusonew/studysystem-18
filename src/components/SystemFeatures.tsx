@@ -137,44 +137,48 @@ export const SystemFeatures = () => {
           </Button>
         </motion.div>
 
-        <div className="flex flex-col gap-8">
-          {/* New image added as the first product image */}
-          <motion.img initial={{
-          opacity: 0,
-          y: 20
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          duration: 0.6
-        }} src="/Demo1.gif" alt="Study System Demo" className="max-w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity mx-auto" onClick={() => handleImageClick("/Demo1.gif")} />
-          
-          {/* Existing product images */}
-          <motion.img initial={{
-          opacity: 0,
-          y: 20
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          duration: 0.6
-        }} src="/lovable-uploads/92c01e81-35fc-4dbd-ba3d-1db40071e7c6.png" alt="Study System Interface" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity" onClick={() => handleImageClick("/lovable-uploads/92c01e81-35fc-4dbd-ba3d-1db40071e7c6.png")} />
-          <motion.img initial={{
-          opacity: 0,
-          y: 20
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          duration: 0.6,
-          delay: 0.2
-        }} src="/lovable-uploads/bdf49e7a-a453-4634-a03f-6d74f6f33579.png" alt="Study System Features" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity" onClick={() => handleImageClick("/lovable-uploads/bdf49e7a-a453-4634-a03f-6d74f6f33579.png")} />
+        {/* GIF Demo Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <motion.img 
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.6 }} 
+            src="/Demo1.gif" 
+            alt="Study System Demo 1" 
+            className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
+            onClick={() => handleImageClick("/Demo1.gif")} 
+          />
+          <motion.img 
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.6, delay: 0.1 }} 
+            src="/Demo2.gif" 
+            alt="Study System Demo 2" 
+            className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
+            onClick={() => handleImageClick("/Demo2.gif")} 
+          />
+          <motion.img 
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.6, delay: 0.2 }} 
+            src="/Demo3.gif" 
+            alt="Study System Demo 3" 
+            className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
+            onClick={() => handleImageClick("/Demo3.gif")} 
+          />
+          <motion.img 
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.6, delay: 0.3 }} 
+            src="/Demo4.gif" 
+            alt="Study System Demo 4" 
+            className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
+            onClick={() => handleImageClick("/Demo4.gif")} 
+          />
         </div>
 
         {selectedImage && <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4" onClick={closeFullscreen}>
