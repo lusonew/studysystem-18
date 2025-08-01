@@ -7,7 +7,6 @@ import { Footer } from "@/components/Footer";
 
 // Lazy-loaded components that are not immediately visible
 const SystemFeatures = React.lazy(() => import("@/components/SystemFeatures").then(module => ({ default: module.SystemFeatures })));
-const VideoFeature = React.lazy(() => import("@/components/VideoFeature").then(module => ({ default: module.VideoFeature })));
 const SuccessFormula = React.lazy(() => import("@/components/SuccessFormula").then(module => ({ default: module.SuccessFormula })));
 const Pricing = React.lazy(() => import("@/components/Pricing").then(module => ({ default: module.Pricing })));
 const Testimonial = React.lazy(() => import("@/components/Testimonial").then(module => ({ default: module.Testimonial })));
@@ -21,7 +20,6 @@ const Index = () => {
       // Start importing lower priority components
       const importPromises = [
         import("@/components/SystemFeatures"),
-        import("@/components/VideoFeature"),
         import("@/components/SuccessFormula"),
         import("@/components/Pricing"),
         import("@/components/Testimonial"),
@@ -48,7 +46,6 @@ const Index = () => {
         <Story />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
           <SystemFeatures />
-          <VideoFeature />
           <SuccessFormula />
           <Pricing />
           <Testimonial />
