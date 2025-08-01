@@ -46,7 +46,30 @@ export const Pricing = () => {
         ease: "easeOut"
       }} className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Sichere dir jetzt dein smartes System</h2>
-          <p className="text-xl text-gray-600">Die Möglichkeit, dein Studium zu revolutionieren</p>
+          <p className="text-xl text-gray-600 mb-6">Die Möglichkeit, dein Studium zu revolutionieren</p>
+          
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex items-center justify-center gap-3"
+          >
+            <span className="text-lg font-semibold text-gray-900">4,9</span>
+            <img 
+              src="/lovable-uploads/45fd89e4-90b7-463a-8832-956858deec36.png" 
+              alt="5 Sterne Bewertung" 
+              className="h-6"
+            />
+            <span className="text-lg text-gray-600">
+              bei 159 Rezensionen auf{" "}
+              <img 
+                src="/lovable-uploads/f67852aa-bafe-4f23-82be-4369f750f591.png" 
+                alt="Google" 
+                className="h-5 inline-block"
+              />
+            </span>
+          </motion.div>
         </motion.div>
 
         <div className="max-w-4xl mx-auto flex justify-center">
