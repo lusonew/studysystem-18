@@ -1,0 +1,8 @@
+/* Only keeping essential styles that might be used somewhere in the application */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
