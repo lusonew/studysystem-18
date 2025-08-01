@@ -96,7 +96,7 @@ export const Hero = () => {
             className="md:w-1/2"
           >
             <img 
-              src="/lovable-uploads/17198f62-dd49-4fef-bf71-a8e5144f7d49.png" 
+              src="/lovable-uploads/069c9ad2-3ead-416d-8df0-f82d65531dda.png" 
               alt="Study System Dashboard" 
               width={800} 
               height={600} 
