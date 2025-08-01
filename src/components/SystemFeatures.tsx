@@ -144,40 +144,40 @@ export const SystemFeatures = () => {
             whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: true }} 
             transition={{ duration: 0.6 }} 
-            src="/Demo1.gif" 
+            src="/lovable-uploads/Demo1.gif" 
             alt="Study System Demo 1" 
             className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-            onClick={() => handleImageClick("/Demo1.gif")} 
+            onClick={() => handleImageClick("/lovable-uploads/Demo1.gif")}
           />
           <motion.img 
             initial={{ opacity: 0, y: 20 }} 
             whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: true }} 
             transition={{ duration: 0.6, delay: 0.1 }} 
-            src="/Demo2.gif" 
+            src="/lovable-uploads/Demo2.gif" 
             alt="Study System Demo 2" 
             className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-            onClick={() => handleImageClick("/Demo2.gif")} 
+            onClick={() => handleImageClick("/lovable-uploads/Demo2.gif")}
           />
           <motion.img 
             initial={{ opacity: 0, y: 20 }} 
             whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: true }} 
             transition={{ duration: 0.6, delay: 0.2 }} 
-            src="/Demo3.gif" 
+            src="/lovable-uploads/Demo3.gif" 
             alt="Study System Demo 3" 
             className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-            onClick={() => handleImageClick("/Demo3.gif")} 
+            onClick={() => handleImageClick("/lovable-uploads/Demo3.gif")}
           />
           <motion.img 
             initial={{ opacity: 0, y: 20 }} 
             whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: true }} 
             transition={{ duration: 0.6, delay: 0.3 }} 
-            src="/Demo4.gif" 
+            src="/lovable-uploads/Demo4.gif" 
             alt="Study System Demo 4" 
             className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-            onClick={() => handleImageClick("/Demo4.gif")} 
+            onClick={() => handleImageClick("/lovable-uploads/Demo4.gif")}
           />
         </div>
 
