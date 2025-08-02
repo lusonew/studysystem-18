@@ -44,7 +44,7 @@ export const SuccessFormula = () => {
             JETZT STARTEN
           </Button>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             <motion.div initial={{
             opacity: 0,
             y: 20
@@ -84,25 +84,6 @@ export const SuccessFormula = () => {
               </p>
             </motion.div>
 
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true,
-            margin: "-100px"
-          }} transition={{
-            duration: 0.6,
-            delay: 0.4
-          }} className="text-left">
-              <img src="/lovable-uploads/de3f294b-3010-4586-bd98-12ce093511b1.png" alt="Das Life Hub" className="w-full h-auto rounded-xl mb-6" loading="lazy" />
-              <h3 className="text-xl font-bold mb-4">Das Life Hub</h3>
-              <p className="text-gray-600">
-                Erhalte ein Notion-System, das dich und deine persönlichen Ambitionen reflektiert. Darin findest du nicht nur deine individuelle Erfolgsformel wieder, sondern auch Systeme, um langfristig dranzubleiben. Tages-, Gewohnheits-, Workout-, Projektplan etc. alles ist Teil deines Life Hubs.
-              </p>
-            </motion.div>
           </div>
         </motion.div>
       </div>
