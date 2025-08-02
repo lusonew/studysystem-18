@@ -53,7 +53,7 @@ export const Hero = () => {
             </div>
             
             <p className="text-gray-600 mb-8">
-              Das Study System PRO liefert alles, um dein Studium zu meistern. <em>Mehr Struktur, mehr Produktivität, weniger Lernen und bessere Ergebnisse.</em> Schließ dich 4.000+ Studierenden an und mach dein Studium klarer und erfolgreicher.
+              Das Study System PRO liefert alles, um dein Studium zu meistern. <em>Die nötige Struktur, das fundamentale Wissen und exklusive Strategien .</em> Schließ dich 4.000+ Studierenden an und mach dein Studium klarer und erfolgreicher.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
