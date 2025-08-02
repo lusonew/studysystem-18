@@ -85,7 +85,7 @@ export const SystemFeatures = () => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Badge variant="secondary" className="bg-amber-100 text-amber-700 text-lg px-6 py-3">
               <Puzzle className="w-8 h-8 mr-2" />
-              Teil 1
+              Teil 1: Das System
             </Badge>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Das hast du den anderen voraus</h2>
