@@ -32,7 +32,7 @@ export const SuccessFormula = () => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Badge variant="secondary" className="bg-amber-100 text-amber-700 text-lg px-6 py-3">
               <Puzzle className="w-8 h-8 mr-2" />
-              Teil 2
+              Teil 2: Die Erfolgsformel
             </Badge>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Darum schaffst du mehr als 99% aller Studenten</h2>
