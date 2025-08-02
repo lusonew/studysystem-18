@@ -119,23 +119,6 @@ export const SystemFeatures = () => {
               </p>
             </motion.div>)}
         </div>
-        
-        {/* New CTA Button */}
-        <motion.div initial={{
-        opacity: 0,
-        y: 20
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} viewport={{
-        once: true
-      }} transition={{
-        duration: 0.6
-      }} className="flex justify-center mb-16">
-          <Button size="lg" className="bg-amber-500 hover:bg-amber-600" onClick={scrollToPricing}>
-            Jetzt starten
-          </Button>
-        </motion.div>
 
         {/* GIF Demo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -218,6 +201,23 @@ export const SystemFeatures = () => {
             <p className="text-gray-500 text-center mt-3 text-sm">System für Hausarbeiten</p>
           </div>
         </div>
+
+        {/* CTA Button */}
+        <motion.div initial={{
+        opacity: 0,
+        y: 20
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.6
+      }} className="flex justify-center mt-16">
+          <Button size="lg" className="bg-amber-500 hover:bg-amber-600" onClick={scrollToPricing}>
+            Jetzt starten
+          </Button>
+        </motion.div>
 
         {selectedImage && <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4" onClick={closeFullscreen}>
             <div className="relative max-w-[95%] max-h-[95%] bg-white rounded-lg overflow-hidden" onClick={e => e.stopPropagation()} onMouseMove={handleMouseMove} onWheel={handleWheel} style={{
