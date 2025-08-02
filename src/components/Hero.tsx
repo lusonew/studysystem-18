@@ -35,6 +35,11 @@ export const Hero = () => {
         ${isMobile ? 'mx-[-19px] px-[19px]' : ''}
       `}>
       <div className="container mx-auto px-3 md:px-40">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-2">Studiere smarter als alle anderen</h1>
+          <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6">Mehr Produktivität & Bessere Ergebnisse</h2>
+        </div>
+        
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
           <motion.div 
             initial={{
@@ -57,10 +62,6 @@ export const Hero = () => {
               </Badge>
               
             </div>
-            
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-2">Studiere smarter als alle anderen</h1>
-            
-            <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6">Mehr Produktivität & Bessere Ergebnisse</h2>
             
             <p className="text-gray-600 mb-8">
               Das Study System PRO liefert alles, um dein Studium zu meistern. <em>Mehr Struktur, mehr Produktivität, weniger Lernen und bessere Ergebnisse.</em> Schließ dich 4.000+ Studierenden an und mach dein Studium klarer und erfolgreicher.
