@@ -17,7 +17,7 @@ export const Story = () => {
         duration: 0.6
       }} className="flex flex-col lg:flex-row items-center gap-5">
           <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6">&quot;Das System, das dein Studium rettet&quot;</h2>
+            <h2 className="text-4xl font-bold mb-6">"Ein erfolgreiches Studium verändert dein Leben"</h2>
             <p className="text-gray-600 mb-4">Wie alle Studierenden hatte ich am Anfang große Probleme im Studium.</p>
             <p className="text-gray-600 mb-4">Durch das Study System PRO bin ich nicht nur 1er-Student geworden, sondern hatte genug Zeit, um zusätzlich Content Creator und Werkstudent zu sein. Alles mit einem ausgeglichenen Privatleben.</p>
             <p className="text-gray-600 mb-4">Da habe ich erkannt: Ein System ist im Studium nicht optional.
