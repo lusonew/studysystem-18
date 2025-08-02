@@ -138,7 +138,7 @@ export const SystemFeatures = () => {
         </motion.div>
 
         {/* GIF Demo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex flex-col items-center">
             <motion.img 
               initial={{ opacity: 0, y: 20 }} 
@@ -190,6 +190,32 @@ export const SystemFeatures = () => {
               onClick={() => handleImageClick("/lovable-uploads/Demo4.gif")}
             />
             <p className="text-gray-500 text-center mt-3 text-sm">Die Studium-Erfolgsformel</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <motion.img 
+              initial={{ opacity: 0, y: 20 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.6, delay: 0.4 }} 
+              src="/lovable-uploads/Demo5.gif" 
+              alt="Study System Demo 5" 
+              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
+              onClick={() => handleImageClick("/lovable-uploads/Demo5.gif")}
+            />
+            <p className="text-gray-500 text-center mt-3 text-sm">Lernumgebung mit Timer & Sounds</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <motion.img 
+              initial={{ opacity: 0, y: 20 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.6, delay: 0.5 }} 
+              src="/lovable-uploads/Demo6.gif" 
+              alt="Study System Demo 6" 
+              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
+              onClick={() => handleImageClick("/lovable-uploads/Demo6.gif")}
+            />
+            <p className="text-gray-500 text-center mt-3 text-sm">System für Hausarbeiten</p>
           </div>
         </div>
 
