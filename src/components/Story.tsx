@@ -15,7 +15,7 @@ export const Story = () => {
         margin: "-100px"
       }} transition={{
         duration: 0.6
-      }} className="flex flex-col lg:flex-row items-center gap-5">
+      }} className="flex flex-col lg:flex-row items-center gap-2.5">
           <div className="lg:w-1/2">
             <h2 className="text-4xl font-bold mb-6">"Ein gutes System verändert dein Leben"</h2>
             <p className="text-gray-600 mb-4">Wie alle Studierenden hatte ich am Anfang große Probleme im Studium. Ich bin bei Klausuren durchgefallen, war durchgehend gestresst und wusste nicht, ob ich jemals den Abschluss schaffen würde.</p>
