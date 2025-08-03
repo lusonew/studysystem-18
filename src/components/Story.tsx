@@ -27,7 +27,7 @@ Wie alle Studierenden hatte ich am Anfang große Probleme im Studium. Ich bin be
             <p className="font-medium">Das Study System PRO ist genau dieses System - und noch mehr. Es macht studieren nicht nur einfacher, sondern hilft dir mehr zu schaffen.</p>
           </div>
           <div className="lg:w-1/2">
-            <img src="/lovable-uploads/a068a710-86cc-4a74-b7b7-dbd20cc44132.png" alt="Student Portrait" className="w-1/2 h-auto rounded-xl mx-auto" loading="lazy" />
+            <img src="/lovable-uploads/11d65837-8385-4c94-8afe-4cc2638aead0.png" alt="Student Portrait" className="w-1/2 h-auto rounded-xl mx-auto" loading="lazy" />
           </div>
         </motion.div>
     </div>
