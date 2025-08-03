@@ -15,9 +15,10 @@ export const Story = () => {
         margin: "-100px"
       }} transition={{
         duration: 0.6
-      }} className="flex flex-col lg:flex-row items-center gap-2.5">
+      }} className="">
+        <h2 className="text-4xl font-bold mb-6 text-center">"Ein gutes System verändert dein Leben"</h2>
+        <div className="flex flex-col lg:flex-row items-center gap-2.5">
           <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6">"Ein gutes System verändert dein Leben"</h2>
             <p className="text-gray-600 mb-4">Falls du mich noch nicht kennst, mein Name ist Luis.
 
 
@@ -29,6 +30,7 @@ Wie alle Studierenden hatte ich am Anfang große Probleme im Studium. Ich bin be
           <div className="lg:w-1/2">
             <img src="/lovable-uploads/61d227f3-9e07-4e44-a1ab-3b82b969bfe8.png" alt="Student Portrait" className="w-1/2 h-auto rounded-xl mx-auto" loading="lazy" />
           </div>
+        </div>
         </motion.div>
     </div>
   </section>;
