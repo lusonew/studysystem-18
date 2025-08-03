@@ -44,8 +44,8 @@ const Index = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex-grow">
         <Hero />
-        <Problems />
         <Story />
+        <Problems />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
           <SystemFeatures />
           <SuccessFormula />
