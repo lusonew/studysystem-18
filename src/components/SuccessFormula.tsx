@@ -77,7 +77,7 @@ export const SuccessFormula = () => {
             duration: 0.6,
             delay: 0.2
           }} className="text-left">
-              <img src="/lovable-uploads/455b7185-b638-40e5-982f-7535b8e14697.png" alt="Die Methoden" className="w-full h-auto rounded-xl mb-6" loading="lazy" />
+              <img src="/lovable-uploads/b57992a7-2951-476c-b92d-3ddb841de3a5.png" alt="Die Methoden" className="w-full h-auto rounded-xl mb-6" loading="lazy" />
               <h3 className="text-xl font-bold mb-4">Die Methoden</h3>
               <p className="text-gray-600">
                 Klare, praktische Übungen & Fragen, um deine individuelle Erfolgsformel zu entwickeln. Jedes Kapitel umfasst vorbereitete Aufgaben- und Fragestellungen, damit du eine klare Anleitung hast und in kürzester Zeit Fortschritte machst. Wir sprechen jede Aufgabe und jede Frage vorab gemeinsam durch.
