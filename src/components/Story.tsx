@@ -19,13 +19,10 @@ export const Story = () => {
         <h2 className="text-4xl font-bold mb-6 text-center">"Ein gutes System verändert dein Leben"</h2>
         <div className="flex flex-col lg:flex-row items-center gap-2.5">
           <div className="lg:w-1/2">
-            <p className="text-gray-600 mb-4">Falls du mich noch nicht kennst, mein Name ist Luis.
-
-
-Wie alle Studierenden hatte ich am Anfang große Probleme im Studium. Ich bin bei Klausuren durchgefallen, war durchgehend gestresst und wusste nicht, ob ich jemals den Abschluss schaffen würde.</p>
-            <p className="text-gray-600 mb-4">Im Laufe meines Bachelor- und Masterstudiums habe ich dann das Study System PRO entwickelt. Ich bin dadurch nicht nur 1er-Student geworden, sondern hatte genug Zeit für einen High-Performance-Werkstudentenjob, Social Media Content und zugleich ein ausgeglichenes Privatleben.</p>
-            <p className="text-gray-600 mb-4">Da habe ich erkannt: Ein System ist im Studium nicht optional. Es ist Grundvoraussetzung für alle, die ihr Studium ernst nehmen.</p>
-            <p className="font-medium">Das Study System PRO ist genau dieses System - und noch mehr. Es macht studieren nicht nur einfacher, sondern hilft dir mehr zu schaffen.</p>
+            <p className="text-gray-600 mb-4 text-lg font-normal">Falls du mich noch nicht kennst, mein Name ist Luis. Wie viele Studierende, hatte ich am Anfang große Probleme: Bei Klausuren durchgefallen, durchgehend gestresst und Zweifel, ob ich jemals den Abschluss schaffen würde.</p>
+            <p className="text-gray-600 mb-4 text-lg font-normal">Während meines Bachelor- und Masterstudiums habe ich dann über 4 Jahre das Study System PRO entwickelt. Ich bin dadurch 1er-Student geworden, hatte Zeit für einen Werkstudentenjob als IT-Business Analyst, zusätzliche Social Media Content und zugleich ein ausgeglichenes Privatleben.</p>
+            <p className="text-gray-600 mb-4 font-normal text-lg">Da habe ich erkannt: Ein System ist im Studium nicht optional. Es ist Grundvoraussetzung für alle, die ihr Studium ernst nehmen.</p>
+            <p className="font-medium text-lg">Das Study System PRO ist genau dieses System - und noch mehr. Es macht studieren nicht nur einfacher, sondern hilft dir mehr zu schaffen.</p>
           </div>
           <div className="lg:w-1/2">
             <img src="/lovable-uploads/61d227f3-9e07-4e44-a1ab-3b82b969bfe8.png" alt="Student Portrait" className="w-1/2 h-auto rounded-xl mx-auto" loading="lazy" />
