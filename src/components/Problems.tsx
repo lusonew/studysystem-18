@@ -50,7 +50,7 @@ export const Problems = () => {
         duration: 0.6,
         delay: 0.2
       }}>
-          {problems.map((problem, index) => <motion.div key={problem.title} className="flex flex-col items-center p-6 bg-amber-50/50 rounded-lg shadow-sm hover:shadow-md transition-shadow" initial={{
+          {problems.map((problem, index) => <motion.div key={problem.title} className="flex flex-col items-center p-6 bg-danger-light/50 rounded-lg shadow-sm hover:shadow-md transition-shadow" initial={{
           opacity: 0,
           y: 20
         }} whileInView={{
@@ -62,7 +62,7 @@ export const Problems = () => {
           duration: 0.3,
           delay: 0.1 * index + 0.3
         }}>
-              <div className="p-3 bg-amber-100 rounded-full mb-4">
+              <div className="p-3 bg-danger-border rounded-full mb-4">
                 <problem.icon className="w-8 h-8 text-red-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{problem.title}</h3>

@@ -29,6 +29,9 @@
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+    
+    --danger-light: 0 100% 97%;
+    --danger-border: 0 100% 95%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -77,6 +80,9 @@
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
+    
+    --danger-light: 0 20% 15%;
+    --danger-border: 0 30% 20%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
