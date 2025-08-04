@@ -19,7 +19,7 @@ const features = [{
   icon: Star,
   title: "Bessere Noten",
   subtitle: "Prüfungsvorbereitung",
-  description: "Effektive Vorlagen für die optimale Prüfungsvorbereitung."
+  description: "Vorlesungsnotizen für jedes Fach. Zusammenfassungen für die Klausurvorbereitung. Zuordnung von Terminen und Aufgaben zu den jeweiligen Fächern für eine klare Übersicht"
 }];
 export const SystemFeatures = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
