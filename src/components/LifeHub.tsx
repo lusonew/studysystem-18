@@ -31,7 +31,7 @@ export const LifeHub = () => {
             </Badge>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Bonus: Dein Lebens-Management-System</h2>
-          <p className="text-gray-600 text-xl font-thin mb-8">
+          <p className="text-gray-600 text-lg font-thin mb-8">
             Mehr als nur Studium - dein komplettes Leben organisiert
           </p>
         </motion.div>
@@ -129,7 +129,7 @@ export const LifeHub = () => {
             <p className="text-gray-600 mb-6 text-lg">
               Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zum Geld.
             </p>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600 mb-8 text-lg">
               Der Finanz Tracker hilft dir dabei, deine Einnahmen und Ausgaben zu verwalten und finanzielle Ziele zu erreichen.
             </p>
           </motion.div>
@@ -166,7 +166,7 @@ export const LifeHub = () => {
             <p className="text-gray-600 mb-6 text-lg">
               Plane und verfolge deine Workouts, um körperlich fit und mental stark zu bleiben.
             </p>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600 mb-8 text-lg">
               Mit dem Workout Tracker organisierst du deine Trainingsroutine und dokumentierst deine Fortschritte im Fitness-Bereich.
             </p>
           </motion.div>
