@@ -14,7 +14,7 @@ const features = [{
   icon: Calendar,
   title: "Mehr Struktur",
   subtitle: "Zeitmanagement",
-  description: "Intergrierter Klausuren-Countdown, um dein Zeitmanagement zu verbessern. To-Do und Tagesplanung für jeden Uni-Alltag. Aufgaben und Lermpläne für optimale Vorbereitung auf deine Prüfungen"
+  description: "Intergrierter Klausuren-Countdown, um dein Zeitmanagement zu verbessern. Tagesplanung und To Dos für deinen Uni-Alltag. Aufgaben und Lermpläne für optimale Vorbereitung auf deine Prüfungen"
 }, {
   icon: Star,
   title: "Bessere Noten",
