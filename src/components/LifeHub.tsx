@@ -31,7 +31,7 @@ export const LifeHub = () => {
             </Badge>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Bonus: Dein Lebens-Management-System</h2>
-          <p className="text-gray-600 text-lg font-thin mb-8">
+          <p className="text-gray-600 mb-8 font-extralight text-xl">
             Mehr als nur Studium - dein komplettes Leben organisiert
           </p>
         </motion.div>
