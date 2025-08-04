@@ -30,9 +30,7 @@ export const LifeHub = () => {
               Teil 3: Das Life Hub
             </Badge>
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">
-            Dein persönliches Lebens-Management-System
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Bonus: Dein Lebens-Management-System</h2>
           <p className="text-gray-600 text-xl font-thin mb-8">
             Mehr als nur Studium - dein komplettes Leben organisiert
           </p>
