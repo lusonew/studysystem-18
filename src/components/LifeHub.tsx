@@ -53,7 +53,7 @@ export const LifeHub = () => {
               Du bist mehr als nur Student. Auch wenn das Studium eine zentrale in deinem Leben spielt, gibt es auch andere wichtige Bereiche. Daher brauchst du ein System, das auch deine persönlichen Ambitionen reflektiert.
             </p>
             <p className="text-gray-600 mb-8 text-lg">
-              Tages-, Gewohnheits-, Workout-, Projektplan etc. alles ist Teil deines Life Hubs. Ein komplettes System für dein Leben - nicht nur für das Studium.
+              Genauer bedeutet das, getestete System um täglich dein Leben zu verbessern: Gewohnheiten etablieren, Informationen speichern oder Finanzen verwalten.
             </p>
             <Button size="lg" className="bg-amber-500 hover:bg-amber-600" onClick={scrollToPricing}>
               Jetzt starten
