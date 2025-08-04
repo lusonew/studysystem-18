@@ -122,12 +122,14 @@ export const LifeHub = () => {
           delay: 0.2
         }} className="lg:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Finanz Tracker</h3>
-            <p className="text-gray-600 mb-6 text-lg">
-              Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zum Geld.
-            </p>
-            <p className="text-gray-600 mb-8 text-lg">
-              Der Finanz Tracker hilft dir dabei, deine Einnahmen und Ausgaben zu verwalten und finanzielle Ziele zu erreichen.
-            </p>
+            <p className="text-gray-600 mb-6 text-lg">Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zum Geld.
+
+Stell dir vor, du könntest endlich aufhören, dich wegen Geld zu stressen. Keine schlaflosen Nächte mehr, weil du nicht weißt, ob das Geld bis Monatsende reicht. Keine Scham mehr, wenn Freunde spontan ausgehen wollen und du wieder knapp bei Kasse bist.
+
+Der Finanz Tracker verwandelt deine Geldsorgen in Geldsicherheit. Du entwickelst ein Gefühl von Kontrolle und Erwachsensein, das dir zeigt: Du hast dein Leben im Griff. Das Selbstvertrauen, das entsteht, wenn du deine Finanzen meisterst, strahlt auf alle anderen Lebensbereiche aus.
+
+Werde zu der Person, die anderen zeigt, wie man als Student smart mit Geld umgeht – und lege schon heute den Grundstein für finanzielle Freiheit in deiner Zukunft.</p>
+            <p className="text-gray-600 mb-8 text-lg">Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zu Geld und werde zu der Person, die anderen zeigt, wie man als Student mit Geld umgeht. So legst du schon heute den Grundstein für finanzielle Freiheit in deiner Zukunft.</p>
           </motion.div>
           <motion.div initial={{
           opacity: 0,
