@@ -48,7 +48,7 @@ export const LifeHub = () => {
         }} transition={{
           duration: 0.6
         }} className="lg:w-2/3">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Das Life Hub</h3>
+            
             <p className="text-gray-600 mb-6 text-lg">
               Du bist mehr als nur Student. Auch wenn das Studium eine zentrale in deinem Leben spielt, gibt es auch andere wichtige Bereiche. Daher brauchst du ein System, das auch deine persönlichen Ambitionen reflektiert.
             </p>
