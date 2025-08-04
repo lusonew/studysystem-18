@@ -50,7 +50,7 @@ export const LifeHub = () => {
         }} className="lg:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Das Life Hub</h3>
             <p className="text-gray-600 mb-6 text-lg">
-              Du bist mehr als nur Student. Erhalte ein Notion-System, das dich und deine persönlichen Ambitionen auch über das Studium hinaus reflektiert. Darin findest du alle nötigen Pläne und Systeme.
+              Du bist mehr als nur Student. Auch wenn das Studium eine zentrale in deinem Leben spielt, gibt es auch andere wichtige Bereiche. Daher brauchst du ein System, das auch deine persönlichen Ambitionen reflektiert.
             </p>
             <p className="text-gray-600 mb-8 text-lg">
               Tages-, Gewohnheits-, Workout-, Projektplan etc. alles ist Teil deines Life Hubs. Ein komplettes System für dein Leben - nicht nur für das Studium.
