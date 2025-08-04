@@ -74,6 +74,75 @@ export const LifeHub = () => {
             <img src="/lovable-uploads/de3f294b-3010-4586-bd98-12ce093511b1.png" alt="Das Life Hub" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
           </motion.div>
         </div>
+
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
+          <motion.div initial={{
+          opacity: 0,
+          x: -20
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.1
+        }} className="lg:w-2/3">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Habit Tracker</h3>
+            <p className="text-gray-600 mb-6 text-lg">
+              Verfolge deine täglichen Gewohnheiten und baue nachhaltige Routinen auf, die dich deinen Zielen näherbringen.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Mit dem integrierten Habit Tracker behältst du den Überblick über deine wichtigsten Gewohnheiten und siehst deinen Fortschritt auf einen Blick.
+            </p>
+          </motion.div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
+          <motion.div initial={{
+          opacity: 0,
+          x: -20
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.2
+        }} className="lg:w-2/3">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Finanz Tracker</h3>
+            <p className="text-gray-600 mb-6 text-lg">
+              Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zum Geld.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Der Finanz Tracker hilft dir dabei, deine Einnahmen und Ausgaben zu verwalten und finanzielle Ziele zu erreichen.
+            </p>
+          </motion.div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
+          <motion.div initial={{
+          opacity: 0,
+          x: -20
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.3
+        }} className="lg:w-2/3">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Workout Tracker</h3>
+            <p className="text-gray-600 mb-6 text-lg">
+              Plane und verfolge deine Workouts, um körperlich fit und mental stark zu bleiben.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Mit dem Workout Tracker organisierst du deine Trainingsroutine und dokumentierst deine Fortschritte im Fitness-Bereich.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>;
 };
