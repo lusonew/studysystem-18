@@ -75,11 +75,29 @@ export const Pricing = () => {
         }} className="w-64 h-0.5 bg-amber-500 mx-auto mt-4 origin-left" />
         </motion.div>
 
-        <div className="max-w-4xl mx-auto flex justify-center">
-          <PricingCard title="Study System PRO" price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-green-600">96€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} features={proPricingFeatures} imageUrl="/lovable-uploads/f44205c6-0d6a-4a94-b574-46b48d96287a.png" ctaUrl="https://www.luisnewton.de/studypaket/buy" bestSeller={true} className="bg-gradient-to-br from-amber-50 to-white border-amber-200" originalValue="139€" additionalLink={{
-          text: "Hier klicken für Kauf mit Klarna oder Apple/Google Pay",
-          url: "https://buy.stripe.com/bIY8zygDgfm9c245ko"
-        }} />
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <PricingCard 
+            title="Study System" 
+            price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-gray-700">79€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} 
+            features={basicPricingFeatures} 
+            imageUrl="/lovable-uploads/35dcb7ed-1d51-4bba-9875-0ba245bc8739.png" 
+            ctaUrl="https://www.luisnewton.de/studypaket/buy" 
+            className="bg-gradient-to-br from-gray-50 to-white border-gray-200" 
+          />
+          <PricingCard 
+            title="Study System PRO" 
+            price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-green-600">96€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} 
+            features={proPricingFeatures} 
+            imageUrl="/lovable-uploads/f44205c6-0d6a-4a94-b574-46b48d96287a.png" 
+            ctaUrl="https://www.luisnewton.de/studypaket/buy" 
+            bestSeller={true} 
+            className="bg-gradient-to-br from-amber-50 to-white border-amber-200" 
+            originalValue="139€" 
+            additionalLink={{
+              text: "Hier klicken für Kauf mit Klarna oder Apple/Google Pay",
+              url: "https://buy.stripe.com/bIY8zygDgfm9c245ko"
+            }} 
+          />
         </div>
       </div>
     </section>;
