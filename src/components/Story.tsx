@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 export const Story = () => {
   const isMobile = useIsMobile();
   return <section className="bg-white py-[50px]">
@@ -28,7 +29,7 @@ Wie viele Studierende, hatte ich am Anfang große Probleme: Bei Klausuren durchg
             <p className="font-medium text-lg">Das Study System PRO ist genau dieses System - und noch mehr. Es macht studieren nicht nur einfacher, sondern hilft dir mehr zu schaffen.</p>
           </div>
           <div className="lg:w-1/2">
-            <img src="/lovable-uploads/61d227f3-9e07-4e44-a1ab-3b82b969bfe8.png" alt="Student Portrait" className="w-4/5 h-4/5 object-cover rounded-xl mx-auto" loading="lazy" />
+            <OptimizedImage src="/lovable-uploads/f4aaa1eb-d46d-43cc-b556-9b53e1afdb84.png" alt="Student Portrait" className="w-4/5 h-4/5 object-cover rounded-xl mx-auto" priority={true} />
           </div>
         </div>
         </motion.div>
