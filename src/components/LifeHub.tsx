@@ -50,7 +50,7 @@ export const LifeHub = () => {
         }} className="lg:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Das Life Hub</h3>
             <p className="text-gray-600 mb-6 text-lg">
-              Erhalte ein Notion-System, das dich und deine persönlichen Ambitionen reflektiert. Darin findest du nicht nur deine individuelle Erfolgsformel wieder, sondern auch Systeme, um langfristig dranzubleiben.
+              Du bist mehr als nur Student. Erhalte ein Notion-System, das dich und deine persönlichen Ambitionen auch über das Studium hinaus reflektiert. Darin findest du alle nötigen Pläne und Systeme.
             </p>
             <p className="text-gray-600 mb-8">
               Tages-, Gewohnheits-, Workout-, Projektplan etc. alles ist Teil deines Life Hubs. Ein komplettes System für dein Leben - nicht nur für das Studium.
