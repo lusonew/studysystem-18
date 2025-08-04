@@ -29,7 +29,7 @@ Wie viele Studierende, hatte ich am Anfang große Probleme: Bei Klausuren durchg
             <p className="font-medium text-lg">Das Study System PRO ist genau dieses System - und noch mehr. Es macht studieren nicht nur einfacher, sondern hilft dir mehr zu schaffen.</p>
           </div>
           <div className="lg:w-1/2">
-            <OptimizedImage src="/lovable-uploads/f4aaa1eb-d46d-43cc-b556-9b53e1afdb84.png" alt="Student Portrait" className="w-4/5 h-4/5 object-cover rounded-xl mx-auto" priority={true} />
+            <OptimizedImage src="/lovable-uploads/f4aaa1eb-d46d-43cc-b556-9b53e1afdb84.png" alt="Student Portrait" className="w-2/3 h-2/3 object-cover rounded-xl mx-auto" priority={true} />
           </div>
         </div>
         </motion.div>
