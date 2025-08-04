@@ -34,7 +34,7 @@ export const SuccessFormula = () => {
             </Badge>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Mühelos mehr schaffen als 99% aller Studenten</h2>
-          <p className="text-xl text-gray-600 mb-6">Die Studium-Erfolgsformel</p>
+          
           <p className="text-gray-600 mb-8 max-w-3xl mx-auto text-lg text-left">
             In der Erfolgsformel erarbeiten wir gemeinsam die genauen Schritte, um erfolgreich zu studieren. Sie ist die perfekte Ergänzung zum Study System und bietet einen Schritt-für-Schritt-Plan für deinen persönlichen Erfolg im Studium - <span className="bg-amber-100">Egal welcher Studiengang oder welche Studienform.</span>
           </p>
