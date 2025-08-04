@@ -92,7 +92,7 @@ export const LifeHub = () => {
             <p className="text-gray-600 mb-6 text-lg">
               Verfolge deine täglichen Gewohnheiten und baue nachhaltige Routinen auf, die dich deinen Zielen näherbringen.
             </p>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600 mb-8 text-lg">
               Mit dem integrierten Habit Tracker behältst du den Überblick über deine wichtigsten Gewohnheiten und siehst deinen Fortschritt auf einen Blick.
             </p>
           </motion.div>
