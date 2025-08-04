@@ -30,8 +30,8 @@ export const Problems = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-12">
-          <h2 className="text-3xl text-gray-900 mb-4 lg:text-3xl font-semibold">Womit sich andere rumschlagen müssen</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-thin">
+          <h2 className="text-3xl text-gray-900 mb-4 font-semibold lg:text-3xl">Womit sich andere rumschlagen müssen</h2>
+          <p className="text-gray-600 max-w-3xl mx-auto font-thin text-xl">
             Stress, schlechte Leistung, Selbstzweifel.
             <span className="font-semibold"> Das ist jetzt vorbei.</span>
           </p>

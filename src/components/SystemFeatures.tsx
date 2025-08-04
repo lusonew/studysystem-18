@@ -5,7 +5,6 @@ import { X, Book, Calendar, Star, Puzzle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "@/components/ui/button";
-
 const features = [{
   icon: Book,
   title: "Weniger Stress",
@@ -22,7 +21,6 @@ const features = [{
   subtitle: "Prüfungsvorbereitung",
   description: "Effektive Vorlagen für die optimale Prüfungsvorbereitung."
 }];
-
 export const SystemFeatures = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [zoomPosition, setZoomPosition] = useState({
@@ -31,7 +29,6 @@ export const SystemFeatures = () => {
   });
   const [zoomLevel, setZoomLevel] = useState(1);
   const isMobile = useIsMobile();
-
   const scrollToPricing = () => {
     const pricingSection = document.getElementById('pricing');
     if (pricingSection) {
@@ -40,16 +37,13 @@ export const SystemFeatures = () => {
       });
     }
   };
-
   const handleImageClick = (imageSrc: string) => {
     setSelectedImage(imageSrc);
     setZoomLevel(1); // Reset zoom when opening a new image
   };
-
   const closeFullscreen = () => {
     setSelectedImage(null);
   };
-
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!selectedImage || zoomLevel === 1) return;
     const rect = e.currentTarget.getBoundingClientRect();
@@ -60,7 +54,6 @@ export const SystemFeatures = () => {
       y
     });
   };
-
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
     if (!selectedImage) return;
@@ -68,7 +61,6 @@ export const SystemFeatures = () => {
     const newZoom = Math.min(Math.max(1, zoomLevel + delta), 3);
     setZoomLevel(newZoom);
   };
-
   return <section className="bg-white py-[50px]">
       <div className="container mx-auto px-3 md:px-40">
         <motion.div initial={{
@@ -88,7 +80,7 @@ export const SystemFeatures = () => {
               Teil 1: Das System
             </Badge>
           </div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Das hast du den anderen voraus</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Das hast du den anderen voraus</h2>
           <p className="text-gray-600 text-xl font-thin">Die Vorteile, die du als jemand mit System hast</p>
         </motion.div>
 
@@ -123,81 +115,92 @@ export const SystemFeatures = () => {
         {/* GIF Demo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex flex-col items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6 }} 
-              src="/lovable-uploads/Demo1.gif" 
-              alt="Study System Demo 1" 
-              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-              onClick={() => handleImageClick("/lovable-uploads/Demo1.gif")}
-            />
+            <motion.img initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6
+          }} src="/lovable-uploads/Demo1.gif" alt="Study System Demo 1" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" onClick={() => handleImageClick("/lovable-uploads/Demo1.gif")} />
             <p className="text-gray-500 text-center mt-3 text-sm">Lernaufgaben schnell erstellen</p>
           </div>
           <div className="flex flex-col items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6, delay: 0.1 }} 
-              src="/lovable-uploads/Demo3.gif" 
-              alt="Study System Demo 3" 
-              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-              onClick={() => handleImageClick("/lovable-uploads/Demo3.gif")}
-            />
+            <motion.img initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.1
+          }} src="/lovable-uploads/Demo3.gif" alt="Study System Demo 3" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" onClick={() => handleImageClick("/lovable-uploads/Demo3.gif")} />
             <p className="text-gray-500 text-center mt-3 text-sm">Termine schnell aufschreiben</p>
           </div>
           <div className="flex flex-col items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6, delay: 0.2 }} 
-              src="/lovable-uploads/Demo2.gif" 
-              alt="Study System Demo 2" 
-              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-              onClick={() => handleImageClick("/lovable-uploads/Demo2.gif")}
-            />
+            <motion.img initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.2
+          }} src="/lovable-uploads/Demo2.gif" alt="Study System Demo 2" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" onClick={() => handleImageClick("/lovable-uploads/Demo2.gif")} />
             <p className="text-gray-500 text-center mt-3 text-sm">Notizen & Aufgaben für Fächer</p>
           </div>
           <div className="flex flex-col items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6, delay: 0.3 }} 
-              src="/lovable-uploads/Demo4.gif" 
-              alt="Study System Demo 4" 
-              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-              onClick={() => handleImageClick("/lovable-uploads/Demo4.gif")}
-            />
+            <motion.img initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.3
+          }} src="/lovable-uploads/Demo4.gif" alt="Study System Demo 4" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" onClick={() => handleImageClick("/lovable-uploads/Demo4.gif")} />
             <p className="text-gray-500 text-center mt-3 text-sm">Die Studium-Erfolgsformel</p>
           </div>
           <div className="flex flex-col items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6, delay: 0.4 }} 
-              src="/lovable-uploads/Demo5.gif" 
-              alt="Study System Demo 5" 
-              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-              onClick={() => handleImageClick("/lovable-uploads/Demo5.gif")}
-            />
+            <motion.img initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.4
+          }} src="/lovable-uploads/Demo5.gif" alt="Study System Demo 5" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" onClick={() => handleImageClick("/lovable-uploads/Demo5.gif")} />
             <p className="text-gray-500 text-center mt-3 text-sm">Lernumgebung mit Timer & Sounds</p>
           </div>
           <div className="flex flex-col items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6, delay: 0.5 }} 
-              src="/lovable-uploads/Demo6.gif" 
-              alt="Study System Demo 6" 
-              className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" 
-              onClick={() => handleImageClick("/lovable-uploads/Demo6.gif")}
-            />
+            <motion.img initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.5
+          }} src="/lovable-uploads/Demo6.gif" alt="Study System Demo 6" className="w-full h-auto rounded-xl shadow-lg cursor-pointer hover:opacity-95 transition-opacity transform scale-50 origin-center" onClick={() => handleImageClick("/lovable-uploads/Demo6.gif")} />
             <p className="text-gray-500 text-center mt-3 text-sm">System für Hausarbeiten</p>
           </div>
         </div>
