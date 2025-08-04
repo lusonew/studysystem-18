@@ -16,7 +16,7 @@ export const Story = () => {
       }} transition={{
         duration: 0.6
       }} className="">
-        <h2 className="text-4xl font-bold mb-6 text-center">"Ein gutes System verändert dein Leben"</h2>
+        <h2 className="font-bold mb-6 text-center text-5xl">"Ein gutes System verändert dein Leben"</h2>
         <div className="flex flex-col lg:flex-row items-center gap-2.5">
           <div className="lg:w-1/2">
             <p className="text-gray-600 mb-4 text-lg font-normal">Falls du mich noch nicht kennst - Hi, mein Name ist Luis 👋
