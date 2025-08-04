@@ -57,7 +57,7 @@ export const SuccessFormula = () => {
           }} className="text-left">
               <img src="/lovable-uploads/f550ee9d-cf68-4457-a4dc-358b3a758f0c.png" alt="Die Formel" className="w-full h-auto rounded-xl mb-6" loading="lazy" />
               <h3 className="text-xl font-bold mb-4">Die Formel</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Erarbeite gemeinsam mit Luis die wichtigsten Erfolgsaspekte für dein Studium. In kurzen Videos besprechen wir die Bedeutung und Probleme jedes Themenbereichs. So verstehen wir besser, worum es genau geht und warum diese Themen wichtig sind. Unter anderem: Mindset, Anti-/Ziele, Gewohnheiten und mehr.
               </p>
             </motion.div>
@@ -77,7 +77,7 @@ export const SuccessFormula = () => {
           }} className="text-left">
               <img src="/lovable-uploads/b57992a7-2951-476c-b92d-3ddb841de3a5.png" alt="Die Methoden" className="w-full h-auto rounded-xl mb-6" loading="lazy" />
               <h3 className="text-xl font-bold mb-4">Die Methoden</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Klare, praktische Übungen & Fragen, um deine individuelle Erfolgsformel zu entwickeln. Jedes Kapitel umfasst vorbereitete Aufgaben- und Fragestellungen, damit du eine klare Anleitung hast und in kürzester Zeit Fortschritte machst. Wir sprechen jede Aufgabe und jede Frage vorab gemeinsam durch.
               </p>
             </motion.div>
