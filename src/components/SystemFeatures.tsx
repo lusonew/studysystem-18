@@ -81,7 +81,7 @@ export const SystemFeatures = () => {
             </Badge>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Das hast du den anderen voraus</h2>
-          <p className="text-gray-600 text-xl font-thin">Die Vorteile, die du als jemand mit System hast</p>
+          <p className="text-gray-600 text-xl font-extralight">Die Vorteile, mit denen du ab jetzt jeden Tag rechnen kannst - während andere Probleme haben.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
