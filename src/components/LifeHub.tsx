@@ -96,6 +96,20 @@ export const LifeHub = () => {
               Mit dem integrierten Habit Tracker behältst du den Überblick über deine wichtigsten Gewohnheiten und siehst deinen Fortschritt auf einen Blick.
             </p>
           </motion.div>
+          <motion.div initial={{
+          opacity: 0,
+          x: 20
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.3
+        }} className="lg:w-1/3">
+            <img src="/lovable-uploads/Demo7.gif" alt="Habit Tracker" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
+          </motion.div>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
@@ -119,6 +133,20 @@ export const LifeHub = () => {
               Der Finanz Tracker hilft dir dabei, deine Einnahmen und Ausgaben zu verwalten und finanzielle Ziele zu erreichen.
             </p>
           </motion.div>
+          <motion.div initial={{
+          opacity: 0,
+          x: 20
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.4
+        }} className="lg:w-1/3">
+            <img src="/lovable-uploads/Demo10.gif" alt="Finanz Tracker" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
+          </motion.div>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
@@ -141,6 +169,20 @@ export const LifeHub = () => {
             <p className="text-gray-600 mb-8">
               Mit dem Workout Tracker organisierst du deine Trainingsroutine und dokumentierst deine Fortschritte im Fitness-Bereich.
             </p>
+          </motion.div>
+          <motion.div initial={{
+          opacity: 0,
+          x: 20
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.5
+        }} className="lg:w-1/3">
+            <img src="/lovable-uploads/Demo8.gif" alt="Workout Tracker" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
           </motion.div>
         </div>
       </div>
