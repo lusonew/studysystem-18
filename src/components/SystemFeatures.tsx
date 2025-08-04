@@ -106,7 +106,7 @@ export const SystemFeatures = () => {
               <p className="text-sm text-amber-600 mb-2">
                 {feature.subtitle}
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 {feature.description}
               </p>
             </motion.div>)}
