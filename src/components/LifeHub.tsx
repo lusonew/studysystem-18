@@ -55,9 +55,6 @@ export const LifeHub = () => {
             <p className="text-gray-600 mb-8 text-lg">
               Genauer bedeutet das, getestete System um täglich dein Leben zu verbessern: Gewohnheiten etablieren, Informationen speichern oder Finanzen verwalten.
             </p>
-            <Button size="lg" className="bg-amber-500 hover:bg-amber-600" onClick={scrollToPricing}>
-              Jetzt starten
-            </Button>
           </motion.div>
           <motion.div initial={{
           opacity: 0,
@@ -172,6 +169,12 @@ export const LifeHub = () => {
         }} className="lg:w-1/3">
             <img src="/lovable-uploads/Demo8.gif" alt="Workout Tracker" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
           </motion.div>
+        </div>
+        
+        <div className="text-center">
+          <Button size="lg" className="bg-amber-500 hover:bg-amber-600" onClick={scrollToPricing}>
+            Jetzt starten
+          </Button>
         </div>
       </div>
     </section>;
