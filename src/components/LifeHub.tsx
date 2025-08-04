@@ -171,7 +171,7 @@ export const LifeHub = () => {
           </motion.div>
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <Button size="lg" className="bg-amber-500 hover:bg-amber-600" onClick={scrollToPricing}>
             Jetzt starten
           </Button>
