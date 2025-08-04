@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Puzzle } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-
 export const SuccessFormula = () => {
   const isMobile = useIsMobile();
   const scrollToPricing = () => {
@@ -14,7 +13,6 @@ export const SuccessFormula = () => {
       });
     }
   };
-
   return <section className="bg-white py-[50px]">
       <div className="container mx-auto px-3 md:px-40">
         <motion.div initial={{
@@ -37,7 +35,7 @@ export const SuccessFormula = () => {
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Darum schaffst du mehr als 99% aller Studenten</h2>
           <p className="text-xl text-gray-600 mb-6">Die Studium-Erfolgsformel</p>
-          <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-gray-600 mb-8 max-w-3xl mx-auto text-lg">
             In der Erfolgsformel erarbeiten wir gemeinsam die genauen Schritte, um erfolgreich zu studieren. Sie ist die perfekte Ergänzung zum Study System und bietet einen Schritt-für-Schritt-Plan für deinen persönlichen Erfolg im Studium - <span className="bg-amber-100">Egal welcher Studiengang oder welche Studienform.</span>
           </p>
           <Button size="lg" className="bg-amber-400 hover:bg-amber-500 mb-16" onClick={scrollToPricing}>
