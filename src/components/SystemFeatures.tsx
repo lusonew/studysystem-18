@@ -9,7 +9,7 @@ const features = [{
   icon: Book,
   title: "Weniger Stress",
   subtitle: "Studienorganisation",
-  description: "Alle Unterlagen und Notizen an einem Ort perfekt strukturiert."
+  description: "Alle Unterlagen und Notizen an einem Ort perfekt strukturiert. Klares System für zusätzliche Leistungen, wie Haus- und Abschlussarbeiten. Ergänzende Seiten für optimiertes Lernen"
 }, {
   icon: Calendar,
   title: "Mehr Struktur",
