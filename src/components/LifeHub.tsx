@@ -71,7 +71,7 @@ export const LifeHub = () => {
           duration: 0.6,
           delay: 0.2
         }} className="lg:w-1/3">
-            <img src="/lovable-uploads/de3f294b-3010-4586-bd98-12ce093511b1.png" alt="Das Life Hub" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
+            <img src="/lovable-uploads/0e9b8fef-096f-423a-bb4b-61b8dd75a0d3.png" alt="Das Life Hub" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
           </motion.div>
         </div>
 
