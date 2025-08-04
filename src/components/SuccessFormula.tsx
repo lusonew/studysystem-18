@@ -38,9 +38,6 @@ export const SuccessFormula = () => {
           <p className="text-gray-600 mb-8 max-w-3xl mx-auto text-lg text-left">
             In der Erfolgsformel erarbeiten wir gemeinsam die genauen Schritte, um erfolgreich zu studieren. Sie ist die perfekte Ergänzung zum Study System und bietet einen Schritt-für-Schritt-Plan für deinen persönlichen Erfolg im Studium - <span className="bg-amber-100">Egal welcher Studiengang oder welche Studienform.</span>
           </p>
-          <Button size="lg" className="bg-amber-400 hover:bg-amber-500 mb-16" onClick={scrollToPricing}>
-            JETZT STARTEN
-          </Button>
 
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div initial={{
@@ -82,6 +79,12 @@ export const SuccessFormula = () => {
               </p>
             </motion.div>
 
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button size="lg" className="bg-amber-400 hover:bg-amber-500" onClick={scrollToPricing}>
+              JETZT STARTEN
+            </Button>
           </div>
         </motion.div>
       </div>
