@@ -22,6 +22,7 @@ export type PricingCardProps = {
   className?: string;
   delay?: number;
   originalValue?: string;
+  imageClassName?: string;
   additionalLink?: {
     text: string;
     url: string;
@@ -38,6 +39,7 @@ export const PricingCard = ({
   className = "",
   delay = 0,
   originalValue,
+  imageClassName = "",
   additionalLink
 }: PricingCardProps) => {
   // Get current URL parameters and append them to the CTA URL
@@ -95,7 +97,7 @@ export const PricingCard = ({
               alt={`${title} Preview`}
               width="300"
               height="225"
-              className="w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-sm mx-auto scale-[0.85]"
+              className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-sm mx-auto scale-[0.85] ${imageClassName}`}
               loading="lazy"
             />
           </a>
