@@ -80,7 +80,7 @@ export const Pricing = () => {
             title="Study System" 
             price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-gray-700">79€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} 
             features={basicPricingFeatures} 
-            imageUrl="/lovable-uploads/35dcb7ed-1d51-4bba-9875-0ba245bc8739.png" 
+            imageUrl="/lovable-uploads/e542ff79-e94f-4e8f-8631-fda80ba255c4.png"
             ctaUrl="https://www.luisnewton.de/studypaket/buy" 
             className="bg-gradient-to-br from-gray-50 to-white border-gray-200" 
           />
