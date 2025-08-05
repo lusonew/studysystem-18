@@ -95,7 +95,7 @@ export const PricingCard = ({
               alt={`${title} Preview`}
               width="300"
               height="225"
-              className="w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-sm mx-auto"
+              className="w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-sm mx-auto scale-[0.85]"
               loading="lazy"
             />
           </a>
