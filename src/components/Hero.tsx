@@ -14,10 +14,10 @@ export const Hero = () => {
       });
     }
   };
-  const scrollToProblems = () => {
-    const problemsSection = document.getElementById('problems');
-    if (problemsSection) {
-      problemsSection.scrollIntoView({
+  const scrollToStory = () => {
+    const storySection = document.getElementById('story');
+    if (storySection) {
+      storySection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -61,7 +61,7 @@ export const Hero = () => {
               <Button size="lg" className="bg-amber-500 hover:bg-amber-600 px-5 md:px-8" onClick={scrollToPricing}>
                 Jetzt starten
               </Button>
-              <Button size="lg" variant="outline" className="px-5 md:px-8" onClick={scrollToProblems}>
+              <Button size="lg" variant="outline" className="px-5 md:px-8" onClick={scrollToStory}>
                 Mehr erfahren
               </Button>
             </div>

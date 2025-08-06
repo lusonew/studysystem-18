@@ -3,7 +3,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 export const Story = () => {
   const isMobile = useIsMobile();
-  return <section className="bg-white py-[50px]">
+  return <section id="story" className="bg-white py-[50px]">
     <div className="container mx-auto px-3 sm:px-6 md:px-20 lg:px-40">
       <motion.div initial={{
         opacity: 0,
