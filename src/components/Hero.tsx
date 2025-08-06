@@ -18,7 +18,8 @@ export const Hero = () => {
     const problemsSection = document.getElementById('problems');
     if (problemsSection) {
       problemsSection.scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
+        block: 'start'
       });
     }
   };
