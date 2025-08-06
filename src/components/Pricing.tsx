@@ -11,9 +11,6 @@ export const Pricing = () => {
   const basicPricingFeatures: PricingFeatureGroup[] = [{
     title: "Das Study System",
     items: ["Haus-/Abschlussarbeiten-System", "Lernaufgaben-Dashboard", "Klausuren-Countdown", "Seiten für jedes Fach (Vorlesungsnotizen, Zusammenfassung etc.)", "und vieles mehr"]
-  }, {
-    title: "Dashboard",
-    items: ["Startseite für dein Notion-System", "Inbox", "Schnellzugriffe"]
   }];
   const proPricingFeatures: PricingFeatureGroup[] = [{
     title: "Teil 1: Das Study System",
