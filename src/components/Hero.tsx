@@ -32,7 +32,7 @@ export const Hero = () => {
       <div className="container mx-auto px-3 md:px-40">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-2 my-[35px] lg:text-6xl">Mach das Studium einfacher und studiere smarter als alle anderen</h1>
-          <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6">Mehr Produktivität, Bessere Ergebnisse & Weniger Aufwand</h2>
+          <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6 my-[25px]">Mehr Produktivität, Bessere Ergebnisse & Weniger Aufwand</h2>
         </div>
         
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
