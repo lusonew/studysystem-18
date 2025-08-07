@@ -119,8 +119,8 @@ export const LifeHub = () => {
           delay: 0.2
         }} className="lg:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Finanz Tracker</h3>
-            <p className="text-gray-600 mb-6 text-lg">Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zum Geld. Stell dir vor, du könntest endlich aufhören, dich wegen Geld zu stressen. Nicht mehr schämen, wenn Freunde spontan ausgehen wollen und du wieder knapp bei Kasse bist. Der Finanz Tracker verwandelt deine Geldsorgen in Geldsicherheit. Du entwickelst ein Gefühl von Kontrolle und Erwachsensein, das dir zeigt: Du hast dein Leben im Griff. Das Selbstvertrauen, das so entsteht, strahlt automatisch auch auf alle anderen Lebensbereiche aus. </p>
-            <p className="text-gray-600 mb-8 text-lg">Behalte deine Finanzen als Student im Blick und entwickle ein gesundes Verhältnis zu Geld und werde zu der Person, die anderen zeigt, wie man als Student mit Geld umgeht. So legst du schon heute den Grundstein für finanzielle Freiheit in deiner Zukunft.</p>
+            <p className="text-gray-600 mb-6 text-lg">Stell dir vor, du könntest endlich aufhören, dich wegen Geld zu stressen. Nicht mehr schämen, wenn Freunde spontan ausgehen wollen und du wieder knapp bei Kasse bist. Der Finanz Tracker verwandelt deine Geldsorgen in Geldsicherheit. Du entwickelst ein Gefühl von Kontrolle und Erwachsensein, das dir zeigt: Du hast dein Leben im Griff.</p>
+            <p className="text-gray-600 mb-8 text-lg">So legst du schon heute den Grundstein für finanzielle Freiheit in deiner Zukunft.</p>
           </motion.div>
           <motion.div initial={{
           opacity: 0,
