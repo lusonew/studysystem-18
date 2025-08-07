@@ -21,9 +21,9 @@ export const Story = () => {
         <div className="flex flex-col lg:flex-row items-center gap-2.5">
           <div className="lg:w-1/2">
             <p className="text-gray-600 mb-4 text-lg font-normal">Falls du mich noch nicht kennst - Hi, mein Name ist Luis 👋</p>
-            <p className="text-gray-600 mb-4 text-lg font-normal">Ähnlich wie viele Studierende, hatte ich anfangs große Probleme: Bei Klausuren durchgefallen, durchgehend gestresst und große Zweifel.</p>
-            <p className="text-gray-600 mb-4 text-lg font-normal">Während meines Bachelor- und Masterstudiums habe ich dann über 4 Jahre das Study System PRO entwickelt. Ich bin dadurch 1er-Student geworden, hatte Zeit für einen gutbezahlten Werkstudentenjob, zusätzliche Social Media und ein ausgeglichenes Privatleben.</p>
-            <p className="text-gray-600 mb-4 font-normal text-lg">Da habe ich erkannt: Ein System ist im Studium nicht optional. Es ist Grundvoraussetzung für alle, die etwas Im Leben erreichen wollen.</p>
+            <p className="text-gray-600 mb-4 text-lg font-normal">Ähnlich wie viele Studierende, hatte ich anfangs große Probleme: Bei Klausuren durchgefallen, durchgehend gestresst und Zweifel, ob ich den Abschluss schaffen würde.</p>
+            <p className="text-gray-600 mb-4 text-lg font-normal">Während meines Bachelor- und Masterstudiums habe ich dann über 4 Jahre das Study System PRO entwickelt. Ich bin dadurch 1er-Student geworden, hatte Zeit für einen gutbezahlten Werkstudentenjob, zusätzliche Social Media und ein erfülltes Privatleben.</p>
+            <p className="text-gray-600 mb-4 font-normal text-lg">Da habe ich erkannt: Ein System ist die Grundvoraussetzung für alle, die etwas Im Leben erreichen wollen.</p>
             <p className="font-medium text-lg">Das Study System PRO ist genau dieses System - und noch mehr. Es macht studieren nicht nur einfacher, sondern hilft dir mehr zu schaffen.</p>
           </div>
           <div className="lg:w-1/2">
