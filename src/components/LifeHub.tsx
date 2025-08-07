@@ -152,8 +152,8 @@ export const LifeHub = () => {
           delay: 0.3
         }} className="lg:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Workout Tracker</h3>
-            <p className="text-gray-600 mb-6 text-lg">Plane und verfolge deine Workouts, um körperlich fit und mental stark zu bleiben. Stell dir vor, wie es sich anfühlt, wenn du dich jeden Tag ein bisschen stärker, ein bisschen fitter, ein bisschen selbstbewusster fühlst. Sport wird zu deiner Superkraft – nicht nur für deinen Körper, sondern für deinen Geist. Werde zu der Person, die niemals aufgibt – im Gym und im Leben. Jedes Workout baut nicht nur Muskeln auf, sondern auch den unerschütterlichen Glauben daran, dass du jedes Ziel erreichen kannst, das du dir setzt.</p>
-            <p className="text-gray-600 mb-8 text-lg">Du willst nicht nur gut aussehen – du willst dich stark fühlen. Du willst die Energie haben, um deine Träume zu verfolgen. Du willst das Selbstvertrauen, das nur kommt, wenn du weißt, dass dein Körper alles schaffen kann, was du dir vornimmst. Mit dem Workout Tracker verwandelst du das Gefühl von Schwäche in pure Stärke. </p>
+            <p className="text-gray-600 mb-6 text-lg">Stell dir vor, wie es sich anfühlt, wenn du dich jeden Tag ein bisschen stärker, ein bisschen fitter, ein bisschen selbstbewusster fühlst. Sport wird zu deiner Superkraft – nicht nur für deinen Körper, sondern auch für deinen Kopf. </p>
+            <p className="text-gray-600 mb-8 text-lg">Du willst nicht nur gut aussehen – du willst dich stark fühlen. Mit dem Workout Tracker verwandelst du das Gefühl von Schwäche in pure Stärke. </p>
           </motion.div>
           <motion.div initial={{
           opacity: 0,
