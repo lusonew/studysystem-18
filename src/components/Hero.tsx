@@ -31,7 +31,7 @@ export const Hero = () => {
       `}>
       <div className="container mx-auto px-3 md:px-40">
         <div className="text-center mb-12">
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-2">Mach dir das Studium einfacher und studiere smarter als alle anderen</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-2">Mach das Studium Einfacher und studiere Smarter als alle anderen</h1>
           <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6">Mehr Produktivität, Bessere Ergebnisse & Weniger Aufwand</h2>
         </div>
         
@@ -81,14 +81,7 @@ export const Hero = () => {
           duration: 0.8,
           delay: 0.2
         }} className="md:w-1/2">
-            <OptimizedImage 
-              src="/lovable-uploads/96552dbd-692e-4a8a-9d1e-ed3218b4f13c.png" 
-              alt="Study System Dashboard" 
-              width={800} 
-              height={600} 
-              className="w-full h-auto" 
-              priority={true}
-            />
+            <OptimizedImage src="/lovable-uploads/96552dbd-692e-4a8a-9d1e-ed3218b4f13c.png" alt="Study System Dashboard" width={800} height={600} className="w-full h-auto" priority={true} />
           </motion.div>
         </div>
         
