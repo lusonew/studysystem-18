@@ -31,7 +31,7 @@ export const Hero = () => {
       `}>
       <div className="container mx-auto px-3 md:px-40">
         <div className="text-center mb-12">
-          <h1 className="font-bold text-gray-900 mb-2 my-[35px] lg:text-6xl text-3xl">Mach das Studium Einfacher und studiere Smarter als alle anderen</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2 my-[35px] lg:text-6xl">Mach das Studium <span className="underline decoration-amber-600 decoration-2">Einfacher</span> und studiere <span className="underline decoration-amber-600 decoration-2">Smarter</span> als alle anderen</h1>
           <h2 className="text-xl lg:text-2xl text-amber-600 font-medium mb-6 my-[26px]">Mehr Produktivität, Bessere Ergebnisse & Weniger Aufwand</h2>
         </div>
         
