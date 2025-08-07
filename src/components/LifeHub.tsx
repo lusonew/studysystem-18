@@ -86,8 +86,8 @@ export const LifeHub = () => {
           delay: 0.1
         }} className="lg:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Habit Tracker</h3>
-            <p className="text-gray-600 mb-6 text-lg">Verfolge deine täglichen Gewohnheiten und baue nachhaltige Routinen auf, die dich deinen Zielen näherbringen. Mit dem integrierten Habit Tracker erlebst du endlich das befreiende Gefühl von echtem Fortschritt. Stell dir vor, wie stolz du sein wirst, wenn du nach 30 Tagen deine erste Gewohnheit gemeistert hast. Wie sich dein Selbstvertrauen steigert, wenn du siehst, dass du wirklich dazu in der Lage bist, Veränderungen in deinem Leben zu schaffen.</p>
-            <p className="text-gray-600 mb-8 text-lg">Werde zu der Person, die du schon immer sein wolltest – diszipliniert, zielstrebig und in Kontrolle über dein Leben. Jeder markierte Tag bringt dich näher zu der Version von dir, auf die du stolz sein kannst.</p>
+            <p className="text-gray-600 mb-6 text-lg">Verfolge deine täglichen Gewohnheiten und baue nachhaltige Routinen auf, die dich deinen Zielen näherbringen. Stell dir vor, wie stolz du sein wirst, wenn du nach 30 Tagen deine erste Gewohnheit gemeistert hast. Wie sich dein Selbstvertrauen steigert, wenn du siehst, dass du wirklich dazu in der Lage bist, Veränderungen in deinem Leben zu schaffen.</p>
+            <p className="text-gray-600 mb-8 text-lg">Werde zu der Person, die du schon immer sein wolltest – diszipliniert, zielstrebig und in Kontrolle über dein Leben.</p>
           </motion.div>
           <motion.div initial={{
           opacity: 0,
