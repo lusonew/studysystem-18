@@ -13,7 +13,7 @@ export const Pricing = () => {
     items: ["Haus-/Abschlussarbeiten-System", "Lernaufgaben-Dashboard", "Klausuren-Countdown", "Seiten für jedes Fach (Vorlesungsnotizen, Zusammenfassung etc.)", "und vieles mehr"]
   }];
   const proPricingFeatures: PricingFeatureGroup[] = [{
-    title: "Teil 1: Das Study System",
+    title: "Teil 1: Alles aus Study System",
     items: ["Haus-/Abschlussarbeiten-System", "Lernaufgaben-Dashboard", "Klausuren-Countdown", "Seiten für jedes Fach (Vorlesungsnotizen, Zusammenfassung etc.)", "und vieles mehr"]
   }, {
     title: "Teil 2: Zugang zur Studium-Erfolgsformel (Videokurs)",
