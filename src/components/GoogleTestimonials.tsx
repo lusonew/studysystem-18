@@ -38,7 +38,7 @@ export const GoogleTestimonials = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">
-            Was unsere Kunden sagen
+            Was Andere sagen
           </h2>
           <p className="text-gray-600 text-xl font-extralight">
             Echte Bewertungen von zufriedenen Studenten
