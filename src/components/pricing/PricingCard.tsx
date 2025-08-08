@@ -127,7 +127,7 @@ export const PricingCard = ({
               window.open(getCtaUrlWithParams(), '_blank');
             }}
           >
-            Jetzt sichern
+            Jetzt Kaufen
           </Button>
           {additionalLink && (
             <a 
