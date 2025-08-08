@@ -6,29 +6,33 @@ export interface Testimonial {
   time: string;
   initials: string;
   isGoogleReview: boolean;
+  imageUrl?: string;
 }
 
 export const testimonialData: Testimonial[] = [
   {
-    name: "Jakob Graf",
-    text: "Simpel und Effektiv. Man kennt sich schnell aus - alles top",
-    time: "Vor 2 Wochen",
-    initials: "JG",
+    name: "EinAnton",
+    text: "Für Studenten einfach perfekt!",
+    time: "Vor 3 Wochen",
+    initials: "EA",
     isGoogleReview: true,
+    imageUrl: "/lovable-uploads/2525e9d9-e1c9-4dda-a953-fc0ba1c9f2e1.png",
   },
   {
-    name: "Sascha Vens",
-    text: "Die Templates und Study System sind gut organisiert und es wurde eine Menge Zeit reingesteckt. Man erkennt dass es seine Leidenschaft ist sich mit dem Thema Produktivität und ähnlichem auseinanderzusetzen. Ich kann es jedem der eine Veränderung anstrebt nur wärmstens empfehlen.",
-    time: "Vor 2 Wochen",
-    initials: "SV",
+    name: "Aldin Hasic",
+    text: "Sehr gutes System, danke für deinen Einsatz. Weiter so! :)",
+    time: "Vor 3 Wochen",
+    initials: "AH",
     isGoogleReview: true,
+    imageUrl: "/lovable-uploads/35f47361-8cf4-4de6-a76e-8dd4774c99e0.png",
   },
   {
-    name: "Tom Hass",
-    text: "10 / 10 Produktivität",
-    time: "Vor 4 Wochen",
-    initials: "TH",
+    name: "Christine Kolczyk",
+    text: "Sehr hilfreiches System und erleichtert die Organisation des Studiums sehr",
+    time: "Vor 5 Wochen",
+    initials: "CK",
     isGoogleReview: true,
+    imageUrl: "/lovable-uploads/48effdf0-947b-4f80-86b3-bcce7227a502.png",
   },
   {
     name: "Isabel Hater",
