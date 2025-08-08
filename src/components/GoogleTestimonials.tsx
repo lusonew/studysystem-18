@@ -4,14 +4,14 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Bilal",
-    image: "/lovable-uploads/44ba3e12-4385-44b8-ba4e-a3ec6afa9872.png",
+    image: "/lovable-uploads/43343dab-c348-47e4-9033-9cb3adbcbeb4.png",
     rating: 5,
     timeAgo: "vor 11 Wochen",
     text: "Ein sehr durchdachtes Konzept und ein anderer Ansatz sein Leben in den Griff zu kriegen. Man merkt, dass Luis sich sehr viel Mühe dabei gegeben hat."
   },
   {
     name: "Dimitrios Stamatis",
-    image: "/lovable-uploads/f98498a9-97f8-4ab2-aca0-c606f0af43aa.png", 
+    image: "/lovable-uploads/9482272f-40e4-4922-bc52-ae1ea5fd1691.png", 
     rating: 5,
     timeAgo: "vor 12 Wochen",
     text: "Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung für alle, die ihr Studium ernst nehmen!"
@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Desch.",
     badge: "Local Guide",
-    image: "/lovable-uploads/c227124a-2d86-4c8e-9b54-cf47416a25c5.png",
+    image: "/lovable-uploads/eb524b70-f23e-46a6-ab64-ae552b765318.png",
     rating: 5,
     timeAgo: "vor 13 Wochen", 
     text: "Top Creator, top Notion Vorlagen, top Service. Auch wenn es mal nicht 100% passen sollte bietet er eine Geld-zurück-Garantie an die absolut problemlos funktioniert. Kann ich nur wärmstens empfehlen."
@@ -45,8 +45,8 @@ export const GoogleTestimonials = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          {testimonials.slice(0, 2).map((testimonial, index) => (
+        <div className="space-y-8">
+          {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -62,22 +62,6 @@ export const GoogleTestimonials = () => {
               />
             </motion.div>
           ))}
-        </div>
-        
-        <div className="flex justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex justify-center"
-          >
-            <img 
-              src={testimonials[2].image} 
-              alt={`Bewertung von ${testimonials[2].name}`}
-              className="w-full max-w-3xl h-auto rounded-lg"
-            />
-          </motion.div>
         </div>
       </div>
     </section>
