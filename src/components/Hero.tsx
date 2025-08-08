@@ -96,21 +96,30 @@ smarter als alle anderen</h1>
       }} transition={{
         duration: 0.8,
         delay: 0.4
-      }} className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-9 max-w-4xl mx-auto">
-          <div className="text-center">
-            <p className="text-gray-500 italic text-sm md:text-base">
-              "Für Studenten einfach perfekt!"
-            </p>
+      }} className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/cca3d976-b37b-4517-9883-915e003be4a4.png" 
+              alt="Google Review - Für Studenten einfach perfekt!" 
+              className="w-full max-w-sm h-auto"
+              loading="lazy"
+            />
           </div>
-          <div className="text-center">
-            <p className="text-gray-500 italic text-sm md:text-base">
-              "Sehr hilfreiches System, erleichtert die Organisation des Studiums sehr"
-            </p>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/9080c02d-117c-45b2-aa9a-7e7ae63e9437.png" 
+              alt="Google Review - Sehr gutes System, danke für deinen Einsatz" 
+              className="w-full max-w-sm h-auto"
+              loading="lazy"
+            />
           </div>
-          <div className="text-center">
-            <p className="text-gray-500 italic text-sm md:text-base">
-              "Simpel und Effektiv. Man kennt sich schnell aus - alles top"
-            </p>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/c565d17f-5159-4975-9f36-86252bc55a0e.png" 
+              alt="Google Review - Sehr hilfreiches System und erleichtert die Organisation des Studiums sehr" 
+              className="w-full max-w-sm h-auto"
+              loading="lazy"
+            />
           </div>
         </motion.div>
       </div>
