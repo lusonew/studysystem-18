@@ -28,7 +28,7 @@ const testimonials = [
 
 export const GoogleTestimonials = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-white py-16">
       <div className="container mx-auto px-3 md:px-40">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export const GoogleTestimonials = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -53,12 +53,12 @@ export const GoogleTestimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white rounded-2xl p-6 shadow-sm"
+              className="flex justify-center"
             >
               <img 
                 src={testimonial.image} 
                 alt={`Bewertung von ${testimonial.name}`}
-                className="w-full h-auto rounded-lg"
+                className="w-full max-w-md h-auto rounded-lg"
               />
             </motion.div>
           ))}
