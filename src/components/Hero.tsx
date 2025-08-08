@@ -96,30 +96,21 @@ smarter als alle anderen</h1>
       }} transition={{
         duration: 0.8,
         delay: 0.4
-      }} className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/7f5815df-e643-43a1-bc19-24ede1d65548.png" 
-              alt="Google Review - Für Studenten einfach perfekt!" 
-              className="w-full max-w-md h-auto"
-              loading="lazy"
-            />
+      }} className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-9 max-w-4xl mx-auto">
+          <div className="text-center">
+            <p className="text-gray-500 italic text-sm md:text-base">
+              "Für Studenten einfach perfekt!"
+            </p>
           </div>
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/fdd3dfa9-682a-49f3-97f0-a4a48b7f7fd2.png" 
-              alt="Google Review - Sehr gutes System, danke für deinen Einsatz" 
-              className="w-full max-w-md h-auto"
-              loading="lazy"
-            />
+          <div className="text-center">
+            <p className="text-gray-500 italic text-sm md:text-base">
+              "Sehr hilfreiches System, erleichtert die Organisation des Studiums sehr"
+            </p>
           </div>
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/d7959b4c-a565-46ca-b450-ee59774bf226.png" 
-              alt="Google Review - Sehr hilfreiches System und erleichtert die Organisation des Studiums sehr" 
-              className="w-full max-w-md h-auto"
-              loading="lazy"
-            />
+          <div className="text-center">
+            <p className="text-gray-500 italic text-sm md:text-base">
+              "Simpel und Effektiv. Man kennt sich schnell aus - alles top"
+            </p>
           </div>
         </motion.div>
       </div>
