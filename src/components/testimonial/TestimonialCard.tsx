@@ -16,7 +16,7 @@ const TestimonialCard = memo(({ testimonial }: TestimonialCardProps) => {
         <img 
           src={imageUrl} 
           alt="Google Review" 
-          className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+          className="w-full max-w-2xl h-auto"
           loading="lazy"
         />
       ) : (

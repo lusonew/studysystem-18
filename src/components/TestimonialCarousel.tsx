@@ -14,20 +14,25 @@ import { useCarouselAutoScroll } from "@/hooks/useCarouselAutoScroll";
 
 export const TestimonialCarousel = () => {
   const [api, setApi] = useState<any>(null);
+  const [isHovered, setIsHovered] = useState(false);
   const isMobile = useIsMobile();
   
   // Use the custom hook for auto-scrolling
   useCarouselAutoScroll({
     api,
     interval: 5000, // Longer interval since images need more time to read
-    enabled: true
+    enabled: !isHovered // Pause when hovered
   });
 
   // Filter testimonials to only show those with images
   const testimonialsWithImages = testimonialData.filter(testimonial => testimonial.imageUrl);
 
   return (
-    <div className="w-full overflow-hidden">
+    <div 
+      className="w-full overflow-hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Carousel
         opts={{
           align: "center",
