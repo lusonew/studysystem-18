@@ -16,9 +16,7 @@ export const Testimonial = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <h2 className="font-bold mb-4 text-5xl">
-            Was andere über das Study System sagen
-          </h2>
+          <h2 className="font-bold mb-4 text-5xl">Was andere über das Study System PRO sagen</h2>
           
           <div className="flex items-center justify-center mb-8">
             <span className="text-lg text-gray-600 mr-2">auf</span>
