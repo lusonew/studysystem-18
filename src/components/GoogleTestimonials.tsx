@@ -45,7 +45,7 @@ export const GoogleTestimonials = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-3">
+        <div className="flex flex-col gap-3">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
