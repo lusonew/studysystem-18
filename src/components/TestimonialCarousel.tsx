@@ -19,25 +19,28 @@ export const TestimonialCarousel = () => {
   // Use the custom hook for auto-scrolling
   useCarouselAutoScroll({
     api,
-    interval: 4000, // Slightly longer interval for better user experience
+    interval: 5000, // Longer interval since images need more time to read
     enabled: true
   });
+
+  // Filter testimonials to only show those with images
+  const testimonialsWithImages = testimonialData.filter(testimonial => testimonial.imageUrl);
 
   return (
     <div className="w-full overflow-hidden">
       <Carousel
         opts={{
-          align: "start",
+          align: "center",
           loop: true,
         }}
-        className="w-full"
+        className="w-full max-w-4xl mx-auto"
         setApi={setApi}
       >
-        <CarouselContent className="gap-4">
-          {testimonialData.map((testimonial, index) => (
+        <CarouselContent className="gap-8">
+          {testimonialsWithImages.map((testimonial, index) => (
             <CarouselItem 
               key={index} 
-              className={`md:basis-1/2 ${isMobile ? 'basis-full' : 'lg:basis-1/3'}`}
+              className="basis-full"
             >
               <TestimonialCard testimonial={testimonial} />
             </CarouselItem>
