@@ -45,7 +45,7 @@ export const GoogleTestimonials = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="space-y-3">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
