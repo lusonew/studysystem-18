@@ -113,7 +113,8 @@ export const SystemFeatures = () => {
         </div>
 
         {/* GIF Demo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <p className="text-gray-500 text-center mb-6 text-sm">Zum Vergrößern anklicken</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col items-center">
             <motion.img initial={{
             opacity: 0,
