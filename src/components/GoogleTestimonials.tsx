@@ -45,7 +45,7 @@ export const GoogleTestimonials = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-0.5">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -58,7 +58,7 @@ export const GoogleTestimonials = () => {
               <img 
                 src={testimonial.image} 
                 alt={`Bewertung von ${testimonial.name}`}
-                className="w-full max-w-3xl h-auto rounded-lg"
+                className="w-full max-w-3xl h-auto"
               />
             </motion.div>
           ))}
