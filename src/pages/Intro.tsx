@@ -106,6 +106,24 @@ const Intro = () => {
             </div>
           </motion.div>
 
+          {/* Support Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-center"
+          >
+            <p className="text-lg text-gray-600">
+              Fragen oder Probleme? Schreibe jederzeit an{" "}
+              <a 
+                href="mailto:support@luisnewton.de" 
+                className="text-amber-600 hover:text-amber-700 underline"
+              >
+                support@luisnewton.de
+              </a>
+            </p>
+          </motion.div>
+
         </div>
       </section>
     </div>
