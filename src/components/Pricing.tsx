@@ -17,10 +17,13 @@ export const Pricing = () => {
     items: []
   }, {
     title: "Teil 2: Zugang zur Studium-Erfolgsformel (Videokurs)",
-    items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "Gewohnheiten etablieren", "und viele weitere Aspekte"]
+    items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "uvm."]
   }, {
     title: "Teil 3: Life Center",
-    items: ["Profi Habit Tracker", "Finanzplaner", "Workout Tracker", "Tagesplaner", "etc."]
+    items: ["Profi Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
+  }, {
+    title: "Bonus: Study System Circle",
+    items: ["Exklusive Community für Study System PRO"]
   }];
   return <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-3 md:px-40">
