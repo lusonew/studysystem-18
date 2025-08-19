@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { PlayCircle, CheckCircle, BookOpen, Target, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Intro = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white">
       {/* Hero Section */}
@@ -38,36 +36,17 @@ const Intro = () => {
             className="mb-20"
           >
             <div className="relative max-w-4xl mx-auto">
-              <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl relative">
-                {!isVideoPlaying ? (
-                  // Thumbnail with play button
-                  <div 
-                    className="relative w-full h-full cursor-pointer group"
-                    onClick={() => setIsVideoPlaying(true)}
-                  >
-                    <img 
-                      src="/lovable-uploads/64d97027-7627-45e3-833c-f2819103b2cb.png"
-                      alt="Study System PRO Video Thumbnail"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <PlayCircle className="w-16 h-16 text-amber-600" />
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  // Video iframe
-                  <iframe
-                    src="https://www.loom.com/embed/9d318b36b5b242edb7979bd89110028f?sid=00d66bfb-249d-41da-a182-260c17da401f&autoplay=1"
-                    title="Study System PRO Einführung"
-                    className="w-full h-full rounded-2xl"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                )}
-              </div>
+                <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
+                {/* Placeholder for video - replace with actual video embed */}
+                <iframe
+                  src="https://www.loom.com/embed/9d318b36b5b242edb7979bd89110028f?sid=00d66bfb-249d-41da-a182-260c17da401f"
+                  title="Study System PRO Einführung"
+                  className="w-full h-full rounded-2xl"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                </div>
             </div>
           </motion.div>
 
