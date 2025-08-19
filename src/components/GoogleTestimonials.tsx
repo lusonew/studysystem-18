@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const testimonials = [
   {
@@ -45,7 +46,7 @@ export const GoogleTestimonials = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-0.5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -53,13 +54,30 @@ export const GoogleTestimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="flex justify-center"
             >
-              <img 
-                src={testimonial.image} 
-                alt={`Bewertung von ${testimonial.name}`}
-                className="w-full max-w-3xl h-auto"
-              />
+              <Card className="h-full">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
+                    {testimonial.badge && (
+                      <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                        {testimonial.badge}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <span className="text-sm text-gray-500">{testimonial.timeAgo}</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700 leading-relaxed">"{testimonial.text}"</p>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
         </div>
