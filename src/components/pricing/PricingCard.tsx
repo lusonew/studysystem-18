@@ -84,12 +84,13 @@ export const PricingCard = ({
           <h3 className="text-xl font-bold mb-3">{title}</h3>
           
           {/* Price section moved under title */}
-          <div className="mb-4 flex items-center justify-center gap-2">
+          <div className="mb-2 flex items-center justify-center gap-2">
             {originalValue && (
               <span className="line-through text-3xl text-gray-400">{originalValue}</span>
             )}
             <div>{price}</div>
           </div>
+          <p className="text-xs text-gray-500 mb-4">inkl. 14 Tage Geld-Zurück-Garantie</p>
           
           <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer" className="block">
             <img
