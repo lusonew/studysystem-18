@@ -19,7 +19,7 @@ const Intro = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Willkommen zum
               <span className="text-amber-600 block">
-                Study System
+                Study System PRO
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
