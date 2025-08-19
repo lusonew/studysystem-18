@@ -76,6 +76,23 @@ export const Pricing = () => {
         }} className="w-64 h-0.5 bg-amber-500 mx-auto mt-4 origin-left" />
         </motion.div>
 
+        <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 2.2
+        }} className="text-center mt-8 mb-16">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto italic">
+            "Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung!"
+          </p>
+        </motion.div>
+
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <PricingCard 
             title="Study System" 
