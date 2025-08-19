@@ -97,7 +97,11 @@ export const PricingCard = ({
         }}>
             Jetzt Kaufen
           </Button>
-          {additionalLink}
+          {additionalLink && (
+            <a href={additionalLink.url} target="_blank" rel="noreferrer" className="text-sm text-gray-600 hover:text-gray-800 mt-2 inline-block">
+              {additionalLink.text}
+            </a>
+          )}
         </div>
       </div>
     </motion.div>;
