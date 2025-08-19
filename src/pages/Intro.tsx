@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Intro = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -18,7 +18,7 @@ const Intro = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Willkommen zum
-              <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent block">
+              <span className="text-amber-600 block">
                 Study System
               </span>
             </h1>
@@ -36,11 +36,11 @@ const Intro = () => {
             className="mb-20"
           >
             <div className="relative max-w-4xl mx-auto">
-              <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
                 {/* Placeholder for video - replace with actual video embed */}
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-50 to-blue-50">
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-amber-50 to-amber-50/50">
                   <div className="text-center">
-                    <PlayCircle className="w-20 h-20 text-purple-600 mx-auto mb-4" />
+                    <PlayCircle className="w-20 h-20 text-amber-600 mx-auto mb-4" />
                     <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                       Dein Start ins Study System
                     </h3>
@@ -74,44 +74,44 @@ const Intro = () => {
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-2 border-purple-100 hover:border-purple-200 transition-colors">
+              <Card className="border-2 border-amber-100 hover:border-amber-200 transition-colors">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <BookOpen className="w-8 h-8 text-purple-600" />
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <BookOpen className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    1. System verstehen
+                    1. E-Mail öffnen
                   </h3>
                   <p className="text-gray-600">
-                    Schaue dir das Einführungsvideo an und verstehe die Grundlagen des Study Systems.
+                    Öffne deine E-Mail und finde die Willkommensnachricht mit allen wichtigen Informationen.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-blue-100 hover:border-blue-200 transition-colors">
+              <Card className="border-2 border-amber-100 hover:border-amber-200 transition-colors">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Target className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Target className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    2. Ziele definieren
+                    2. Konto anlegen
                   </h3>
                   <p className="text-gray-600">
-                    Definiere deine Lernziele und erstelle deinen persönlichen Lernplan.
+                    Erstelle dein persönliches Konto mit den Zugangsdaten aus der E-Mail.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-green-100 hover:border-green-200 transition-colors">
+              <Card className="border-2 border-amber-100 hover:border-amber-200 transition-colors">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Clock className="w-8 h-8 text-green-600" />
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Clock className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    3. Routine aufbauen
+                    3. Anleitung herunterladen
                   </h3>
                   <p className="text-gray-600">
-                    Beginne mit deiner täglichen Lernroutine und verfolge deinen Fortschritt.
+                    Lade die vollständige Anleitung herunter und beginne mit dem Study System.
                   </p>
                 </CardContent>
               </Card>
@@ -125,7 +125,7 @@ const Intro = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-20"
           >
-            <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-3xl p-8 md:p-12">
+            <div className="bg-gradient-to-r from-amber-50 to-amber-50/50 rounded-3xl p-8 md:p-12">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">
                 Was dich erwartet
               </h2>
@@ -146,7 +146,7 @@ const Intro = () => {
                     transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                     className="flex items-center space-x-3"
                   >
-                    <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
                     <span className="text-gray-700">{benefit}</span>
                   </motion.div>
                 ))}
@@ -170,7 +170,7 @@ const Intro = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg"
+              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 text-lg"
             >
               Jetzt mit dem System starten
             </Button>
