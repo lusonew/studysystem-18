@@ -15,7 +15,6 @@ const testimonials = [{
   text: "Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung für alle, die ihr Studium ernst nehmen!"
 }, {
   name: "Desch.",
-  badge: "Local Guide",
   image: "/lovable-uploads/eb524b70-f23e-46a6-ab64-ae552b765318.png",
   rating: 5,
   timeAgo: "vor 13 Wochen",
@@ -60,7 +59,6 @@ export const GoogleTestimonials = () => {
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
-                    {testimonial.badge}
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="flex">
