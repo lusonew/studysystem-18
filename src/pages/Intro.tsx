@@ -38,27 +38,15 @@ const Intro = () => {
             <div className="relative max-w-4xl mx-auto">
                 <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
                 {/* Placeholder for video - replace with actual video embed */}
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-amber-50 to-amber-50/50">
-                  <div className="text-center">
-                    <PlayCircle className="w-20 h-20 text-amber-600 mx-auto mb-4" />
-                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                      Dein Start ins Study System
-                    </h3>
-                    <p className="text-gray-600">
-                      Klicke hier, um das Einführungsvideo zu starten
-                    </p>
-                  </div>
-                </div>
-                {/* Uncomment and replace with your actual video embed:
                 <iframe
-                  src="YOUR_VIDEO_URL"
-                  title="Study System Einführung"
-                  className="w-full h-full"
+                  src="https://www.loom.com/embed/9d318b36b5b242edb7979bd89110028f?sid=00d66bfb-249d-41da-a182-260c17da401f"
+                  title="Study System PRO Einführung"
+                  className="w-full h-full rounded-2xl"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                */}
-              </div>
+                </div>
             </div>
           </motion.div>
 
