@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { Problems } from "@/components/Problems";
 import { Story } from "@/components/Story";
 import { Footer } from "@/components/Footer";
+import { CookieBanner } from "@/components/CookieBanner";
 
 // Lazy-loaded components that are not immediately visible
 const SystemFeatures = React.lazy(() => import("@/components/SystemFeatures").then(module => ({ default: module.SystemFeatures })));
@@ -60,6 +61,7 @@ const Index = () => {
         </Suspense>
       </div>
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
