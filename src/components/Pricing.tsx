@@ -16,7 +16,7 @@ export const Pricing = () => {
     title: "Teil 1: Alles aus Study System",
     items: []
   }, {
-    title: "Teil 2: Zugang zur Studium-Erfolgsformel (Videokurs)",
+    title: "Teil 2: Die Studium-Erfolgsformel (Videokurs)",
     items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "uvm."]
   }, {
     title: "Teil 3: Life Center",
