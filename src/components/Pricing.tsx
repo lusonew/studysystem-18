@@ -22,7 +22,7 @@ export const Pricing = () => {
     title: "Teil 3: Life Center (weiteres System)",
     items: ["Profi Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
   }, {
-    title: "Bonus: Study System Circle (Community)",
+    title: "BONUS: Study System Circle (Community)",
     items: ["Exklusive Community für Study System PRO", "Austausch zu Fragen/Problemen im Studium", "Hilfestellungen zu Notion & Technik"]
   }];
   return <section id="pricing" className="py-24 bg-white">
