@@ -106,63 +106,6 @@ const Intro = () => {
             </div>
           </motion.div>
 
-          {/* Key Benefits */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mb-20"
-          >
-            <div className="bg-gradient-to-r from-amber-50 to-amber-50/50 rounded-3xl p-8 md:p-12">
-              <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">
-                Was dich erwartet
-              </h2>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  "Effiziente Lernmethoden, die nachweislich funktionieren",
-                  "Strukturierte Pläne für maximalen Lernerfolg",
-                  "Zeitersparnis durch optimierte Lernstrategien",
-                  "Langfristige Wissensspeicherung und -abruf",
-                  "Motivation und Durchhaltevermögen stärken",
-                  "Prüfungsangst überwinden und selbstsicher werden"
-                ].map((benefit, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                    className="flex items-center space-x-3"
-                  >
-                    <CheckCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Call to Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-center"
-          >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Bereit zu starten?
-            </h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Dein Lernerfolg beginnt jetzt. Folge dem System und erlebe, 
-              wie sich deine Noten und dein Verständnis drastisch verbessern.
-            </p>
-            <Button 
-              size="lg" 
-              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 text-lg"
-            >
-              Jetzt mit dem System starten
-            </Button>
-          </motion.div>
         </div>
       </section>
     </div>
