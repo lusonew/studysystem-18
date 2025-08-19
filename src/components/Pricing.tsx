@@ -55,8 +55,9 @@ export const Pricing = () => {
               <img src="/lovable-uploads/45fd89e4-90b7-463a-8832-956858deec36.png" alt="5 Sterne Bewertung" className="h-6" />
             </div>
             <span className="text-lg text-gray-600">
-              bei 159 Rezensionen auf{" "}
+              auf{" "}
               <img src="/lovable-uploads/f67852aa-bafe-4f23-82be-4369f750f591.png" alt="Google" className="h-5 inline-block" />
+              {" "}bei 4000+ Kunden
             </span>
           </motion.div>
           
