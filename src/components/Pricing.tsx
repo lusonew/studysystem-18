@@ -23,7 +23,7 @@ export const Pricing = () => {
     items: ["Profi Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
   }, {
     title: "Bonus: Study System Circle",
-    items: ["Exklusive Community für Study System PRO"]
+    items: ["Exklusive Community für Study System PRO", "Austausch zu Fragen/Problemen im Studium", "Hilfestellungen zu Notion & Technik"]
   }];
   return <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-3 md:px-40">
