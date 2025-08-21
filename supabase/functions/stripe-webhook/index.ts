@@ -72,11 +72,18 @@ serve(async (req) => {
         customerName = customerEmail.split('@')[0];
       }
 
-      // Anonymize the name using our database function
-      const { data: anonymizedResult } = await supabase
-        .rpc('anonymize_customer_name', { full_name: customerName });
+      // Extract only the first name from customer name
+      let firstName = 'Anonymous';
       
-      const anonymizedName = anonymizedResult || customerName;
+      if (customerName && customerName !== 'Anonymous') {
+        // Extract first name (everything before the first space)
+        firstName = customerName.split(' ')[0].trim();
+        
+        // Ensure we have a valid first name
+        if (!firstName || firstName.length === 0) {
+          firstName = 'Anonymous';
+        }
+      }
 
       // Determine product name based on amount
       const amount = session.amount_total || session.amount;
@@ -91,7 +98,7 @@ serve(async (req) => {
         .from('purchases')
         .insert({
           stripe_payment_intent_id: session.payment_intent || session.id,
-          customer_name: anonymizedName,
+          customer_name: firstName,
           product_name: productName,
           amount: amount,
           currency: session.currency || 'eur',
@@ -104,7 +111,7 @@ serve(async (req) => {
       }
 
       logStep('Purchase recorded successfully', { 
-        customer: anonymizedName, 
+        customer: firstName, 
         product: productName, 
         amount: amount 
       });
