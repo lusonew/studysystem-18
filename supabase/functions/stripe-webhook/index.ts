@@ -40,12 +40,19 @@ serve(async (req) => {
       return new Response('Missing Stripe signature', { status: 400 });
     }
 
-    // Note: For production, you should use webhook endpoint secret
-    // const webhookSecret = Deno.env.get('STRIPE_WEBHOOK_SECRET');
-    // const event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
+    // Verify webhook signature for security
+    const webhookSecret = Deno.env.get('STRIPE_WEBHOOK_SECRET');
+    let event;
     
-    // For now, parse the event directly (you'll need to add webhook secret later)
-    const event = JSON.parse(body);
+    if (webhookSecret) {
+      // Production: verify signature
+      event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
+      logStep('Webhook signature verified');
+    } else {
+      // Development: parse directly (less secure)
+      event = JSON.parse(body);
+      logStep('WARNING: Webhook signature not verified - add STRIPE_WEBHOOK_SECRET for production');
+    }
     logStep('Event received', { type: event.type, id: event.id });
 
     // Handle successful payment events
