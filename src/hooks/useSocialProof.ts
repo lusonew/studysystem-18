@@ -86,13 +86,13 @@ export const useSocialProof = () => {
     const showPurchase = () => {
       showRandomPurchase();
       
-      // Schedule next notification (15-45 seconds)
-      const nextInterval = Math.random() * 30000 + 15000; // 15-45 seconds
+      // Schedule next notification (30-90 seconds - doubled for less intrusiveness)
+      const nextInterval = Math.random() * 60000 + 30000; // 30-90 seconds
       setTimeout(showPurchase, nextInterval);
     };
 
-    // Initial delay (5-10 seconds after component mount)
-    const initialDelay = Math.random() * 5000 + 5000;
+    // Initial delay (10-20 seconds after component mount - doubled for less intrusiveness)
+    const initialDelay = Math.random() * 10000 + 10000;
     const timeoutId = setTimeout(showPurchase, initialDelay);
 
     return () => clearTimeout(timeoutId);
