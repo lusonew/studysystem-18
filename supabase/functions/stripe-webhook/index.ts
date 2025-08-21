@@ -45,8 +45,8 @@ serve(async (req) => {
     let event;
     
     if (webhookSecret) {
-      // Production: verify signature
-      event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
+      // Production: verify signature (async version for Deno)
+      event = await stripe.webhooks.constructEventAsync(body, signature, webhookSecret);
       logStep('Webhook signature verified');
     } else {
       // Development: parse directly (less secure)
