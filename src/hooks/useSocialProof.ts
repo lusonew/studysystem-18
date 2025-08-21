@@ -49,7 +49,7 @@ export const useSocialProof = () => {
     const timeAgo = getTimeAgo(purchase.created_at);
 
     toast.success(
-      `${purchase.customer_name} hat gerade ${purchase.product_name} gekauft`,
+      `${purchase.customer_name} hat sich das Study System PRO gekauft 🚀`,
       {
         description: `vor ${timeAgo}`,
         duration: 4000,
