@@ -117,3 +117,18 @@
     }
   }
 }
+
+@layer components {
+  /* Social Proof Toast Styling */
+  .social-proof-toast {
+    @apply bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200 text-amber-900;
+  }
+  
+  .social-proof-toast [data-description] {
+    @apply text-amber-700;
+  }
+  
+  .social-proof-toast [data-icon] {
+    @apply text-amber-600;
+  }
+}
