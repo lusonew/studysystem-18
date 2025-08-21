@@ -14,25 +14,21 @@ export const useSocialProof = () => {
   const [recentPurchases, setRecentPurchases] = useState<Purchase[]>([]);
   const [lastShownIndex, setLastShownIndex] = useState(-1);
 
-  // Fetch initial recent purchases (last 24 hours)
+  // Fetch recent purchases via secure edge function
   const fetchRecentPurchases = useCallback(async () => {
-    const twentyFourHoursAgo = new Date();
-    twentyFourHoursAgo.setHours(twentyFourHoursAgo.getHours() - 24);
+    try {
+      const { data, error } = await supabase.functions.invoke('get-social-proof');
+      
+      if (error) {
+        console.error('Error fetching social proof:', error);
+        return;
+      }
 
-    const { data, error } = await supabase
-      .from('purchases')
-      .select('*')
-      .gte('created_at', twentyFourHoursAgo.toISOString())
-      .order('created_at', { ascending: false })
-      .limit(20);
-
-    if (error) {
-      console.error('Error fetching purchases:', error);
-      return;
-    }
-
-    if (data) {
-      setRecentPurchases(data);
+      if (data?.purchases) {
+        setRecentPurchases(data.purchases);
+      }
+    } catch (error) {
+      console.error('Error in social proof fetch:', error);
     }
   }, []);
 
@@ -77,42 +73,11 @@ export const useSocialProof = () => {
 
   useEffect(() => {
     fetchRecentPurchases();
+    
+    // Refresh every 5 minutes to get new purchases
+    const interval = setInterval(fetchRecentPurchases, 5 * 60 * 1000);
+    return () => clearInterval(interval);
   }, [fetchRecentPurchases]);
-
-  // Set up real-time subscription for new purchases
-  useEffect(() => {
-    const channel = supabase
-      .channel('purchases-changes')
-      .on(
-        'postgres_changes',
-        {
-          event: 'INSERT',
-          schema: 'public',
-          table: 'purchases'
-        },
-        (payload) => {
-          const newPurchase = payload.new as Purchase;
-          setRecentPurchases(prev => [newPurchase, ...prev.slice(0, 19)]);
-          
-          // Show notification for new purchase immediately
-          setTimeout(() => {
-            toast.success(
-              `${newPurchase.customer_name} hat gerade ${newPurchase.product_name} gekauft`,
-              {
-                description: 'gerade eben',
-                duration: 4000,
-                className: "social-proof-toast",
-              }
-            );
-          }, 2000); // Small delay to make it feel natural
-        }
-      )
-      .subscribe();
-
-    return () => {
-      supabase.removeChannel(channel);
-    };
-  }, []);
 
   // Set up periodic display of existing purchases
   useEffect(() => {
