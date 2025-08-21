@@ -14,13 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      purchases: {
+        Row: {
+          amount: number
+          created_at: string
+          currency: string | null
+          customer_name: string
+          id: string
+          product_name: string
+          purchased_at: string
+          stripe_payment_intent_id: string | null
+        }
+        Insert: {
+          amount: number
+          created_at?: string
+          currency?: string | null
+          customer_name: string
+          id?: string
+          product_name: string
+          purchased_at?: string
+          stripe_payment_intent_id?: string | null
+        }
+        Update: {
+          amount?: number
+          created_at?: string
+          currency?: string | null
+          customer_name?: string
+          id?: string
+          product_name?: string
+          purchased_at?: string
+          stripe_payment_intent_id?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      anonymize_customer_name: {
+        Args: { full_name: string }
+        Returns: string
+      }
     }
     Enums: {
       [_ in never]: never
