@@ -41,7 +41,7 @@ export const Pricing = () => {
         ease: "easeOut"
       }} className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Starte jetzt mit deinem Study System</h2>
-          <p className="text-xl text-gray-600 mb-6">Die Möglichkeit, dein Studium zu revolutionieren</p>
+          
           
           <motion.div initial={{
           opacity: 0
