@@ -3,6 +3,7 @@ import React, { Suspense, useEffect } from "react";
 import { Hero } from "@/components/Hero";
 import { Problems } from "@/components/Problems";
 import { Story } from "@/components/Story";
+import { Experiences } from "@/components/Experiences";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
 import { SocialProofNotifications } from "@/components/social-proof/SocialProofNotifications";
@@ -50,6 +51,7 @@ const Index = () => {
       <div className="flex-grow">
         <Hero />
         <Story />
+        <Experiences />
         <Problems />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
           <SystemFeatures />
