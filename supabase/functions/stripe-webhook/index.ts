@@ -61,7 +61,7 @@ serve(async (req) => {
       logStep('Processing payment event', { sessionId: session.id });
 
       // Extract customer information
-      let customerName = 'Anonymous';
+      let customerName = 'Jemand';
       let customerEmail = '';
       
       if (session.customer_details?.email) {
@@ -73,15 +73,15 @@ serve(async (req) => {
       }
 
       // Extract only the first name from customer name
-      let firstName = 'Anonymous';
+      let firstName = 'Jemand';
       
-      if (customerName && customerName !== 'Anonymous') {
+      if (customerName && customerName !== 'Jemand') {
         // Extract first name (everything before the first space)
         firstName = customerName.split(' ')[0].trim();
         
         // Ensure we have a valid first name
         if (!firstName || firstName.length === 0) {
-          firstName = 'Anonymous';
+          firstName = 'Jemand';
         }
       }
 
