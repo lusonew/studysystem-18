@@ -88,13 +88,9 @@ export const Pricing = () => {
         duration: 0.6,
         delay: 1.1
       }} className="text-center mt-8 mb-16">
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/450394f2-62a5-46d3-bd73-e8b74f23051d.png" 
-              alt="Kundenbewertung von Dimitrios Stamatis - 5 Sterne Bewertung für das Study System" 
-              className="max-w-lg w-full h-auto rounded-lg shadow-sm"
-            />
-          </div>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto italic">
+            "Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung!"
+          </p>
         </motion.div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
