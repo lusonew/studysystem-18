@@ -88,9 +88,13 @@ export const Pricing = () => {
           duration: 0.6,
           delay: 1.1
         }} className="text-center mt-8 mb-16">
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto italic">
-            "Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung!"
-          </p>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/5ce59901-3aa1-4585-a7ed-f4677582373d.png" 
+              alt="Kundenbewertung" 
+              className="max-w-2xl h-auto rounded-lg"
+            />
+          </div>
         </motion.div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
