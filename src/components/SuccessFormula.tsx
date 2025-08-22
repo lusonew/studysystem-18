@@ -89,7 +89,7 @@ export const SuccessFormula = () => {
     </section>
     
     {/* New testimonials section */}
-    <section className="bg-gray-50 py-[50px]">
+    <section className="bg-white py-[50px]">
       <div className="container mx-auto px-3 md:px-40">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
