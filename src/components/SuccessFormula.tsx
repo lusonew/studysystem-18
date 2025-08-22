@@ -84,5 +84,72 @@ export const SuccessFormula = () => {
           </div>
         </motion.div>
       </div>
+    </section>
+    
+    {/* New testimonials section */}
+    <section className="bg-gray-50 py-[50px]">
+      <div className="container mx-auto px-3 md:px-40">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+            >
+              <img 
+                src="/lovable-uploads/0686b3a6-8549-47f9-adad-b76f9c78beae.png" 
+                alt="Testimonial von Meral"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="lazy"
+              />
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <img 
+                src="/lovable-uploads/d6eb3ce5-1bdc-4494-a349-9e494507ac90.png" 
+                alt="Testimonial von Mohamad Abdulrazzak"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="lazy"
+              />
+            </motion.div>
+          </div>
+          
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <img 
+                src="/lovable-uploads/b7c70801-ab33-40dd-92cf-53c893f63179.png" 
+                alt="Testimonial von S. Bakhada"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="lazy"
+              />
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <img 
+                src="/lovable-uploads/7717bfe1-7edc-477d-935a-737127c8775b.png" 
+                alt="Testimonial von Manuela Friedrich"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="lazy"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
     </section>;
 };
