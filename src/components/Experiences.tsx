@@ -23,7 +23,6 @@ export const Experiences = () => {
           }} 
           className="text-center"
         >
-          <h3 className="font-bold mb-8 text-5xl">Bisherige Erfahrungen</h3>
           
           <div className="flex justify-center">
             <OptimizedImage 
