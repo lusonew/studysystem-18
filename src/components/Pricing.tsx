@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
 import PricingCard from "./pricing/PricingCard";
 import type { PricingFeatureGroup } from "./pricing/PricingCard";
+import { LaunchCountdownLarge } from "./LaunchCountdownLarge";
 export const Pricing = () => {
   const isMobile = useIsMobile();
 
@@ -90,6 +91,8 @@ export const Pricing = () => {
       }} className="text-center mt-8 mb-16">
           <p className="text-lg text-gray-600 max-w-4xl mx-auto italic">"Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung!" - Dimitrios D.</p>
         </motion.div>
+
+        <LaunchCountdownLarge />
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <PricingCard title="Study System" price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-gray-700">79€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} features={basicPricingFeatures} imageUrl="/lovable-uploads/e542ff79-e94f-4e8f-8631-fda80ba255c4.png" ctaUrl="https://pay.studysystem.de/b/5kA4jidr45Lz0jmdQQ" className="bg-gradient-to-br from-gray-50 to-white border-gray-200" />
