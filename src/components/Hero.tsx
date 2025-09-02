@@ -4,6 +4,7 @@ import { Users, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { LaunchCountdown } from "@/components/LaunchCountdown";
 export const Hero = () => {
   const isMobile = useIsMobile();
   const scrollToPricing = () => {
@@ -50,7 +51,7 @@ export const Hero = () => {
                 <Users className="w-4 h-4 mr-1" />
                 4.000+ Studierende
               </Badge>
-              
+              <LaunchCountdown />
             </div>
             
             <p className="text-gray-600 mb-8">
