@@ -13,6 +13,8 @@ interface Purchase {
 // Global timer state to prevent multiple instances
 let globalTimerActive = false;
 let globalTimerIds: number[] = [];
+let currentIntervalIndex = 0;
+const intervalPattern = [15000, 10000, 12000]; // 15s, 10s, 12s pattern
 
 const clearAllTimers = () => {
   globalTimerIds.forEach(id => clearTimeout(id));
@@ -102,14 +104,18 @@ export const useSocialProof = () => {
       
       showRandomPurchase();
       
-      // Schedule next notification (5-10 minutes for better spacing)
-      const nextInterval = Math.random() * 300000 + 300000; // 5-10 minutes
+      // Get next interval from pattern and advance index
+      const nextInterval = intervalPattern[currentIntervalIndex];
+      currentIntervalIndex = (currentIntervalIndex + 1) % intervalPattern.length;
+      
+      // Schedule next notification
       const timerId = window.setTimeout(showPurchase, nextInterval);
       globalTimerIds.push(timerId);
     };
 
-    // Initial delay (15 seconds after component mount)
-    const initialDelay = 15000; // 15 seconds
+    // Start with first interval from pattern (15 seconds)
+    const initialDelay = intervalPattern[0]; // 15 seconds
+    currentIntervalIndex = 1; // Next will be 10 seconds
     const initialTimerId = window.setTimeout(showPurchase, initialDelay);
     globalTimerIds.push(initialTimerId);
 
