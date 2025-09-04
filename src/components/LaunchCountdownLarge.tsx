@@ -4,8 +4,7 @@ import { useCountdown } from "@/hooks/useCountdown";
 import { motion } from "framer-motion";
 
 export const LaunchCountdownLarge = () => {
-  const targetDate = new Date('2025-10-05T23:59:59');
-  const { days, hours, minutes, seconds, isExpired } = useCountdown(targetDate);
+  const { days, hours, minutes, seconds, isExpired } = useCountdown('2025-10-05T23:59:59');
 
   if (isExpired) {
     return null;

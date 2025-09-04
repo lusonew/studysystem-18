@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
-export const useCountdown = (targetDate: Date) => {
+export const useCountdown = (targetDateString: string) => {
+  const targetDate = useMemo(() => new Date(targetDateString), [targetDateString]);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
