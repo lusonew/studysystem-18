@@ -20,11 +20,8 @@ export const Pricing = () => {
     title: "Teil 2: Studium-Erfolgsformel (Videokurs)",
     items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "uvm."]
   }, {
-    title: "Teil 3: Life Center (weiteres System)",
+    title: "BONUS: Life Center (weiteres System)",
     items: ["Profi Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
-  }, {
-    title: "BONUS: Study System Circle (Community)",
-    items: ["Exklusive Community für Study System PRO", "Austausch zu Fragen/Problemen im Studium", "Hilfestellungen zu Notion & Technik"]
   }];
   return <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-3 md:px-40">
