@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 
@@ -10,9 +10,20 @@ interface Purchase {
   amount: number;
 }
 
+// Global timer state to prevent multiple instances
+let globalTimerActive = false;
+let globalTimerIds: number[] = [];
+
+const clearAllTimers = () => {
+  globalTimerIds.forEach(id => clearTimeout(id));
+  globalTimerIds = [];
+  globalTimerActive = false;
+};
+
 export const useSocialProof = () => {
   const [recentPurchases, setRecentPurchases] = useState<Purchase[]>([]);
   const [lastShownIndex, setLastShownIndex] = useState(-1);
+  const isInitializedRef = useRef(false);
 
   // Fetch recent purchases via secure edge function
   const fetchRecentPurchases = useCallback(async () => {
@@ -81,22 +92,39 @@ export const useSocialProof = () => {
 
   // Set up periodic display of existing purchases
   useEffect(() => {
-    if (recentPurchases.length === 0) return;
+    if (recentPurchases.length === 0 || globalTimerActive || isInitializedRef.current) return;
+
+    globalTimerActive = true;
+    isInitializedRef.current = true;
 
     const showPurchase = () => {
+      if (!globalTimerActive) return; // Stop if timer was cleared
+      
       showRandomPurchase();
       
-      // Schedule next notification (120-360 seconds - reduced by half for less spam)
-      const nextInterval = Math.random() * 240000 + 120000; // 120-360 seconds
-      setTimeout(showPurchase, nextInterval);
+      // Schedule next notification (5-10 minutes for better spacing)
+      const nextInterval = Math.random() * 300000 + 300000; // 5-10 minutes
+      const timerId = window.setTimeout(showPurchase, nextInterval);
+      globalTimerIds.push(timerId);
     };
 
-    // Initial delay (40-80 seconds after component mount - reduced by half for less spam)
-    const initialDelay = Math.random() * 40000 + 40000;
-    const timeoutId = setTimeout(showPurchase, initialDelay);
+    // Initial delay (2-4 minutes after component mount)
+    const initialDelay = Math.random() * 120000 + 120000; // 2-4 minutes
+    const initialTimerId = window.setTimeout(showPurchase, initialDelay);
+    globalTimerIds.push(initialTimerId);
 
-    return () => clearTimeout(timeoutId);
+    return clearAllTimers;
   }, [recentPurchases, showRandomPurchase]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (isInitializedRef.current) {
+        clearAllTimers();
+        isInitializedRef.current = false;
+      }
+    };
+  }, []);
 
   return {
     recentPurchases,
