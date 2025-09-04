@@ -108,8 +108,8 @@ export const useSocialProof = () => {
       globalTimerIds.push(timerId);
     };
 
-    // Initial delay (2-4 minutes after component mount)
-    const initialDelay = Math.random() * 120000 + 120000; // 2-4 minutes
+    // Initial delay (15 seconds after component mount)
+    const initialDelay = 15000; // 15 seconds
     const initialTimerId = window.setTimeout(showPurchase, initialDelay);
     globalTimerIds.push(initialTimerId);
 
