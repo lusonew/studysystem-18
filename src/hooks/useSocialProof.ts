@@ -86,8 +86,8 @@ export const useSocialProof = () => {
     const showPurchase = () => {
       showRandomPurchase();
       
-      // Schedule next notification (300-600 seconds - much longer intervals to prevent clustering)
-      const nextInterval = Math.random() * 300000 + 300000; // 300-600 seconds (5-10 minutes)
+      // Schedule next notification (120-360 seconds - reduced by half for less spam)
+      const nextInterval = Math.random() * 240000 + 120000; // 120-360 seconds
       setTimeout(showPurchase, nextInterval);
     };
 
