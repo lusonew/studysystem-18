@@ -11,7 +11,7 @@ const problems = [{
   description: "Trotz viel Aufwand und Mühe, erhältst du am Ende enttäuschende Ergebnisse."
 }, {
   icon: HelpCircle,
-  title: "Selbstzweifel",
+  title: "Starke Selbstzweifel",
   description: "Ständiges Hinterfragen deiner Fähigkeiten und deines Potenzials."
 }];
 export const Problems = () => {
