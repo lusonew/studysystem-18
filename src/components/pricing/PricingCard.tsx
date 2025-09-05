@@ -60,7 +60,7 @@ export const PricingCard = ({
     duration: 0.4,
     delay,
     ease: "easeOut"
-  }} className={`${className} p-5 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-4xl mx-auto`}>
+  }} className={`${className} p-5 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-6xl mx-auto`}>
       <div className="flex flex-col md:flex-row gap-5">
         {/* Left section - Image (desktop) */}
         <div className="md:w-1/2 text-center">
@@ -76,7 +76,7 @@ export const PricingCard = ({
           </div>
           
           <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer" className="block">
-            <img src={imageUrl} alt={`${title} Preview`} width="300" height="225" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-sm mx-auto scale-[0.85] ${imageClassName}`} loading="lazy" />
+            <img src={imageUrl} alt={`${title} Preview`} width="300" height="225" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-lg mx-auto scale-[1.7] ${imageClassName}`} loading="lazy" />
           </a>
         </div>
 
