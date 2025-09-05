@@ -3,7 +3,7 @@ import { AlarmClock, Frown, HelpCircle } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 const problems = [{
   icon: AlarmClock,
-  title: "Stress",
+  title: "Hoher Stress",
   description: "Schlaflose Nächte vor Klausuren und ständige Anspannung im Semester."
 }, {
   icon: Frown,
