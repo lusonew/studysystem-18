@@ -91,9 +91,8 @@ export const Pricing = () => {
 
         <LaunchCountdownLarge />
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <PricingCard title="Study System" price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-gray-700">79€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} features={basicPricingFeatures} imageUrl="/lovable-uploads/e542ff79-e94f-4e8f-8631-fda80ba255c4.png" ctaUrl="https://pay.studysystem.de/b/5kA4jidr45Lz0jmdQQ" className="bg-gradient-to-br from-gray-50 to-white border-gray-200" />
-          <PricingCard title="Study System PRO" price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-green-600">96€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} features={proPricingFeatures} imageUrl="/lovable-uploads/2d367a7d-0631-407d-b870-021d9b5db458.png" ctaUrl="https://pay.studysystem.de/b/bIY8zygDgfm9c245ko" bestSeller={true} className="bg-gradient-to-br from-amber-50 to-white border-amber-200" originalValue="139€" imageClassName="!scale-100" additionalLink={{
+        <div className="max-w-2xl mx-auto">
+          <PricingCard title="Study System PRO" price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-green-600">109€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} features={proPricingFeatures} imageUrl="/lovable-uploads/2d367a7d-0631-407d-b870-021d9b5db458.png" ctaUrl="https://pay.studysystem.de/b/bIY8zygDgfm9c245ko" bestSeller={true} className="bg-gradient-to-br from-amber-50 to-white border-amber-200" originalValue="199€" imageClassName="!scale-100" additionalLink={{
           text: "Hier klicken für Kauf mit Klarna oder Apple/Google Pay",
           url: "https://pay.studysystem.de/b/bIY8zygDgfm9c245ko"
         }} />
