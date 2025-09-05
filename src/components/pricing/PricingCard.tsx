@@ -60,10 +60,10 @@ export const PricingCard = ({
     duration: 0.4,
     delay,
     ease: "easeOut"
-  }} className={`${className} p-5 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-2xl mx-auto`}>
-      <div className="flex flex-col gap-5">
-        {/* Top section - Image and basic info */}
-        <div className="text-center">
+  }} className={`${className} p-5 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-4xl mx-auto`}>
+      <div className="flex flex-col md:flex-row gap-5">
+        {/* Left section - Image (desktop) */}
+        <div className="md:w-1/2 text-center">
           {bestSeller && <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-3">
               Bestseller
             </div>}
@@ -80,23 +80,26 @@ export const PricingCard = ({
           </a>
         </div>
 
-        {/* Middle section - Features */}
-        <div className="text-left">
-          {features.map((featureGroup, index) => <React.Fragment key={index}>
-              {featureGroup.description}
-              <PricingFeatureGroup title={featureGroup.title} items={featureGroup.items} icon={featureGroup.icon} />
-            </React.Fragment>)}
-        </div>
+        {/* Right section - Features and Button (desktop) */}
+        <div className="md:w-1/2 flex flex-col">
+          {/* Features */}
+          <div className="text-left flex-1">
+            {features.map((featureGroup, index) => <React.Fragment key={index}>
+                {featureGroup.description}
+                <PricingFeatureGroup title={featureGroup.title} items={featureGroup.items} icon={featureGroup.icon} />
+              </React.Fragment>)}
+          </div>
 
-        {/* Bottom section - Button */}
-        <div className="text-center">
-          <p className="text-xs text-gray-500 mb-3">inkl. 14 Tage Geld-Zurück-Garantie</p>
-          <Button size="default" className="w-full bg-amber-500 hover:bg-amber-600" onClick={() => {
-          (window as any).trackPurchaseIntent?.();
-          window.open(getCtaUrlWithParams(), '_blank');
-        }}>
-            Jetzt Kaufen
-          </Button>
+          {/* Button */}
+          <div className="text-center mt-auto">
+            <p className="text-xs text-gray-500 mb-3">inkl. 14 Tage Geld-Zurück-Garantie</p>
+            <Button size="default" className="w-full bg-amber-500 hover:bg-amber-600" onClick={() => {
+            (window as any).trackPurchaseIntent?.();
+            window.open(getCtaUrlWithParams(), '_blank');
+          }}>
+              Jetzt Kaufen
+            </Button>
+          </div>
         </div>
       </div>
     </motion.div>;

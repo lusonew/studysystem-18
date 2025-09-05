@@ -15,7 +15,7 @@ export const Pricing = () => {
   }];
   const proPricingFeatures: PricingFeatureGroup[] = [{
     title: "Teil 1: Alles aus Study System",
-    items: []
+    items: ["Haus-/Abschlussarbeiten-System", "Lernaufgaben-Dashboard", "Klausuren-Countdown", "Seiten für jedes Fach (Vorlesungsnotizen, Zusammenfassung etc.)", "und vieles mehr"]
   }, {
     title: "Teil 2: Studium-Erfolgsformel (Videokurs)",
     items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "uvm."]
