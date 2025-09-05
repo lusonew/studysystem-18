@@ -8,7 +8,7 @@ const problems = [{
 }, {
   icon: Frown,
   title: "Schlechte Leistung",
-  description: "Trotz viel Aufwand und Mühe, erhältst du am Ende enttäuschende Ergebnisse."
+  description: "Trotz viel Aufwand erhältst du am Ende enttäuschende Ergebnisse."
 }, {
   icon: HelpCircle,
   title: "Starke Selbstzweifel",
