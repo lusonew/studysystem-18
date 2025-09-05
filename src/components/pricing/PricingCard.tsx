@@ -60,23 +60,23 @@ export const PricingCard = ({
     duration: 0.4,
     delay,
     ease: "easeOut"
-  }} className={`${className} p-5 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-6xl mx-auto`}>
-      <div className="flex flex-col md:flex-row gap-5">
+  }} className={`${className} p-8 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-7xl mx-auto`}>
+      <div className="flex flex-col md:flex-row gap-8">
         {/* Left section - Image (desktop) */}
-        <div className="md:w-1/2 text-center">
+        <div className="md:w-1/2 text-center overflow-hidden">
           {bestSeller && <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-3">
               Bestseller
             </div>}
           <h3 className="text-xl font-bold mb-3">{title}</h3>
           
           {/* Price section moved under title */}
-          <div className="mb-4 flex items-center justify-center gap-2">
+          <div className="mb-6 flex items-center justify-center gap-2">
             {originalValue && <span className="line-through text-3xl text-gray-400">{originalValue}</span>}
             <div>{price}</div>
           </div>
           
           <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer" className="block">
-            <img src={imageUrl} alt={`${title} Preview`} width="300" height="225" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-lg mx-auto scale-[1.7] ${imageClassName}`} loading="lazy" />
+            <img src={imageUrl} alt={`${title} Preview`} width="600" height="450" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-2xl mx-auto ${imageClassName}`} loading="lazy" />
           </a>
         </div>
 
