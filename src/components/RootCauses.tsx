@@ -19,9 +19,7 @@ export const RootCauses = () => {
         }} className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight">Der Grund für diese Probleme?</h2>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
-              In der Schule wird dir nicht beigebracht, wie du im Anschluss studierst. Keine Hilfestellungen, um deine Ziele zu definieren, keine Erklärung dazu, wie man sich selbst organisiert und erst recht kein klares System, um zurecht zu finden. Das Ergebnis?
-            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">In der Schule wird dir nicht beigebracht, wie du im Anschluss studierst. Keine Hilfestellungen, um deine Ziele zu definieren, keine Erklärung dazu, wie man sich selbst organisiert und erst recht kein klares System, um dich zurecht zu finden. Das Ergebnis?</p>
             
             <div className="space-y-4 text-gray-700">
               <p className="text-lg">
