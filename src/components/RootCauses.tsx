@@ -3,7 +3,7 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 
 export const RootCauses = () => {
   return (
-    <section className="bg-gray-50 py-[80px]">
+    <section className="bg-white py-[80px]">
       <div className="container mx-auto px-3 md:px-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
@@ -51,17 +51,14 @@ export const RootCauses = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <div className="relative">
               <OptimizedImage
                 src="/lovable-uploads/5feba1e7-4c39-4564-a3dc-20ffe7bf512f.png"
                 alt="Gestresster Student beim Lernen - typische Probleme beim Studium"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-2xl"
                 width={600}
                 height={600}
               />
-              
-              {/* Overlay gradient for better text readability if needed */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
             </div>
           </motion.div>
         </div>
