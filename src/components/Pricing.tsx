@@ -91,7 +91,7 @@ export const Pricing = () => {
 
         <LaunchCountdownLarge />
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-none mx-auto">
           <PricingCard title="Study System PRO" price={<div className="flex items-center gap-2"><span className="text-2xl font-medium text-green-600">109€</span> <span className="text-sm text-gray-500">Einmalig</span></div>} features={proPricingFeatures} imageUrl="/lovable-uploads/2d367a7d-0631-407d-b870-021d9b5db458.png" ctaUrl="https://pay.studysystem.de/b/bIY8zygDgfm9c245ko" bestSeller={true} className="bg-gradient-to-br from-amber-50 to-white border-amber-200" originalValue="199€" imageClassName="!scale-100" additionalLink={{
           text: "Hier klicken für Kauf mit Klarna oder Apple/Google Pay",
           url: "https://pay.studysystem.de/b/bIY8zygDgfm9c245ko"
