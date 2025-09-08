@@ -31,7 +31,7 @@ export const RootCauses = () => {
               </p>
               
               <p className="text-lg">
-                <span className="font-semibold text-gray-900">Keine klaren Ziele:</span> Dir fehlt eine konkrete Strategie, wie du deine Traumzensur erreichst.
+                <span className="font-semibold text-gray-900">Keine klaren Ziele:</span> Du weißt nicht, warum du studierst und es fehlt an Motivation.
               </p>
               
               <p className="text-lg">
