@@ -60,7 +60,7 @@ export const PricingCard = ({
     duration: 0.4,
     delay,
     ease: "easeOut"
-  }} className={`${className} p-8 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-7xl mx-auto`}>
+  }} className={`${className} p-8 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-none w-full mx-auto`} style={{maxWidth: '1920px'}}>
       <div className="flex flex-col md:flex-row gap-8">
         {/* Left section - Image (desktop) */}
         <div className="md:w-1/2 text-center overflow-hidden">
