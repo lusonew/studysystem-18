@@ -60,8 +60,8 @@ export const PricingCard = ({
     duration: 0.4,
     delay,
     ease: "easeOut"
-  }} className={`${className} p-8 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-7xl mx-auto`}>
-      <div className="flex flex-col md:flex-row gap-8">
+  }} className={`${className} p-8 rounded-xl border shadow-sm hover:shadow-lg transition-shadow max-w-[1600px] mx-auto`}>
+      <div className="flex flex-col md:flex-row gap-12">
         {/* Left section - Image (desktop) */}
         <div className="md:w-1/2 text-center overflow-hidden">
           {bestSeller && <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-3">
