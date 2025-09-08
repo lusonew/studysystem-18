@@ -71,7 +71,7 @@ export const PricingCard = ({
           
           {/* Price section moved under title */}
           <div className="mb-6 flex items-center justify-center gap-2">
-            {originalValue && <span className="line-through text-3xl text-gray-400">{originalValue}</span>}
+            {originalValue && <span className="line-through text-4xl text-gray-400">{originalValue}</span>}
             <div>{price}</div>
           </div>
           
