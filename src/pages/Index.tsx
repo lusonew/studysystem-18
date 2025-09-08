@@ -2,6 +2,7 @@
 import React, { Suspense, useEffect } from "react";
 import { Hero } from "@/components/Hero";
 import { Problems } from "@/components/Problems";
+import { RootCauses } from "@/components/RootCauses";
 import { Story } from "@/components/Story";
 import { Experiences } from "@/components/Experiences";
 import { Footer } from "@/components/Footer";
@@ -53,6 +54,7 @@ const Index = () => {
         <Story />
         <Experiences />
         <Problems />
+        <RootCauses />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
           <SystemFeatures />
           <GoogleTestimonials />
