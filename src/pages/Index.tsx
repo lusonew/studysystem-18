@@ -14,7 +14,7 @@ const SystemFeatures = React.lazy(() => import("@/components/SystemFeatures").th
 const GoogleTestimonials = React.lazy(() => import("@/components/GoogleTestimonials").then(module => ({ default: module.GoogleTestimonials })));
 const SuccessFormula = React.lazy(() => import("@/components/SuccessFormula").then(module => ({ default: module.SuccessFormula })));
 const LifeHub = React.lazy(() => import("@/components/LifeHub").then(module => ({ default: module.LifeHub })));
-const Pricing = React.lazy(() => import("@/components/Pricing").then(module => ({ default: module.Pricing })));
+const Pricing = React.lazy(() => import("@/components/Pricing"));
 const Testimonial = React.lazy(() => import("@/components/Testimonial").then(module => ({ default: module.Testimonial })));
 const SatisfactionGuarantee = React.lazy(() => import("@/components/SatisfactionGuarantee").then(module => ({ default: module.SatisfactionGuarantee })));
 const CTA = React.lazy(() => import("@/components/CTA").then(module => ({ default: module.CTA })));
