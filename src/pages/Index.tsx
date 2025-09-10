@@ -54,12 +54,12 @@ const Index = () => {
         <Experiences />
         <Problems />
         <RootCauses />
-        <Story />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
           <SystemFeatures />
           <GoogleTestimonials />
           <SuccessFormula />
           <LifeHub />
+          <Story />
           <Pricing />
           <Testimonial />
           <SatisfactionGuarantee />
