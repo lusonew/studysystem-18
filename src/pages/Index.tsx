@@ -51,10 +51,10 @@ const Index = () => {
       <SocialProofNotifications />
       <div className="flex-grow">
         <Hero />
-        <Story />
         <Experiences />
         <Problems />
         <RootCauses />
+        <Story />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
           <SystemFeatures />
           <GoogleTestimonials />
