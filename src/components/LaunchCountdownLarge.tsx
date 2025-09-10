@@ -20,7 +20,7 @@ export const LaunchCountdownLarge = () => {
       transition={{ duration: 0.6, delay: 1.2 }}
       className="flex justify-center mb-12"
     >
-      <div className="w-1/2 max-w-md">
+      <div className="w-full md:w-1/2 max-w-md">
         <Badge 
           variant="destructive" 
           className="w-full justify-center py-4 px-6 text-lg font-bold bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20"
