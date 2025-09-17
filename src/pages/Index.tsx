@@ -1,6 +1,7 @@
 
 import React, { Suspense, useEffect } from "react";
 import { Hero } from "@/components/Hero";
+import { VideoFeature } from "@/components/VideoFeature";
 import { Problems } from "@/components/Problems";
 import { RootCauses } from "@/components/RootCauses";
 import { Story } from "@/components/Story";
@@ -51,6 +52,7 @@ const Index = () => {
       <SocialProofNotifications />
       <div className="flex-grow">
         <Hero />
+        <VideoFeature />
         <Experiences />
         <Problems />
         <RootCauses />

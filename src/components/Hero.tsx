@@ -15,10 +15,10 @@ export const Hero = () => {
       });
     }
   };
-  const scrollToStory = () => {
-    const storySection = document.getElementById('story');
-    if (storySection) {
-      storySection.scrollIntoView({
+  const scrollToVideo = () => {
+    const videoSection = document.getElementById('video-feature');
+    if (videoSection) {
+      videoSection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -62,7 +62,7 @@ export const Hero = () => {
               <Button size="lg" className="bg-amber-500 hover:bg-amber-600 px-5 md:px-8" onClick={scrollToPricing}>
                 Jetzt starten
               </Button>
-              <Button size="lg" variant="outline" className="px-5 md:px-8" onClick={scrollToStory}>
+              <Button size="lg" variant="outline" className="px-5 md:px-8" onClick={scrollToVideo}>
                 Mehr erfahren
               </Button>
             </div>

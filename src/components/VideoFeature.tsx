@@ -1,14 +1,39 @@
 import { motion } from "framer-motion";
-import { Puzzle } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { useIsMobile } from "@/hooks/use-mobile";
+
 export const VideoFeature = () => {
-  const isMobile = useIsMobile();
-  
   return (
-    <div>
-      {/* VideoFeature component content will be added here */}
-    </div>
+    <section id="video-feature" className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Entdecke das System in Aktion
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Sieh dir an, wie das Study System PRO funktioniert und wie es dein Studium revolutionieren wird.
+          </p>
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl"
+        >
+          <iframe
+            src="https://www.loom.com/embed/fa9d04303bed477a92c9c60a5cbc665d?sid=d36b9694-132e-4862-b736-d69ff4635c0e"
+            title="Study System PRO in Aktion"
+            className="w-full h-full"
+            frameBorder="0"
+            allowFullScreen
+          />
+        </motion.div>
+      </div>
+    </section>
   );
 };
 export default VideoFeature;
