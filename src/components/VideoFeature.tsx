@@ -25,7 +25,7 @@ export const VideoFeature = () => {
           className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl"
         >
           <iframe
-            src="https://www.loom.com/embed/fa9d04303bed477a92c9c60a5cbc665d?sid=d36b9694-132e-4862-b736-d69ff4635c0e"
+            src="https://www.loom.com/embed/f91d2d3134a04c96b9215168302ecdc5?sid=8a1864ce-c904-4dbf-8117-92adcb1f6991"
             title="Study System PRO in Aktion"
             className="w-full h-full"
             frameBorder="0"
