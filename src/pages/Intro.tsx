@@ -39,7 +39,7 @@ const Intro = () => {
                 <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
                 {/* Placeholder for video - replace with actual video embed */}
                 <iframe
-                  src="https://www.loom.com/embed/d1ce017421504aa188f927403ca1b109?sid=6f367a9d-3b88-4735-a6a1-d66bcbca4459"
+                  src="https://www.loom.com/embed/d1ce017421504aa188f927403ca1b109"
                   title="Study System PRO Einführung"
                   className="w-full h-full rounded-2xl"
                   frameBorder="0"
