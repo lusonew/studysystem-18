@@ -8,9 +8,9 @@ import { LaunchCountdown } from "@/components/LaunchCountdown";
 export const Hero = () => {
   const isMobile = useIsMobile();
   const scrollToPricing = () => {
-    const jetztStartenButton = document.getElementById('jetzt-starten-button');
-    if (jetztStartenButton) {
-      jetztStartenButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const pricingImage = document.getElementById('pricing-image');
+    if (pricingImage) {
+      pricingImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
   const scrollToVideo = () => {

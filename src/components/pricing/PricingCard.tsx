@@ -76,7 +76,7 @@ export const PricingCard = ({
           </div>
           
           <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer" className="block">
-            <img src={imageUrl} alt={`${title} Preview`} width="600" height="450" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-2xl mx-auto ${imageClassName}`} loading="lazy" />
+            <img id="pricing-image" src={imageUrl} alt={`${title} Preview`} width="600" height="450" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-2xl mx-auto ${imageClassName}`} loading="lazy" />
           </a>
         </div>
 
