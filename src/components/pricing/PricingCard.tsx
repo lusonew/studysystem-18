@@ -93,10 +93,15 @@ export const PricingCard = ({
           {/* Button */}
           <div className="text-center mt-auto">
             <p className="text-xs text-gray-500 mb-3">inkl. 14 Tage Geld-Zurück-Garantie</p>
-            <Button size="default" className="w-full bg-amber-500 hover:bg-amber-600" onClick={() => {
-            (window as any).trackPurchaseIntent?.();
-            window.open(getCtaUrlWithParams(), '_blank');
-          }}>
+            <Button 
+              id="jetzt-starten-button" 
+              size="default" 
+              className="w-full bg-amber-500 hover:bg-amber-600" 
+              onClick={() => {
+                (window as any).trackPurchaseIntent?.();
+                window.open(getCtaUrlWithParams(), '_blank');
+              }}
+            >
               Jetzt Starten
             </Button>
           </div>
