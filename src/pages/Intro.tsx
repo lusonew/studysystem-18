@@ -84,9 +84,7 @@ const Intro = () => {
                     <Target className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Einloggen</h3>
-                  <p className="text-gray-600">
-                    Erstelle dein persönliches Konto mit den Zugangsdaten aus der E-Mail.
-                  </p>
+                  <p className="text-gray-600">Erstelle dein Konto mit über die Mail oder den folgenden Link:</p>
                 </CardContent>
               </Card>
 
