@@ -8,9 +8,13 @@ import { LaunchCountdown } from "@/components/LaunchCountdown";
 export const Hero = () => {
   const isMobile = useIsMobile();
   const scrollToPricing = () => {
-    const jetztStartenButton = document.getElementById('jetzt-starten-button');
-    if (jetztStartenButton) {
-      jetztStartenButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // After scrolling to pricing, scroll a bit more to center the button
+      setTimeout(() => {
+        window.scrollBy(0, 200);
+      }, 500);
     }
   };
   const scrollToVideo = () => {
