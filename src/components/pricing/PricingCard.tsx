@@ -104,7 +104,6 @@ export const PricingCard = ({
             >
               Jetzt Starten
             </Button>
-            <p className="text-red-600 text-sm font-medium mt-2">Code: RELAUNCH</p>
           </div>
         </div>
       </div>
