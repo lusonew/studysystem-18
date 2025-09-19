@@ -10,9 +10,11 @@ export const Hero = () => {
   const scrollToPricing = () => {
     const pricingSection = document.getElementById('pricing');
     if (pricingSection) {
-      pricingSection.scrollIntoView({
-        behavior: 'smooth'
-      });
+      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // After scrolling to pricing, scroll a bit more to center the button
+      setTimeout(() => {
+        window.scrollBy(0, 200);
+      }, 500);
     }
   };
   const scrollToVideo = () => {

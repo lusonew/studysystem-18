@@ -97,7 +97,7 @@ export const PricingCard = ({
             (window as any).trackPurchaseIntent?.();
             window.open(getCtaUrlWithParams(), '_blank');
           }}>
-              Jetzt Kaufen
+              Jetzt Starten
             </Button>
           </div>
         </div>
