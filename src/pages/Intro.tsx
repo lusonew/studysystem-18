@@ -72,9 +72,7 @@ const Intro = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     1. E-Mail öffnen
                   </h3>
-                  <p className="text-gray-600">
-                    Öffne deine E-Mail und finde die Willkommensnachricht mit allen wichtigen Informationen.
-                  </p>
+                  <p className="text-gray-600">Öffne deine E-Mails und die Willkommensnachricht von mir.</p>
                 </CardContent>
               </Card>
 
