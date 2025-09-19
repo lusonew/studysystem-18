@@ -95,9 +95,7 @@ const Intro = () => {
                   <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Clock className="w-8 h-8 text-amber-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    3. Anleitung herunterladen
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">3. L</h3>
                   <p className="text-gray-600">
                     Lade die vollständige Anleitung herunter und beginne mit dem Study System.
                   </p>
