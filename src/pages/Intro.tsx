@@ -96,9 +96,7 @@ const Intro = () => {
                     <Clock className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">3. L</h3>
-                  <p className="text-gray-600">
-                    Lade die vollständige Anleitung herunter und beginne mit dem Study System.
-                  </p>
+                  <p className="text-gray-600">Starte mit den Tutorials und arbeite dich in dein Study System PRO ein..</p>
                 </CardContent>
               </Card>
             </div>
