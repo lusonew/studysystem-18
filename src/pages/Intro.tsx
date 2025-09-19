@@ -84,7 +84,7 @@ const Intro = () => {
                     <Target className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Einloggen</h3>
-                  <p className="text-gray-600">Erstelle dein Konto mit über die Mail oder den folgenden Link:</p>
+                  <p className="text-gray-600">Erstelle dein Konto über den Link in der Mail.</p>
                   <a href="https://www.luisnewton.de/dashboard" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline font-medium mt-2 inline-block">
                     Zum Login
                   </a>
