@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { Play } from "lucide-react";
+import videoThumbnail from "../assets/video-thumbnail.png";
 
 export const VideoFeature = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
   return (
     <section id="video-feature" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 max-w-6xl">
@@ -22,15 +31,39 @@ export const VideoFeature = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl"
+          className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl relative cursor-pointer group"
+          onClick={handlePlay}
         >
-          <iframe
-            src="https://www.loom.com/embed/f91d2d3134a04c96b9215168302ecdc5?sid=d7636d95-3ddd-46ea-a5ab-ef597ace7862"
-            title="Study System PRO in Aktion"
-            className="w-full h-full"
-            frameBorder="0"
-            allowFullScreen
-          />
+          {!isPlaying ? (
+            <>
+              <img
+                src={videoThumbnail}
+                alt="Study System PRO Video Thumbnail"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-white/90 hover:bg-white rounded-full p-6 shadow-lg backdrop-blur-sm transition-colors duration-300"
+                >
+                  <Play className="w-12 h-12 text-gray-900 ml-1" fill="currentColor" />
+                </motion.div>
+              </div>
+              <div className="absolute bottom-4 left-4 bg-black/80 text-white px-3 py-1 rounded-md text-sm font-medium">
+                Video abspielen
+              </div>
+            </>
+          ) : (
+            <iframe
+              src="https://www.loom.com/embed/f91d2d3134a04c96b9215168302ecdc5?sid=d7636d95-3ddd-46ea-a5ab-ef597ace7862&autoplay=1"
+              title="Study System PRO in Aktion"
+              className="w-full h-full"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay"
+            />
+          )}
         </motion.div>
       </div>
     </section>
