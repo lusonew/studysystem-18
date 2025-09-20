@@ -24,7 +24,7 @@ export const Pricing = () => {
     items: ["Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
   }];
   return <section id="pricing" className="py-24 bg-white">
-      <div className="container mx-auto px-3 md:px-40">
+      <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
         <motion.div initial={{
         opacity: 0,
         y: 20

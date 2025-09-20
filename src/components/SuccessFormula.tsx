@@ -16,7 +16,7 @@ export const SuccessFormula = () => {
   return (
     <>
       <section className="bg-white py-[50px]">
-      <div className="container mx-auto px-3 md:px-40">
+      <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
         <motion.div initial={{
         opacity: 0,
         y: 20
@@ -90,7 +90,7 @@ export const SuccessFormula = () => {
     
     {/* New testimonials section */}
     <section className="bg-white py-[50px]">
-      <div className="container mx-auto px-3 md:px-40">
+      <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <motion.div

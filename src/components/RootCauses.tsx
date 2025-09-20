@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 export const RootCauses = () => {
   return <section className="bg-white py-[80px]">
-      <div className="container mx-auto px-3 md:px-40">
+      <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <motion.div initial={{

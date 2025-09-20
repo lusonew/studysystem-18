@@ -22,7 +22,7 @@ const testimonials = [{
 }];
 export const GoogleTestimonials = () => {
   return <section className="bg-white py-16">
-      <div className="container mx-auto px-3 md:px-40">
+      <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
         <motion.div initial={{
         opacity: 0,
         y: 20

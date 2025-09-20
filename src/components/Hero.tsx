@@ -28,7 +28,7 @@ export const Hero = () => {
         pt-[30px] pb-[10px] md:py-[10px]
         ${isMobile ? 'mx-[-19px] px-[19px]' : ''}
       `}>
-      <div className="container mx-auto px-3 md:px-40">
+      <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
         <div className="text-center mb-12">
           <h1 className="font-bold text-gray-900 mb-2 text-4xl text-center lg:text-6xl">Das Beliebteste System für Erfolgreiches Studieren</h1>
           <h2 className="text-xl text-amber-600 font-medium mb-6 lg:text-3xl">Von Streß & Chaos zu entspannten Bestnoten</h2>
