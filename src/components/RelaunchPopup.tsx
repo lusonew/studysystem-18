@@ -45,27 +45,27 @@ export const RelaunchPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border">
+      <DialogContent className="max-w-4xl sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border m-4 sm:m-6">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Image */}
-          <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-8 flex items-center justify-center">
+          <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-4 sm:p-8 flex items-center justify-center">
             <OptimizedImage
               src="/assets/sale-thumbnail.jpg"
               alt="Study System PRO 30% Rabatt"
-              className="w-full h-auto max-w-md rounded-lg shadow-lg"
+              className="w-full h-auto max-w-xs sm:max-w-md rounded-lg shadow-lg"
               width={400}
               height={300}
             />
           </div>
           
           {/* Right side - Content */}
-          <div className="flex-1 p-8 flex flex-col justify-center">
-            <div className="space-y-6">
+          <div className="flex-1 p-4 sm:p-8 flex flex-col justify-center">
+            <div className="space-y-4 sm:space-y-6">
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-2">
+                <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2">
                   Back To Uni Relaunch 📚
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed">
                   Die neue Version des Study Systems ist passend zum Semesterstart verfügbar! 
                   Sichere dir das beliebeste System für kurze Zeit mit 30% Rabatt.
                 </p>
@@ -74,7 +74,7 @@ export const RelaunchPopup = () => {
               <div className="space-y-3">
                 <Button 
                   onClick={handleStartNow}
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3"
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 sm:py-3"
                   size="lg"
                 >
                   Jetzt starten
