@@ -20,7 +20,7 @@ export const Pricing = () => {
     title: "Teil 2: Studium-Erfolgsformel (Videokurs)",
     items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "uvm."]
   }, {
-    title: "BONUS: Life Center (System)",
+    title: "BONUS: Life Hub (System)",
     items: ["Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
   }];
   return <section id="pricing" className="py-24 bg-white">
@@ -86,7 +86,7 @@ export const Pricing = () => {
         duration: 0.6,
         delay: 1.1
       }} className="text-center mt-8 mb-16">
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto italic">"Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Center sind echte Gamechanger. Absolute Empfehlung!" - Dimitrios D.</p>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto italic">"Das neue System ist noch durchdachter, übersichtlicher und hilft mir enorm dabei, mein Studium strukturiert und stressfrei zu organisieren. Besonders der Lernplaner und das Life Hub sind echte Gamechanger. Absolute Empfehlung!" - Dimitrios D.</p>
         </motion.div>
 
         <LaunchCountdownLarge />
