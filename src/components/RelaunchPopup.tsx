@@ -27,7 +27,7 @@ export const RelaunchPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-4xl sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border m-6 sm:m-6 rounded-xl overflow-hidden">
+      <DialogContent className="max-w-[90vw] sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border m-6 sm:m-6 rounded-xl overflow-hidden">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Image */}
           <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-4 sm:p-8 flex items-center justify-center">
