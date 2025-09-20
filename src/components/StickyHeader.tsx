@@ -7,15 +7,8 @@ export const StickyHeader = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Show header when scrolled past hero section (approximately 100vh)
-      const scrollPosition = window.scrollY;
-      const heroHeight = window.innerHeight;
-      setIsVisible(scrollPosition > heroHeight);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Show header immediately
+    setIsVisible(true);
   }, []);
 
   return (
