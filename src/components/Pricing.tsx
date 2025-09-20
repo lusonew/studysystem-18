@@ -20,8 +20,8 @@ export const Pricing = () => {
     title: "Teil 2: Studium-Erfolgsformel (Videokurs)",
     items: ["Nie wieder Probleme mit Lernmotivation", "Klare Ziele definieren", "Anti-Ziele entwickeln", "uvm."]
   }, {
-    title: "BONUS: Life Center (weiteres System)",
-    items: ["Profi Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
+    title: "BONUS: Life Center (System)",
+    items: ["Habit Tracker", "Finanzplaner", "Workout Tracker", "uvm."]
   }];
   return <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-3 md:px-40">
