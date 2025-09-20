@@ -47,7 +47,7 @@ export const Hero = () => {
             <div className="flex items-center justify-center md:justify-start gap-2 mb-6 flex-wrap">
               <Badge variant="secondary" className="bg-amber-100 text-amber-700">
                 <Users className="w-4 h-4 mr-1" />
-                4.000+ Studierende
+                5.000+ Studierende
               </Badge>
               <LaunchCountdown />
             </div>
