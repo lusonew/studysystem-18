@@ -21,13 +21,13 @@ export const StickyHeader = () => {
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-destructive/20 shadow-sm"
         >
-          <div className="container mx-auto px-4 py-2">
+          <div className="container mx-auto px-4 py-1">
             <div className="flex justify-center">
               <Badge 
                 variant="destructive" 
-                className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium"
+                className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-3 py-1 text-xs font-medium max-w-[70%] text-center"
               >
-                <BookOpen className="w-4 h-4 mr-2" />
+                <BookOpen className="w-3 h-3 mr-1" />
                 Back to Uni Relaunch 📚 -30% mit Code "RELAUNCH"
               </Badge>
             </div>
