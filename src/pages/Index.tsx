@@ -7,7 +7,6 @@ import { RootCauses } from "@/components/RootCauses";
 import { Story } from "@/components/Story";
 
 import { Footer } from "@/components/Footer";
-import { CookieBanner } from "@/components/CookieBanner";
 import { SocialProofNotifications } from "@/components/social-proof/SocialProofNotifications";
 import { StickyHeader } from "@/components/StickyHeader";
 import { RelaunchPopup } from "@/components/RelaunchPopup";
@@ -73,7 +72,6 @@ const Index = () => {
         </Suspense>
       </div>
       <Footer />
-      <CookieBanner />
     </div>
   );
 };
