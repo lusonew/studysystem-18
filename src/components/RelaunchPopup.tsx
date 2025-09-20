@@ -45,10 +45,10 @@ export const RelaunchPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-4xl p-0 gap-0 bg-background border-border">
+      <DialogContent className="max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Image */}
-          <div className="flex-1 bg-gradient-to-br from-primary/5 to-primary/10 p-8 flex items-center justify-center">
+          <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-8 flex items-center justify-center">
             <OptimizedImage
               src="/assets/sale-thumbnail.jpg"
               alt="Study System PRO 30% Rabatt"
@@ -74,7 +74,7 @@ export const RelaunchPopup = () => {
               <div className="space-y-3">
                 <Button 
                   onClick={handleStartNow}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-3"
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3"
                   size="lg"
                 >
                   Jetzt starten
@@ -90,28 +90,6 @@ export const RelaunchPopup = () => {
             </div>
           </div>
         </div>
-        
-        {/* Close button */}
-        <button
-          onClick={handleClose}
-          className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors p-2"
-          aria-label="Schließen"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m18 6-12 12" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
       </DialogContent>
     </Dialog>
   );
