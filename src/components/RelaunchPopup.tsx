@@ -25,24 +25,6 @@ export const RelaunchPopup = () => {
     localStorage.setItem("relaunch-popup-seen", "true");
   };
 
-  const handleStartNow = () => {
-    handleClose();
-    // Scroll to pricing section or handle navigation
-    const pricingSection = document.querySelector('[data-section="pricing"]');
-    if (pricingSection) {
-      pricingSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleLearnMore = () => {
-    handleClose();
-    // Scroll to features or handle navigation
-    const featuresSection = document.querySelector('[data-section="features"]');
-    if (featuresSection) {
-      featuresSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="max-w-4xl sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border m-6 sm:m-6 rounded-xl overflow-hidden">
@@ -73,19 +55,12 @@ export const RelaunchPopup = () => {
               
               <div className="space-y-3">
                 <Button 
-                  onClick={handleStartNow}
+                  onClick={handleClose}
                   className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 sm:py-3"
                   size="lg"
                 >
-                  Jetzt starten
+                  Verstanden
                 </Button>
-                
-                <button
-                  onClick={handleLearnMore}
-                  className="w-full text-muted-foreground hover:text-foreground transition-colors text-sm font-medium py-2"
-                >
-                  Mehr erfahren
-                </button>
               </div>
             </div>
           </div>
