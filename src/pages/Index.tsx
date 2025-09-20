@@ -5,7 +5,7 @@ import { VideoFeature } from "@/components/VideoFeature";
 import { Problems } from "@/components/Problems";
 import { RootCauses } from "@/components/RootCauses";
 import { Story } from "@/components/Story";
-import { Experiences } from "@/components/Experiences";
+
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
 import { SocialProofNotifications } from "@/components/social-proof/SocialProofNotifications";
@@ -55,7 +55,7 @@ const Index = () => {
       <div className="flex-grow">
         <Hero />
         <VideoFeature />
-        <Experiences />
+        
         <Problems />
         <RootCauses />
         <Suspense fallback={<div className="h-[500px] flex items-center justify-center">Lädt...</div>}>
