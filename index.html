@@ -42,7 +42,7 @@
         // Meta Pixel tracking
         if (typeof fbq !== 'undefined') {
           fbq('track', 'Purchase', {
-            value: 47,
+            value: 63,
             currency: 'EUR'
           });
         }
@@ -62,15 +62,15 @@
       fbq('init', '1322682691999251');
       fbq('track', 'PageView');
     </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-           src="https://www.facebook.com/tr?id=1322682691999251&ev=PageView&noscript=1"/>
-    </noscript>
     
     <!-- Crazy Egg tracking script -->
     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0121/2093.js" async="async" ></script>
   </head>
   <body>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=1322682691999251&ev=PageView&noscript=1"/>
+    </noscript>
     <div id="root"></div>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
