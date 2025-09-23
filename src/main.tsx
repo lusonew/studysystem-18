@@ -8,18 +8,4 @@ if (spinner) {
   spinner.style.display = 'none';
 }
 
-// Initialize React first
-const root = createRoot(document.getElementById("root")!);
-root.render(<App />);
-
-// Initialize performance monitoring after React is ready
-import('./utils/performance').then(({ trackPerformanceMetrics, registerServiceWorker, preloadCriticalResources }) => {
-  // Initialize performance monitoring
-  trackPerformanceMetrics();
-  
-  // Register service worker for caching
-  registerServiceWorker();
-  
-  // Preload critical resources
-  preloadCriticalResources();
-});
+createRoot(document.getElementById("root")!).render(<App />);
