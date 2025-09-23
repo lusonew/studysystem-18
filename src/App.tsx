@@ -10,14 +10,21 @@ const Index = lazy(() => import("./pages/Index"));
 const Intro = lazy(() => import("./pages/Intro"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-// Loading fallback component
+// Simple loading fallback component
 const PageLoading = () => (
   <div className="flex items-center justify-center min-h-screen">
-    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
   </div>
 );
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5 minutes
+      retry: 1,
+    },
+  },
+});
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -25,14 +32,23 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Suspense fallback={<PageLoading />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/intro" element={<Intro />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
+        <Routes>
+          <Route path="/" element={
+            <Suspense fallback={<PageLoading />}>
+              <Index />
+            </Suspense>
+          } />
+          <Route path="/intro" element={
+            <Suspense fallback={<PageLoading />}>
+              <Intro />
+            </Suspense>
+          } />
+          <Route path="*" element={
+            <Suspense fallback={<PageLoading />}>
+              <NotFound />
+            </Suspense>
+          } />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
