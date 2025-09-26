@@ -18,6 +18,17 @@ export const StickyHeader = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleClick = () => {
+    const baseUrl = "https://pay.studysystem.de/b/5kQ3cv3zO9WG6s4f4l3cc0a?prefilled_promo_code=relaunch";
+    const currentParams = new URLSearchParams(window.location.search);
+    if (currentParams.toString()) {
+      const separator = baseUrl.includes('?') ? '&' : '?';
+      window.open(`${baseUrl}${separator}${currentParams.toString()}`, '_blank');
+    } else {
+      window.open(baseUrl, '_blank');
+    }
+  };
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -32,7 +43,8 @@ export const StickyHeader = () => {
             <div className="flex justify-center">
               <Badge 
                 variant="destructive" 
-                className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium"
+                className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium cursor-pointer transition-all duration-200 hover:scale-105"
+                onClick={handleClick}
               >
                 <BookOpen className="w-4 h-4 mr-2" />
                 Back to Uni Relaunch 📚 -30% mit Code "RELAUNCH"
