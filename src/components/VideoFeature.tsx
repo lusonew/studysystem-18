@@ -22,15 +22,15 @@ export const VideoFeature = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl"
+          className="bg-gray-100 rounded-2xl overflow-hidden shadow-2xl"
+          style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}
         >
-          <iframe
-            src="https://www.loom.com/embed/f91d2d3134a04c96b9215168302ecdc5"
+          <iframe 
+            src="https://www.loom.com/embed/f91d2d3134a04c96b9215168302ecdc5?sid=66460eca-92a9-4fef-9bf0-151ebb6de198" 
+            frameBorder="0" 
+            allowFullScreen 
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             title="Study System PRO in Aktion"
-            className="w-full h-full"
-            frameBorder="0"
-            allowFullScreen
-            allow="camera; microphone; fullscreen; display-capture"
           />
         </motion.div>
       </div>
