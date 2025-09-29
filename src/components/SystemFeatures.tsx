@@ -80,7 +80,7 @@ export const SystemFeatures = () => {
               Teil 1: Das System
             </Badge>
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Wie du diese Probleme löst</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 lg:text-5xl">Das hast du den anderen voraus</h2>
           <p className="text-gray-600 text-xl font-extralight">Die Vorteile, mit denen du ab jetzt jeden Tag rechnen kannst - während andere Probleme haben.</p>
         </motion.div>
 
