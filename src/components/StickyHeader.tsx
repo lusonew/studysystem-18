@@ -30,13 +30,24 @@ export const StickyHeader = () => {
         >
           <div className="container mx-auto px-4 py-2">
             <div className="flex justify-center">
-              <Badge 
-                variant="destructive" 
-                className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium"
+              <a 
+                href="https://pay.studysystem.de/b/5kQ3cv3zO9WG6s4f4l3cc0a?prefilled_promo_code=relaunch"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackPurchaseIntent) {
+                    (window as any).trackPurchaseIntent();
+                  }
+                }}
               >
-                <BookOpen className="w-4 h-4 mr-2" />
-                Back to Uni Relaunch 📚 -30% mit Code "RELAUNCH"
-              </Badge>
+                <Badge 
+                  variant="destructive" 
+                  className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium cursor-pointer transition-all duration-200 hover:scale-105"
+                >
+                  <BookOpen className="w-4 h-4 mr-2" />
+                  Back to Uni Relaunch 📚 -30% mit Code "RELAUNCH"
+                </Badge>
+              </a>
             </div>
           </div>
         </motion.div>
