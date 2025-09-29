@@ -67,7 +67,7 @@ export const Hero = () => {
 
             <div className="flex justify-center md:justify-start mb-8">
               <a 
-                href="https://www.google.com/search?sca_esv=219388647f983b16&hl=de&authuser=0&q=Luis+Newton&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E9N6PKRhMT6q4kWgTaye1HX7-Gnsh7lRNyK8VQe8-Pu4w3GyYFUvTGcdYQGGbS-4GYaUK8s%3D&uds=AOm0WdFjhyjv-N7IxYZGImag8WES6oW-JQttxByN1uOgLcEVN2Y_GVDuAilnakcwbb3qbv8mBvEfIa5viS2gNPN5sr0CugUWi3a5ebmL2oLKgE13hUdFq0Y&sa=X&ved=2ahUKEwj-x_Xus_6PAxWBhv0HHUHtD1sQ3PALegQIHBAE&biw=1512&bih=857&dpr=2"
+                href="https://share.google/h4PNe9qEQyQK1ulA2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
