@@ -51,15 +51,22 @@ export const Pricing = () => {
           duration: 0.6,
           delay: 0.2
         }} className="flex flex-col md:flex-row items-center justify-center gap-3">
-            <div className="flex items-center gap-3">
-              <span className="text-lg font-semibold text-gray-900">4,9</span>
-              <img src="/lovable-uploads/45fd89e4-90b7-463a-8832-956858deec36.png" alt="5 Sterne Bewertung" className="h-6" />
-            </div>
-            <span className="text-lg text-gray-600">
-              auf{" "}
-              <img src="/lovable-uploads/f67852aa-bafe-4f23-82be-4369f750f591.png" alt="Google" className="h-5 inline-block" />
-              {" "}bei 4000+ Kunden
-            </span>
+            <a 
+              href="https://www.google.com/share.google?q=h4PNe9qEQyQK1ulA2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col md:flex-row items-center justify-center gap-3"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-lg font-semibold text-gray-900">4,9</span>
+                <img src="/lovable-uploads/45fd89e4-90b7-463a-8832-956858deec36.png" alt="5 Sterne Bewertung" className="h-6" />
+              </div>
+              <span className="text-lg text-gray-600">
+                auf{" "}
+                <img src="/lovable-uploads/f67852aa-bafe-4f23-82be-4369f750f591.png" alt="Google" className="h-5 inline-block" />
+                {" "}bei 4000+ Kunden
+              </span>
+            </a>
           </motion.div>
           
           <motion.div initial={{
