@@ -20,6 +20,6 @@ export default defineConfig(({ command, mode }) => ({
     dedupe: ["react", "react-dom"],
   },
   optimizeDeps: {
-    include: ["react", "react-dom", "react-dom/client", "@tanstack/react-query", "@radix-ui/react-tooltip", "sonner"],
+    include: ["react", "react-dom", "react-dom/client", "@radix-ui/react-tooltip", "sonner"],
   },
 }));
