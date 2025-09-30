@@ -4,6 +4,15 @@ import { useIsMobile } from "@/hooks/use-mobile";
 export default function Checkout() {
   const isMobile = useIsMobile();
 
+  const getUrlWithParams = (baseUrl: string) => {
+    const currentParams = new URLSearchParams(window.location.search);
+    if (currentParams.toString()) {
+      const separator = baseUrl.includes('?') ? '&' : '?';
+      return `${baseUrl}${separator}${currentParams.toString()}`;
+    }
+    return baseUrl;
+  };
+
   // Placeholder data - wird später mit echten Daten gefüllt
   const levelUpFeatures: CheckoutFeature[] = [{
     title: "",
@@ -50,11 +59,11 @@ export default function Checkout() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-          <button onClick={() => window.open('https://pay.studysystem.de/b/5kQ3cv3zO9WG6s4f4l3cc0a?prefilled_promo_code=RELAUNCH', '_blank')} className="text-gray-500 hover:text-gray-700 text-sm font-medium px-6 py-2 bg-white rounded-md border border-gray-200 hover:border-gray-300 transition-colors order-2 sm:order-1">
+          <button onClick={() => window.open(getUrlWithParams('https://pay.studysystem.de/b/5kQ3cv3zO9WG6s4f4l3cc0a?prefilled_promo_code=RELAUNCH'), '_blank')} className="text-gray-500 hover:text-gray-700 text-sm font-medium px-6 py-2 bg-white rounded-md border border-gray-200 hover:border-gray-300 transition-colors order-2 sm:order-1">
             Ohne Upgrade fortfahren.
           </button>
           <button onClick={() => {
-            window.open('https://pay.studysystem.de/b/3cI8wPgmAecWaIk6xP3cc0d?prefilled_promo_code=bundle38', '_blank');
+            window.open(getUrlWithParams('https://pay.studysystem.de/b/3cI8wPgmAecWaIk6xP3cc0d?prefilled_promo_code=bundle38'), '_blank');
           }} className="bg-white text-amber-500 border-2 border-amber-500 hover:bg-amber-50 text-sm font-medium px-6 py-2 rounded-md transition-colors order-1 sm:order-2">
             Beide Upgrades sichern.
           </button>
