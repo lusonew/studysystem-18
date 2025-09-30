@@ -52,7 +52,7 @@ export const CheckoutCard = ({
         {/* Top section - Badge, Title, Price, Image */}
         <div className="text-center mb-3">
           {badge && (
-            <div className="inline-block px-1.5 py-0.5 bg-amber-100 text-amber-800 rounded-full text-[8px] font-medium mb-1.5">
+            <div className="inline-block px-1.5 py-0.5 bg-amber-100 text-amber-800 rounded-full text-[10px] font-medium mb-1.5">
               {badge}
             </div>
           )}

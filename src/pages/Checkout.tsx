@@ -26,23 +26,23 @@ export default function Checkout() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <CheckoutCard title={<div className="text-center">
-                <div className="text-[10px] text-gray-600 mb-0.5">Study System PRO</div>
-                <div className="text-lg font-bold">+ LevelUP</div>
+                <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
+                <div className="text-xl font-bold">+ LevelUP</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-sm font-medium text-gray-400 line-through">+ 89€</span>
-                  <span className="text-sm font-medium text-green-600">+ 44€ (-50%)</span>
+                  <span className="text-base font-medium text-gray-400 line-through">+ 89€</span>
+                  <span className="text-base font-medium text-green-600">+ 44€ (-50%)</span>
                 </div>
-                <span className="text-[10px] text-gray-500">Einmalig</span>
+                <span className="text-xs text-gray-500">Einmalig</span>
               </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} />
 
           <CheckoutCard title={<div className="text-center">
-                <div className="text-[10px] text-gray-600 mb-0.5">Study System PRO</div>
-                <div className="text-lg font-bold">+ Fokus-Icons (iPhone)</div>
+                <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
+                <div className="text-xl font-bold">+ Fokus-Icons (iPhone)</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-sm font-medium text-green-600">79€</span>
-                  <span className="text-[10px] text-gray-500">Einmalig</span>
+                  <span className="text-base font-medium text-green-600">79€</span>
+                  <span className="text-xs text-gray-500">Einmalig</span>
                 </div>
               </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0.1} badge="Beliebt" />
         </div>
