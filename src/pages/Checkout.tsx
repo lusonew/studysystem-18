@@ -37,7 +37,7 @@ export default function Checkout() {
 
           <CheckoutCard title={<div className="text-center">
                 <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
-                <div className="text-2xl font-bold">+ Fokus-Icons</div>
+                <div className="text-2xl font-bold">+ Fokus-Icons (iPhone)</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-lg font-medium text-green-600">79€</span>
