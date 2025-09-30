@@ -29,20 +29,20 @@ export default function Checkout() {
   ];
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white py-16 ${isMobile ? 'px-4' : 'px-6'}`}>
-      <div className="container mx-auto max-w-6xl">
+    <div className={`h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white flex items-center justify-center ${isMobile ? 'px-4 py-6' : 'px-6 py-8'}`}>
+      <div className="container mx-auto max-w-5xl">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             Wähle deine Upgrade
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base text-gray-600">
             Erweitere dein Study System PRO mit exklusiven Upgrades
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <CheckoutCard
             title="Study System PRO x LevelUP Bundle"
             price={
@@ -79,6 +79,16 @@ export default function Checkout() {
             delay={0.1}
             badge="Beliebt"
           />
+        </div>
+
+        {/* Decline Button */}
+        <div className="text-center">
+          <button
+            onClick={() => window.history.back()}
+            className="text-gray-500 hover:text-gray-700 text-sm font-medium px-6 py-2 bg-white rounded-md border border-gray-200 hover:border-gray-300 transition-colors"
+          >
+            Nein, danke.
+          </button>
         </div>
       </div>
     </div>

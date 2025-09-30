@@ -46,16 +46,16 @@ export const CheckoutCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.4, delay, ease: "easeOut" }}
-      className={`${className} p-6 rounded-xl border shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full`}
+      className={`${className} p-4 rounded-xl border shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full`}
     >
       {badge && (
-        <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-3 self-start">
+        <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-2 self-start">
           {badge}
         </div>
       )}
 
       {/* Image */}
-      <div className="text-center mb-4">
+      <div className="text-center mb-3">
         <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer">
           <img
             src={imageUrl}
@@ -67,21 +67,21 @@ export const CheckoutCard = ({
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-bold mb-3 text-center">{title}</h3>
+      <h3 className="text-lg font-bold mb-2 text-center">{title}</h3>
 
       {/* Price */}
-      <div className="mb-4 text-center">
+      <div className="mb-3 text-center">
         <div>{price}</div>
       </div>
 
       {/* Features */}
-      <div className="flex-1 mb-6">
+      <div className="flex-1 mb-4">
         {features.map((featureGroup, index) => (
-          <div key={index} className="mb-4">
-            <h4 className="font-semibold text-sm mb-2">{featureGroup.title}</h4>
-            <ul className="space-y-1.5">
+          <div key={index} className="mb-2">
+            <h4 className="font-semibold text-xs mb-1.5">{featureGroup.title}</h4>
+            <ul className="space-y-1">
               {featureGroup.items.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-sm">
+                <li key={idx} className="flex items-start gap-2 text-xs">
                   <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-50 text-amber-700 text-xs mt-0.5">
                     ○
                   </span>
