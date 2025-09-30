@@ -80,14 +80,18 @@ export const CheckoutCard = ({
           <div className="text-left flex-1 mb-3">
             {features.map((featureGroup, index) => (
               <div key={index} className="mb-2">
-                <h4 className="font-semibold text-[10px] mb-1">{featureGroup.title}</h4>
-                <ul className="space-y-0.5">
+                {featureGroup.title && (
+                  <h4 className="font-semibold text-[10px] mb-1">{featureGroup.title}</h4>
+                )}
+                <ul className={featureGroup.title ? "space-y-0.5" : ""}>
                   {featureGroup.items.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-1 text-[10px]">
-                      <span className="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-amber-50 text-amber-700 text-[8px] mt-0.5">
-                        ○
-                      </span>
-                      <span className="flex-1">{item}</span>
+                    <li key={idx} className={featureGroup.title ? "flex items-start gap-1 text-[10px]" : "text-[10px] text-gray-700 leading-relaxed"}>
+                      {featureGroup.title && (
+                        <span className="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-amber-50 text-amber-700 text-[8px] mt-0.5">
+                          ○
+                        </span>
+                      )}
+                      <span className={featureGroup.title ? "flex-1" : ""}>{item}</span>
                     </li>
                   ))}
                 </ul>
