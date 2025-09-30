@@ -54,7 +54,7 @@ export default function Checkout() {
               </div>
             }
             features={levelUpFeatures}
-            imageUrl="/placeholder.svg"
+            imageUrl="/lovable-uploads/LevelUPXStudySystem.jpg"
             ctaUrl="#"
             ctaText="Jetzt upgraden"
             className="bg-gradient-to-br from-amber-50 to-white border-amber-200"
@@ -72,7 +72,7 @@ export default function Checkout() {
               </div>
             }
             features={fokusIconsFeatures}
-            imageUrl="/placeholder.svg"
+            imageUrl="/lovable-uploads/FokusIconsXStudySystem.jpg"
             ctaUrl="#"
             ctaText="Jetzt upgraden"
             className="bg-gradient-to-br from-amber-50 to-white border-amber-200"
