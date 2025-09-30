@@ -9,7 +9,7 @@ export type CheckoutFeature = {
 };
 
 export type CheckoutCardProps = {
-  title: string;
+  title: string | ReactNode;
   price: string | ReactNode;
   features: CheckoutFeature[];
   imageUrl: string;
@@ -57,7 +57,7 @@ export const CheckoutCard = ({
             </div>
           )}
           
-          <h3 className="text-base font-bold mb-2">{title}</h3>
+          <div className="mb-2">{title}</div>
           
           {/* Price section */}
           <div className="mb-4">

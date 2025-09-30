@@ -25,14 +25,20 @@ export default function Checkout() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <CheckoutCard title="Study System PRO x LevelUP Bundle" price={<div className="flex flex-col items-center gap-0.5">
+          <CheckoutCard title={<div className="text-center">
+                <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
+                <div className="text-2xl font-bold">+ LevelUP</div>
+              </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-lg font-medium text-green-600">99€</span>
                   <span className="text-xs text-gray-500">Einmalig</span>
                 </div>
               </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} />
 
-          <CheckoutCard title="Study System PRO x Fokus-Icons (iPhone)" price={<div className="flex flex-col items-center gap-0.5">
+          <CheckoutCard title={<div className="text-center">
+                <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
+                <div className="text-2xl font-bold">+ Fokus-Icons</div>
+              </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-lg font-medium text-green-600">79€</span>
                   <span className="text-xs text-gray-500">Einmalig</span>
