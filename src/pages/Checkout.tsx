@@ -45,7 +45,7 @@ export default function Checkout() {
                   <span className="text-sm font-medium text-green-600">+ 9€ (-50%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
-              </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0.1} />
+              </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="https://pay.studysystem.de/b/4gMdR96M03yi6s4g8p3cc0c?prefilled_promo_code=bundle33" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0.1} />
         </div>
 
         {/* Action Buttons */}
