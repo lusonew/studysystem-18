@@ -30,9 +30,10 @@ export default function Checkout() {
                 <div className="text-2xl font-bold">+ LevelUP</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg font-medium text-green-600">99€</span>
-                  <span className="text-xs text-gray-500">Einmalig</span>
+                  <span className="text-lg font-medium text-gray-400 line-through">+ 89€</span>
+                  <span className="text-lg font-medium text-green-600">+ 44€ (-50%)</span>
                 </div>
+                <span className="text-xs text-gray-500">Einmalig</span>
               </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} />
 
           <CheckoutCard title={<div className="text-center">
