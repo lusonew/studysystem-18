@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export const StickyHeader = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +20,17 @@ export const StickyHeader = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleCheckoutClick = () => {
+    const currentParams = new URLSearchParams(window.location.search);
+    const checkoutPath = currentParams.toString() 
+      ? `/checkout?${currentParams.toString()}`
+      : '/checkout';
+    if (typeof window !== 'undefined' && (window as any).trackPurchaseIntent) {
+      (window as any).trackPurchaseIntent();
+    }
+    navigate(checkoutPath);
+  };
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -30,24 +43,14 @@ export const StickyHeader = () => {
         >
           <div className="container mx-auto px-4 py-2">
             <div className="flex justify-center">
-              <a 
-                href="https://pay.studysystem.de/b/5kQ3cv3zO9WG6s4f4l3cc0a?prefilled_promo_code=relaunch"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackPurchaseIntent) {
-                    (window as any).trackPurchaseIntent();
-                  }
-                }}
+              <Badge 
+                variant="destructive" 
+                className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium cursor-pointer transition-all duration-200 hover:scale-105"
+                onClick={handleCheckoutClick}
               >
-                <Badge 
-                  variant="destructive" 
-                  className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20 px-4 py-2 text-sm font-medium cursor-pointer transition-all duration-200 hover:scale-105"
-                >
-                  <BookOpen className="w-4 h-4 mr-2" />
-                  Back to Uni Relaunch 📚 -30% mit Code "RELAUNCH"
-                </Badge>
-              </a>
+                <BookOpen className="w-4 h-4 mr-2" />
+                Back to Uni Relaunch 📚 -30% mit Code "RELAUNCH"
+              </Badge>
             </div>
           </div>
         </motion.div>
