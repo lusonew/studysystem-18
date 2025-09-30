@@ -54,8 +54,7 @@ export default function Checkout() {
             Ohne Upgrade fortfahren.
           </button>
           <button onClick={() => {
-            // TODO: Add URL for both upgrades bundle
-            window.open('#', '_blank');
+            window.open('https://pay.studysystem.de/b/6oU7sL7Q4c4O3fS4pH3cc0b?prefilled_promo_code=Bundle37', '_blank');
           }} className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-6 py-2 rounded-md transition-colors order-1 sm:order-2">
             Beide Upgrades sichern.
           </button>
