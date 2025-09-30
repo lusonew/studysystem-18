@@ -97,7 +97,7 @@ export const CheckoutCard = ({
                 ) : (
                   <div>
                     {featureGroup.items.map((item, idx) => (
-                      <p key={idx} className="text-base text-gray-700 leading-relaxed">
+                      <p key={idx} className="text-sm text-gray-700 leading-relaxed">
                         {item}
                       </p>
                     ))}
