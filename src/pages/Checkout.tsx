@@ -27,7 +27,7 @@ export default function Checkout() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <CheckoutCard title={<div className="text-center">
                 <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
-                <div className="text-xl font-bold">+ LevelUP</div>
+                <div className="text-3xl font-bold">+ LevelUP</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-base font-medium text-gray-400 line-through">+ 89€</span>
@@ -38,7 +38,7 @@ export default function Checkout() {
 
           <CheckoutCard title={<div className="text-center">
                 <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
-                <div className="text-xl font-bold">+ Fokus-Icons (iPhone)</div>
+                <div className="text-3xl font-bold">+ Fokus-Icons (iPhone)</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-base font-medium text-gray-400 line-through">+ 18€</span>
