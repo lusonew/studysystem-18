@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import PricingFeatureGroup from "./PricingFeatureList";
 import { ReactNode } from "react";
+import { useNavigate } from "react-router-dom";
 export type PricingFeatureGroup = {
   title: string;
   items: string[];
@@ -38,6 +39,8 @@ export const PricingCard = ({
   imageClassName = "",
   additionalLink
 }: PricingCardProps) => {
+  const navigate = useNavigate();
+  
   // Get current URL parameters and append them to the CTA URL
   const getCtaUrlWithParams = () => {
     const currentParams = new URLSearchParams(window.location.search);
@@ -46,6 +49,15 @@ export const PricingCard = ({
       return `${ctaUrl}${separator}${currentParams.toString()}`;
     }
     return ctaUrl;
+  };
+
+  const handleCheckoutClick = () => {
+    const currentParams = new URLSearchParams(window.location.search);
+    const checkoutPath = currentParams.toString() 
+      ? `/checkout?${currentParams.toString()}`
+      : '/checkout';
+    (window as any).trackPurchaseIntent?.();
+    navigate(checkoutPath);
   };
   return <motion.div initial={{
     opacity: 0,
@@ -97,10 +109,7 @@ export const PricingCard = ({
               id="jetzt-starten-button" 
               size="default" 
               className="w-full bg-amber-500 hover:bg-amber-600" 
-              onClick={() => {
-                (window as any).trackPurchaseIntent?.();
-                window.open(getCtaUrlWithParams(), '_blank');
-              }}
+              onClick={handleCheckoutClick}
             >
               Jetzt Starten
             </Button>
