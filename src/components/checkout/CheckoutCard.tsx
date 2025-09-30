@@ -98,11 +98,15 @@ export const CheckoutCard = ({
                   </ul>
                 ) : (
                   <div>
-                    {featureGroup.items.map((item, idx) => (
-                      <p key={idx} className="text-sm text-gray-700 leading-relaxed">
-                        {item}
-                      </p>
-                    ))}
+                    {featureGroup.items.map((item, idx) => 
+                      item === "" ? (
+                        <div key={idx} className="h-3"></div>
+                      ) : (
+                        <p key={idx} className="text-sm text-gray-700 leading-relaxed">
+                          {item}
+                        </p>
+                      )
+                    )}
                   </div>
                 )}
               </div>
