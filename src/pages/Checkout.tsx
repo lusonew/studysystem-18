@@ -34,7 +34,7 @@ export default function Checkout() {
                   <span className="text-base font-medium text-green-600">+ 44€ (-50%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
-              </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} />
+              </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} badge="Beliebt" />
 
           <CheckoutCard title={<div className="text-center">
                 <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
@@ -45,7 +45,7 @@ export default function Checkout() {
                   <span className="text-sm font-medium text-green-600">+ 9€ (-50%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
-              </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0.1} badge="Beliebt" />
+              </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0.1} />
         </div>
 
         {/* Action Buttons */}
