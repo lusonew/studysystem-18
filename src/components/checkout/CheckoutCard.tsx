@@ -51,10 +51,12 @@ export const CheckoutCard = ({
       <div className="flex flex-col">
         {/* Top section - Badge, Title, Price, Image */}
         <div className="text-center mb-3">
-          {badge && (
+          {badge ? (
             <div className="inline-block px-1.5 py-0.5 bg-amber-100 text-amber-800 rounded-full text-[10px] font-medium mb-1.5">
               {badge}
             </div>
+          ) : (
+            <div className="h-[18px] mb-1.5"></div>
           )}
           
           <div className="mb-1.5">{title}</div>
