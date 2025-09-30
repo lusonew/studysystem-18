@@ -29,14 +29,14 @@ export default function Checkout() {
   ];
 
   return (
-    <div className={`h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white flex items-center justify-center ${isMobile ? 'px-4 py-6' : 'px-6 py-8'}`}>
+    <div className={`min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
       <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
             Wähle deine Upgrade
           </h1>
-          <p className="text-base text-gray-600">
+          <p className="text-sm text-gray-600">
             Erweitere dein Study System PRO mit exklusiven Upgrades
           </p>
         </div>
@@ -46,10 +46,10 @@ export default function Checkout() {
           <CheckoutCard
             title="Study System PRO x LevelUP Bundle"
             price={
-              <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-medium text-green-600">99€</span>
-                  <span className="text-sm text-gray-500">Einmalig</span>
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-lg font-medium text-green-600">99€</span>
+                  <span className="text-xs text-gray-500">Einmalig</span>
                 </div>
               </div>
             }
@@ -64,10 +64,10 @@ export default function Checkout() {
           <CheckoutCard
             title="Study System PRO x Fokus-Icons (iPhone)"
             price={
-              <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-medium text-green-600">79€</span>
-                  <span className="text-sm text-gray-500">Einmalig</span>
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-lg font-medium text-green-600">79€</span>
+                  <span className="text-xs text-gray-500">Einmalig</span>
                 </div>
               </div>
             }
