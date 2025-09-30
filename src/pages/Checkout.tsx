@@ -34,7 +34,7 @@ export default function Checkout() {
                   <span className="text-base font-medium text-green-600">+ 44€ (-50%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
-              </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} badge="Beliebt" />
+              </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="https://pay.studysystem.de/b/6oU7sL7Q4c4O3fS4pH3cc0b?prefilled_promo_code=Bundle37" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} badge="Beliebt" />
 
           <CheckoutCard title={<div className="text-center">
                 <div className="text-xs text-gray-600 mb-0.5">Study System PRO</div>
