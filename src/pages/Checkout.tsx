@@ -11,7 +11,7 @@ export default function Checkout() {
   }];
   const fokusIconsFeatures: CheckoutFeature[] = [{
     title: "",
-    items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "Probleme gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 Die Fokus-Icons sind speziell designte iPhone-Icons, die dich fokussiert halten und Ablenkungen minimieren 🎯"]
+    items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "Nie wieder Ablenkung durch dein Handy: Gib deinem Handy einen minimalistischen Look und reduziere gleichzeitig deine Bildschirmzeit. Die perfekte Ergänzung, damit du dich nicht vom Lernen ablenken lässt."]
   }];
   return <div className={`min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
       <div className="container mx-auto max-w-5xl">
