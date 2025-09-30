@@ -46,21 +46,21 @@ export const CheckoutCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.4, delay, ease: "easeOut" }}
-      className={`${className} p-5 rounded-lg border shadow-sm hover:shadow-lg transition-shadow`}
+      className={`${className} p-3 rounded-lg border shadow-sm hover:shadow-lg transition-shadow`}
     >
       <div className="flex flex-col">
         {/* Top section - Badge, Title, Price, Image */}
-        <div className="text-center mb-4">
+        <div className="text-center mb-3">
           {badge && (
-            <div className="inline-block px-2 py-0.5 bg-amber-100 text-amber-800 rounded-full text-[10px] font-medium mb-2">
+            <div className="inline-block px-1.5 py-0.5 bg-amber-100 text-amber-800 rounded-full text-[8px] font-medium mb-1.5">
               {badge}
             </div>
           )}
           
-          <div className="mb-2">{title}</div>
+          <div className="mb-1.5">{title}</div>
           
           {/* Price section */}
-          <div className="mb-4">
+          <div className="mb-3">
             <div>{price}</div>
           </div>
           
@@ -68,7 +68,7 @@ export const CheckoutCard = ({
             <img
               src={imageUrl}
               alt={`${title} Preview`}
-              className="w-[70%] h-auto rounded-lg mb-3 hover:opacity-90 transition-opacity cursor-pointer mx-auto"
+              className="w-[50%] h-auto rounded-lg mb-2 hover:opacity-90 transition-opacity cursor-pointer mx-auto"
               loading="lazy"
             />
           </a>
@@ -77,14 +77,14 @@ export const CheckoutCard = ({
         {/* Bottom section - Features and Button */}
         <div className="flex flex-col">
           {/* Features */}
-          <div className="text-left flex-1 mb-4">
+          <div className="text-left flex-1 mb-3">
             {features.map((featureGroup, index) => (
-              <div key={index} className="mb-3">
-                <h4 className="font-semibold text-xs mb-1.5">{featureGroup.title}</h4>
-                <ul className="space-y-1">
+              <div key={index} className="mb-2">
+                <h4 className="font-semibold text-[10px] mb-1">{featureGroup.title}</h4>
+                <ul className="space-y-0.5">
                   {featureGroup.items.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-1.5 text-xs">
-                      <span className="inline-flex items-center justify-center w-3 h-3 rounded-full bg-amber-50 text-amber-700 text-[10px] mt-0.5">
+                    <li key={idx} className="flex items-start gap-1 text-[10px]">
+                      <span className="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-amber-50 text-amber-700 text-[8px] mt-0.5">
                         ○
                       </span>
                       <span className="flex-1">{item}</span>
@@ -97,10 +97,10 @@ export const CheckoutCard = ({
 
           {/* Button */}
           <div className="text-center mt-auto">
-            <p className="text-[10px] text-gray-500 mb-2">inkl. 14 Tage Geld-Zurück-Garantie</p>
+            <p className="text-[8px] text-gray-500 mb-1.5">inkl. 14 Tage Geld-Zurück-Garantie</p>
             <Button
               size="sm"
-              className="w-full bg-amber-500 hover:bg-amber-600"
+              className="w-full bg-amber-500 hover:bg-amber-600 text-xs h-8"
               onClick={() => {
                 window.open(getCtaUrlWithParams(), '_blank');
               }}
