@@ -55,7 +55,7 @@ export default function Checkout() {
           </button>
           <button onClick={() => {
             window.open('https://pay.studysystem.de/b/3cI8wPgmAecWaIk6xP3cc0d?prefilled_promo_code=bundle38', '_blank');
-          }} className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-6 py-2 rounded-md transition-colors order-1 sm:order-2">
+          }} className="bg-white text-amber-500 border-2 border-amber-500 hover:bg-amber-50 text-sm font-medium px-6 py-2 rounded-md transition-colors order-1 sm:order-2">
             Beide Upgrades sichern.
           </button>
         </div>
