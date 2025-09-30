@@ -10,8 +10,8 @@ export default function Checkout() {
     items: ["Ergänze dein Study System PRO um LevelUP 🕹️:", "", "Probleme gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 LevelUP ist ein ergänzendes Notion-System, das deine Gewohnheiten, Ziele und Projekte in ein Spiel verwandelt und so spielende leicht macht 🎮"]
   }];
   const fokusIconsFeatures: CheckoutFeature[] = [{
-    title: "Enthält:",
-    items: ["Study System PRO", "Fokus-Icons (iPhone)", "Weitere Features folgen"]
+    title: "",
+    items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "Probleme gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 Die Fokus-Icons sind speziell designte iPhone-Icons, die dich fokussiert halten und Ablenkungen minimieren 🎯"]
   }];
   return <div className={`min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
       <div className="container mx-auto max-w-5xl">
