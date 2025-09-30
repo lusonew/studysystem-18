@@ -41,9 +41,10 @@ export default function Checkout() {
                 <div className="text-xl font-bold">+ Fokus-Icons (iPhone)</div>
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-base font-medium text-green-600">79€</span>
-                  <span className="text-xs text-gray-500">Einmalig</span>
+                  <span className="text-base font-medium text-gray-400 line-through">+ 18€</span>
+                  <span className="text-sm font-medium text-green-600">+ 9€ (-50%)</span>
                 </div>
+                <span className="text-xs text-gray-500">Einmalig</span>
               </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="#" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0.1} badge="Beliebt" />
         </div>
 
