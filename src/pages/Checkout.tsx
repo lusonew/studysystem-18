@@ -13,7 +13,7 @@ export default function Checkout() {
     title: "",
     items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "Lässt du dich immer wieder von deinem Handy ablenken? Gib deinem Handy einen minimalistischen Look und reduziere gleichzeitig deine Bildschirmzeit mit Icons, die extra dafür designt sind."]
   }];
-  return <div className={`min-h-screen bg-gradient-to-br from-amber-50 via-amber-50/50 to-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
+  return <div className={`min-h-screen bg-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
       <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-4">
