@@ -16,11 +16,11 @@ export default function Checkout() {
   // Placeholder data - wird später mit echten Daten gefüllt
   const levelUpFeatures: CheckoutFeature[] = [{
     title: "",
-    items: ["Ergänze dein Study System PRO um LevelUP 🕹️:", "", "Probleme gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 LevelUP ist ein ergänzendes Notion-System, das deine Gewohnheiten, Ziele und Projekte in ein Spiel verwandelt und so spielende leicht macht 🎮"]
+    items: ["Ergänze dein Study System PRO um LevelUP 🕹️:", "", "", "Probleme gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 LevelUP ist ein ergänzendes Notion-System, das deine Gewohnheiten, Ziele und Projekte in ein Spiel verwandelt und so spielende leicht macht 🎮"]
   }];
   const fokusIconsFeatures: CheckoutFeature[] = [{
     title: "",
-    items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "Lässt du dich immer wieder von deinem Handy ablenken? Gib deinem Handy einen minimalistischen Look und reduziere gleichzeitig deine Bildschirmzeit mit Icons, die extra dafür designt sind."]
+    items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "", "Lässt du dich immer wieder von deinem Handy ablenken? Gib deinem Handy einen minimalistischen Look und reduziere gleichzeitig deine Bildschirmzeit mit Icons, die extra dafür designt sind."]
   }];
   return <div className={`min-h-screen bg-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
       <div className="container mx-auto max-w-5xl">
