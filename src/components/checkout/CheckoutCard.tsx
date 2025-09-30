@@ -109,7 +109,6 @@ export const CheckoutCard = ({
 
           {/* Button */}
           <div className="text-center mt-auto">
-            <p className="text-[8px] text-gray-500 mb-1.5">inkl. 14 Tage Geld-Zurück-Garantie</p>
             <Button
               size="sm"
               className="w-full bg-amber-500 hover:bg-amber-600 text-xs h-8"
