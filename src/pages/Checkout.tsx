@@ -46,10 +46,10 @@ export default function Checkout() {
           <CheckoutCard
             title="Study System PRO x LevelUP Bundle"
             price={
-              <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="text-3xl font-bold text-green-600">99€</span>
-                  <span className="text-sm text-gray-500">Einmalig</span>
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-xl font-bold text-green-600">99€</span>
+                  <span className="text-[10px] text-gray-500">Einmalig</span>
                 </div>
               </div>
             }
@@ -64,10 +64,10 @@ export default function Checkout() {
           <CheckoutCard
             title="Study System PRO x Fokus-Icons (iPhone)"
             price={
-              <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="text-3xl font-bold text-green-600">79€</span>
-                  <span className="text-sm text-gray-500">Einmalig</span>
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-xl font-bold text-green-600">79€</span>
+                  <span className="text-[10px] text-gray-500">Einmalig</span>
                 </div>
               </div>
             }

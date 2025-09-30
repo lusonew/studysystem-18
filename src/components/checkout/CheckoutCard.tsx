@@ -46,16 +46,16 @@ export const CheckoutCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.4, delay, ease: "easeOut" }}
-      className={`${className} p-4 rounded-xl border shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full`}
+      className={`${className} p-3 rounded-lg border shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full`}
     >
       {badge && (
-        <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-2 self-start">
+        <div className="inline-block px-2 py-0.5 bg-amber-100 text-amber-800 rounded-full text-[10px] font-medium mb-1.5 self-start">
           {badge}
         </div>
       )}
 
       {/* Image */}
-      <div className="text-center mb-3">
+      <div className="text-center mb-2">
         <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer">
           <img
             src={imageUrl}
@@ -67,22 +67,22 @@ export const CheckoutCard = ({
       </div>
 
       {/* Title */}
-      <h3 className="text-lg font-bold mb-2 text-center">{title}</h3>
+      <h3 className="text-sm font-bold mb-1.5 text-center">{title}</h3>
 
       {/* Price */}
-      <div className="mb-3 text-center">
+      <div className="mb-2 text-center">
         <div>{price}</div>
       </div>
 
       {/* Features */}
-      <div className="flex-1 mb-4">
+      <div className="flex-1 mb-3">
         {features.map((featureGroup, index) => (
-          <div key={index} className="mb-2">
-            <h4 className="font-semibold text-xs mb-1.5">{featureGroup.title}</h4>
-            <ul className="space-y-1">
+          <div key={index} className="mb-1.5">
+            <h4 className="font-semibold text-[10px] mb-1">{featureGroup.title}</h4>
+            <ul className="space-y-0.5">
               {featureGroup.items.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs">
-                  <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-50 text-amber-700 text-xs mt-0.5">
+                <li key={idx} className="flex items-start gap-1.5 text-[10px]">
+                  <span className="inline-flex items-center justify-center w-3 h-3 rounded-full bg-amber-50 text-amber-700 text-[8px] mt-0.5">
                     ○
                   </span>
                   <span className="flex-1">{item}</span>
@@ -96,8 +96,8 @@ export const CheckoutCard = ({
       {/* Button */}
       <div className="text-center mt-auto">
         <Button
-          size="default"
-          className="w-full bg-amber-500 hover:bg-amber-600"
+          size="sm"
+          className="w-full bg-amber-500 hover:bg-amber-600 text-xs"
           onClick={() => {
             window.open(getCtaUrlWithParams(), '_blank');
           }}
