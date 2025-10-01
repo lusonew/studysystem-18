@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { LaunchCountdown } from "@/components/LaunchCountdown";
 
 export const RelaunchPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,9 @@ export const RelaunchPopup = () => {
                 <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2">
                   Back To Uni Relaunch 📚
                 </h2>
+                <div className="flex justify-center mb-3">
+                  <LaunchCountdown />
+                </div>
                 <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed">
                   Die neue Version des Study Systems ist passend zum Semesterstart verfügbar! 
                   Sichere dir das beliebeste System für kurze Zeit mit 30% Rabatt.
