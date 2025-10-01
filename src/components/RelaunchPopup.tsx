@@ -45,7 +45,7 @@ export const RelaunchPopup = () => {
           <div className="flex-1 p-4 sm:p-8 flex flex-col justify-center">
             <div className="space-y-4 sm:space-y-6">
               <div>
-                <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2">
+                <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2 text-center">
                   Back To Uni Relaunch 📚
                 </h2>
                 <div className="flex justify-center mb-3">
