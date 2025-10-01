@@ -31,7 +31,7 @@ export const LaunchCountdownLarge = () => {
           <div className="text-center">
             <div className="flex items-center justify-center mb-1">
               <Clock className="w-5 h-5 mr-2" />
-              Launch-Aktion endet in: {formatNumber(days)}d {formatNumber(hours)}h {formatNumber(minutes)}m {formatNumber(seconds)}s
+              Launch-Aktion endet in: {formatNumber(days)}t {formatNumber(hours)}h {formatNumber(minutes)}m {formatNumber(seconds)}s
             </div>
             
           </div>

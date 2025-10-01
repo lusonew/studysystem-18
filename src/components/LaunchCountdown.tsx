@@ -14,7 +14,7 @@ export const LaunchCountdown = () => {
   return (
     <Badge variant="destructive" className="bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/20">
       <Clock className="w-4 h-4 mr-1" />
-      Launch-Aktion: {formatNumber(days)}d {formatNumber(hours)}h {formatNumber(minutes)}m {formatNumber(seconds)}s
+      Launch-Aktion: {formatNumber(days)}t {formatNumber(hours)}h {formatNumber(minutes)}m {formatNumber(seconds)}s
     </Badge>
   );
 };
