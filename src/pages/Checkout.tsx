@@ -16,7 +16,7 @@ export default function Checkout() {
   // Placeholder data - wird später mit echten Daten gefüllt
   const levelUpFeatures: CheckoutFeature[] = [{
     title: "",
-    items: ["Ergänze dein Study System PRO um LevelUP 🕹️:", "", "", "Probleme gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 LevelUP ist ein ergänzendes Notion-System, das deine Gewohnheiten, Ziele und Projekte in ein Spiel verwandelt und so spielende leicht macht 🎮"]
+    items: ["Ergänze dein Study System PRO um LevelUP 🕹️:", "", "", "Probleme, gute Gewohnheiten beizubehalten oder deine Interessen neben dem Studium zu verfolgen? Mach es dir leicht, indem du es in ein Spiel verwandelst 👾 LevelUP ist ein ergänzendes Notion-System, das deine Gewohnheiten, Ziele spielend leicht macht 🎮"]
   }];
   const fokusIconsFeatures: CheckoutFeature[] = [{
     title: "",
