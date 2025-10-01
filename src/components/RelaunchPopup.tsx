@@ -48,7 +48,7 @@ export const RelaunchPopup = () => {
                 <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2 text-center">
                   Back To Uni Relaunch 📚
                 </h2>
-                <div className="flex justify-center mb-3 scale-[1.4]">
+                <div className="flex justify-center mb-3 text-sm sm:text-lg">
                   <LaunchCountdown />
                 </div>
                 <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed">
