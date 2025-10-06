@@ -87,9 +87,9 @@ export const PricingCard = ({
             <div>{price}</div>
           </div>
           
-          <a href={getCtaUrlWithParams()} target="_blank" rel="noreferrer" className="block">
+          <div onClick={handleCheckoutClick} className="block cursor-pointer">
             <img id="pricing-image" src={imageUrl} alt={`${title} Preview`} width="600" height="450" className={`w-full h-auto rounded-lg mb-4 hover:opacity-90 transition-opacity cursor-pointer max-w-2xl mx-auto ${imageClassName}`} loading="lazy" />
-          </a>
+          </div>
         </div>
 
         {/* Right section - Features and Button (desktop) */}
