@@ -8,7 +8,6 @@ import { Story } from "@/components/Story";
 
 import { Footer } from "@/components/Footer";
 import { SocialProofNotifications } from "@/components/social-proof/SocialProofNotifications";
-import { StickyHeader } from "@/components/StickyHeader";
 import { RelaunchPopup } from "@/components/RelaunchPopup";
 
 // Lazy-loaded components that are not immediately visible
@@ -51,7 +50,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <RelaunchPopup />
-      <StickyHeader />
       <SocialProofNotifications />
       <div className="flex-grow">
         <Hero />
