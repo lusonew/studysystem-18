@@ -51,7 +51,7 @@ export default function Checkout() {
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-base font-medium text-gray-400 line-through">+ 30€</span>
-                  <span className="text-sm font-medium text-green-600">+ 17€ (-45%)</span>
+                  <span className="text-sm font-medium text-green-600">+ 10€ (-66%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
               </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.png" ctaUrl="https://pay.studysystem.de/b/4gMdR96M03yi6s4g8p3cc0c?prefilled_promo_code=FOKUS20" ctaText="Jetzt upgraden" className="bg-white border-gray-200" delay={0.1} />
