@@ -40,7 +40,7 @@ export default function Checkout() {
               </div>} price={<div className="flex flex-col items-center gap-0.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-base font-medium text-gray-400 line-through">+ 89€</span>
-                  <span className="text-base font-medium text-green-600">+ 44€ (-50%)</span>
+                  <span className="text-base font-medium text-green-600">+ 40€ (-55%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
               </div>} features={levelUpFeatures} imageUrl="/lovable-uploads/LevelUPSeiten.png" ctaUrl="https://pay.studysystem.de/b/6oU7sL7Q4c4O3fS4pH3cc0b?prefilled_promo_code=LEVELUP40" ctaText="Jetzt upgraden" className="bg-gradient-to-br from-amber-50 to-white border-amber-200" delay={0} badge="Beliebt" />
