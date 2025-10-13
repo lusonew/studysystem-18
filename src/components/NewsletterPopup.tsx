@@ -87,10 +87,10 @@ export const NewsletterPopup = () => {
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2">
-                  Dein 5€-Rabattcode wartet
+                  Lust auf 5€ Rabatt?
                 </h2>
                 <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                  Werde Teil meines wöchentlichen Newsletters mit exklusiven Tipps rund um Produktivität und Studium und erhalte zum Start einen exklusiven 5€ Rabatt-Gutschein.
+                  Werde Teil der wöchentlichen Newton Notes mit exklusiven Tipps für deine Produktivität und erhalte zum Start einen exklusiven 5€ Rabatt-Gutschein.
                 </p>
               </div>
               
