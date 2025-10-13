@@ -143,7 +143,7 @@ export const NewsletterPopup = () => {
                   className="w-full font-medium py-2 sm:py-3"
                   size="lg"
                 >
-                  Ich möchte keinen Gutschein
+                  Ich möchte keinen Gutschein haben
                 </Button>
               </div>
             </form>
