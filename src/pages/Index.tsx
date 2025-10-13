@@ -8,7 +8,7 @@ import { Story } from "@/components/Story";
 
 import { Footer } from "@/components/Footer";
 import { SocialProofNotifications } from "@/components/social-proof/SocialProofNotifications";
-import { RelaunchPopup } from "@/components/RelaunchPopup";
+import { NewsletterPopup } from "@/components/NewsletterPopup";
 
 // Lazy-loaded components that are not immediately visible
 const SystemFeatures = React.lazy(() => import("@/components/SystemFeatures").then(module => ({ default: module.SystemFeatures })));
@@ -49,7 +49,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <RelaunchPopup />
+      <NewsletterPopup />
       <SocialProofNotifications />
       <div className="flex-grow">
         <Hero />
