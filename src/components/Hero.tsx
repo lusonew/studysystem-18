@@ -86,7 +86,7 @@ export const Hero = () => {
           duration: 0.8,
           delay: 0.2
         }} className="md:w-1/2">
-            <OptimizedImage src="/lovable-uploads/96552dbd-692e-4a8a-9d1e-ed3218b4f13c.png" alt="Study System Dashboard" width={800} height={600} className="w-full h-auto" priority={true} />
+            <OptimizedImage src="/lovable-uploads/dashboard.webp" alt="Study System Dashboard" width={800} height={600} className="w-full h-auto" priority={true} />
           </motion.div>
         </div>
         

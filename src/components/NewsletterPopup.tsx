@@ -76,7 +76,7 @@ export const NewsletterPopup = () => {
           {/* Left side - Image */}
           <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-4 sm:p-8 flex items-center justify-center">
             <img
-              src="/assets/newsletter-popup.png"
+              src="/assets/newsletter-popup.webp"
               alt="Newsletter Rabatt"
               className="w-full h-auto max-w-xs sm:max-w-md rounded-lg shadow-lg"
             />
