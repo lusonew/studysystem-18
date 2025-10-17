@@ -61,7 +61,7 @@ export const RootCauses = () => {
           delay: 0.2
         }} className="relative">
             <div className="relative">
-              <OptimizedImage src="/lovable-uploads/5feba1e7-4c39-4564-a3dc-20ffe7bf512f.png" alt="Gestresster Student beim Lernen - typische Probleme beim Studium" className="w-full h-auto object-cover rounded-2xl" width={600} height={600} />
+              <OptimizedImage src="/lovable-uploads/ProblemeBilder.webp" alt="Gestresster Student beim Lernen - typische Probleme beim Studium" className="w-full h-auto object-cover rounded-2xl" width={600} height={600} />
             </div>
           </motion.div>
         </div>
