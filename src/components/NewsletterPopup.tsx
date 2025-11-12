@@ -86,17 +86,17 @@ export const NewsletterPopup = () => {
           <div className="flex-1 p-4 sm:p-8 flex flex-col justify-center">
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
-                <h2 className="text-lg sm:text-2xl font-bold text-foreground mb-2">
+                <h2 className="text-base sm:text-2xl font-bold text-foreground mb-1 sm:mb-2">
                   Lust auf 5€ Rabatt?
                 </h2>
-                <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                <p className="text-muted-foreground text-xs sm:text-base leading-relaxed">
                   Werde Teil der wöchentlichen Newton Notes mit exklusiven Tipps für deine Produktivität und erhalte zum Start einen exklusiven 5€ Rabatt-Gutschein.
                 </p>
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div>
-                  <Label htmlFor="firstName" className="text-sm font-medium">
+                  <Label htmlFor="firstName" className="text-xs sm:text-sm font-medium">
                     Vorname *
                   </Label>
                   <Input
@@ -106,12 +106,12 @@ export const NewsletterPopup = () => {
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     required
-                    className="mt-1"
+                    className="mt-1 text-sm"
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="email" className="text-sm font-medium">
+                  <Label htmlFor="email" className="text-xs sm:text-sm font-medium">
                     E-Mail-Adresse *
                   </Label>
                   <Input
@@ -121,16 +121,16 @@ export const NewsletterPopup = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="mt-1"
+                    className="mt-1 text-sm"
                   />
                 </div>
               </div>
               
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <Button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 sm:py-3"
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 sm:py-3 text-sm sm:text-base"
                   size="lg"
                 >
                   {isSubmitting ? "Wird gesendet..." : "Gutschein sichern"}
@@ -140,7 +140,7 @@ export const NewsletterPopup = () => {
                   type="button"
                   onClick={handleClose}
                   variant="outline"
-                  className="w-full font-medium py-2 sm:py-3"
+                  className="w-full font-medium py-2 sm:py-3 text-sm sm:text-base"
                   size="lg"
                 >
                   Ich möchte keinen Gutschein haben
