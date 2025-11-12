@@ -74,11 +74,11 @@ export const NewsletterPopup = () => {
       <DialogContent className="max-w-[90vw] sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border mx-auto my-6 rounded-xl overflow-hidden">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Image */}
-          <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-4 sm:p-8 flex items-center justify-center">
+          <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-2 sm:p-8 flex items-center justify-center">
             <img
               src="/assets/newsletter-popup.webp"
               alt="Newsletter Rabatt"
-              className="w-full h-auto max-w-xs sm:max-w-md rounded-lg shadow-lg"
+              className="w-full h-auto max-w-[150px] sm:max-w-md rounded-lg shadow-lg"
             />
           </div>
           
