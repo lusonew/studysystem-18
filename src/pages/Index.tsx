@@ -51,7 +51,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <BlackFridayBanner />
-      <NewsletterPopup />
+      {/* <NewsletterPopup /> */}
       <SocialProofNotifications />
       <div className="flex-grow">
         <Hero />
