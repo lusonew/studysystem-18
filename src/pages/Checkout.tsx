@@ -31,8 +31,8 @@ export default function Checkout() {
         <div className="text-center mb-4">
           {/* Black Friday Badge */}
           <div className="mb-4 inline-block">
-            <div className="bg-black text-white px-6 py-2 rounded-full font-bold text-sm sm:text-base animate-pulse">
-              🔥 BLACK FRIDAY: -20% auf alle Produkte bis 01.12. 🔥
+            <div className="bg-black text-white px-6 py-2 rounded-full font-bold text-sm sm:text-base">
+              Black Friday: Zusätzlicher Rabatt auf dein Upgrade
             </div>
           </div>
           <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-1.5">Wähle dein einmaliges Angebot</h1>
