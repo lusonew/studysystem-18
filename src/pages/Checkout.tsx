@@ -63,7 +63,7 @@ export default function Checkout() {
                   <span className="text-sm font-medium text-green-600">+ 10€ (-66%)</span>
                 </div>
                 <span className="text-xs text-gray-500">Einmalig</span>
-              </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.webp" ctaUrl="https://pay.studysystem.de/b/4gMdR96M03yi6s4g8p3cc0c?prefilled_promo_code=FOKUS20" ctaText="Jetzt upgraden" className="bg-white border-gray-200" delay={0.1} />
+              </div>} features={fokusIconsFeatures} imageUrl="/lovable-uploads/IconsThumbnail.webp" ctaUrl="https://pay.studysystem.de/b/4gMdR96M03yi6s4g8p3cc0c?prefilled_promo_code=BFFokusBundle" ctaText="Jetzt upgraden" className="bg-white border-gray-200" delay={0.1} />
         </div>
 
         {/* Action Buttons */}
