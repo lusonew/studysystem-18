@@ -1,6 +1,7 @@
 import { CheckoutCard } from "@/components/checkout/CheckoutCard";
 import type { CheckoutFeature } from "@/components/checkout/CheckoutCard";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { BlackFridayBanner } from "@/components/BlackFridayBanner";
 export default function Checkout() {
   const isMobile = useIsMobile();
 
@@ -22,7 +23,9 @@ export default function Checkout() {
     title: "",
     items: ["Ergänze dein Study System PRO um Fokus-Icons 📱:", "", "", "Lässt du dich immer wieder von deinem Handy ablenken? Gib deinem Handy einen einzigartigen Look und reduziere gleichzeitig deine Bildschirmzeit. Dieses Icon-Set wurde extra dafür designt, um Ablenkungen durch dein Handy zu reduzieren."]
   }];
-  return <div className={`min-h-screen bg-white flex items-center justify-center ${isMobile ? 'px-4 py-12' : 'px-6 py-16'}`}>
+  return <>
+    <BlackFridayBanner />
+    <div className={`min-h-screen bg-white flex items-center justify-center ${isMobile ? 'px-4 pt-24 pb-12' : 'px-6 pt-28 pb-16'}`}>
       <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-4">
@@ -69,5 +72,6 @@ export default function Checkout() {
           </button>
         </div>
       </div>
-    </div>;
+    </div>
+  </>;
 }
