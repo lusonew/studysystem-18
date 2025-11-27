@@ -29,15 +29,12 @@ export const NewsletterPopup = () => {
   };
 
   useEffect(() => {
-    const hasSeenPopup = localStorage.getItem("newsletter-popup-seen");
+    // Temporär: Popup immer anzeigen für Bearbeitung
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 500);
     
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-      }, 3000);
-      
-      return () => clearTimeout(timer);
-    }
+    return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
