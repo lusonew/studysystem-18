@@ -3,7 +3,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 
 export const NewsletterPopup = () => {
@@ -11,7 +11,7 @@ export const NewsletterPopup = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [selectedStatus, setSelectedStatus] = useState("");
 
   const options = [
     "Vollzeitstudium",
@@ -19,14 +19,6 @@ export const NewsletterPopup = () => {
     "Arbeitnehmer",
     "Selbständig"
   ];
-
-  const handleCheckboxChange = (option: string) => {
-    setSelectedOptions(prev =>
-      prev.includes(option)
-        ? prev.filter(item => item !== option)
-        : [...prev, option]
-    );
-  };
 
   useEffect(() => {
     // Temporär: Popup immer anzeigen für Bearbeitung
@@ -55,6 +47,11 @@ export const NewsletterPopup = () => {
       return;
     }
 
+    if (!selectedStatus) {
+      toast.error("Bitte wähle deinen Status aus");
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -66,7 +63,7 @@ export const NewsletterPopup = () => {
         body: JSON.stringify({
           firstName: firstName.trim(),
           email: email.trim(),
-          selectedOptions: selectedOptions,
+          status: selectedStatus,
         }),
       });
 
@@ -142,26 +139,21 @@ export const NewsletterPopup = () => {
               </div>
 
               <div>
-                <Label className="text-xs sm:text-sm font-medium mb-2 block">
-                  Was trifft auf dich zu?
+                <Label htmlFor="status" className="text-xs sm:text-sm font-medium">
+                  Was trifft auf dich zu? *
                 </Label>
-                <div className="grid grid-cols-2 gap-2 sm:gap-3">
-                  {options.map((option) => (
-                    <div key={option} className="flex items-center space-x-2">
-                      <Checkbox
-                        id={option}
-                        checked={selectedOptions.includes(option)}
-                        onCheckedChange={() => handleCheckboxChange(option)}
-                      />
-                      <label
-                        htmlFor={option}
-                        className="text-xs sm:text-sm leading-tight cursor-pointer"
-                      >
+                <Select value={selectedStatus} onValueChange={setSelectedStatus} required>
+                  <SelectTrigger id="status" className="mt-1 text-sm bg-background">
+                    <SelectValue placeholder="Bitte wählen..." />
+                  </SelectTrigger>
+                  <SelectContent className="bg-background z-50">
+                    {options.map((option) => (
+                      <SelectItem key={option} value={option} className="text-sm">
                         {option}
-                      </label>
-                    </div>
-                  ))}
-                </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
               
               <div className="space-y-2 sm:space-y-3">
