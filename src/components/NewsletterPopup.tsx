@@ -18,7 +18,8 @@ export const NewsletterPopup = () => {
     "Vollzeitstudium",
     "Studium (nebenberuflich)",
     "Arbeitnehmer",
-    "Selbständig"
+    "Selbständig",
+    "Anderes"
   ];
 
   // Zeige Status-Feld wenn beide Felder ausgefüllt sind
