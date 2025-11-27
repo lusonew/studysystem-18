@@ -3,6 +3,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 
 export const NewsletterPopup = () => {
@@ -10,6 +11,22 @@ export const NewsletterPopup = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+
+  const options = [
+    "Vollzeitstudium",
+    "Studium (nebenberuflich)",
+    "Arbeitnehmer",
+    "Selbständig"
+  ];
+
+  const handleCheckboxChange = (option: string) => {
+    setSelectedOptions(prev =>
+      prev.includes(option)
+        ? prev.filter(item => item !== option)
+        : [...prev, option]
+    );
+  };
 
   useEffect(() => {
     const hasSeenPopup = localStorage.getItem("newsletter-popup-seen");
@@ -52,6 +69,7 @@ export const NewsletterPopup = () => {
         body: JSON.stringify({
           firstName: firstName.trim(),
           email: email.trim(),
+          selectedOptions: selectedOptions,
         }),
       });
 
@@ -123,6 +141,29 @@ export const NewsletterPopup = () => {
                     required
                     className="mt-1 text-sm"
                   />
+                </div>
+              </div>
+
+              <div>
+                <Label className="text-xs sm:text-sm font-medium mb-2 block">
+                  Was trifft auf dich zu?
+                </Label>
+                <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                  {options.map((option) => (
+                    <div key={option} className="flex items-center space-x-2">
+                      <Checkbox
+                        id={option}
+                        checked={selectedOptions.includes(option)}
+                        onCheckedChange={() => handleCheckboxChange(option)}
+                      />
+                      <label
+                        htmlFor={option}
+                        className="text-xs sm:text-sm leading-tight cursor-pointer"
+                      >
+                        {option}
+                      </label>
+                    </div>
+                  ))}
                 </div>
               </div>
               

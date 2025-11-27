@@ -52,10 +52,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      anonymize_customer_name: {
-        Args: { full_name: string }
-        Returns: string
-      }
+      anonymize_customer_name: { Args: { full_name: string }; Returns: string }
     }
     Enums: {
       [_ in never]: never
