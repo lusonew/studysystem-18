@@ -12,6 +12,7 @@ export const NewsletterPopup = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedStatus, setSelectedStatus] = useState("");
+  const [showStatusField, setShowStatusField] = useState(false);
 
   const options = [
     "Vollzeitstudium",
@@ -19,6 +20,15 @@ export const NewsletterPopup = () => {
     "Arbeitnehmer",
     "Selbständig"
   ];
+
+  // Zeige Status-Feld wenn beide Felder ausgefüllt sind
+  useEffect(() => {
+    if (firstName.trim() && email.trim() && email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      setShowStatusField(true);
+    } else {
+      setShowStatusField(false);
+    }
+  }, [firstName, email]);
 
   useEffect(() => {
     // Temporär: Popup immer anzeigen für Bearbeitung
@@ -83,7 +93,7 @@ export const NewsletterPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-[90vw] sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border mx-auto my-6 rounded-xl overflow-hidden">
+      <DialogContent className="max-w-[90vw] sm:max-w-md md:max-w-4xl p-0 gap-0 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white border-border mx-auto my-6 rounded-xl overflow-hidden animate-scale-in">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Image */}
           <div className="flex-1 bg-gradient-to-br from-amber-50 via-amber-50/50 to-white p-2 sm:p-8 flex items-center justify-center">
@@ -138,23 +148,25 @@ export const NewsletterPopup = () => {
                 </div>
               </div>
 
-              <div>
-                <Label htmlFor="status" className="text-xs sm:text-sm font-medium">
-                  Was trifft auf dich zu? *
-                </Label>
-                <Select value={selectedStatus} onValueChange={setSelectedStatus} required>
-                  <SelectTrigger id="status" className="mt-1 text-sm bg-background">
-                    <SelectValue placeholder="Bitte wählen..." />
-                  </SelectTrigger>
-                  <SelectContent className="bg-background z-50">
-                    {options.map((option) => (
-                      <SelectItem key={option} value={option} className="text-sm">
-                        {option}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
+              {showStatusField && (
+                <div className="animate-fade-in">
+                  <Label htmlFor="status" className="text-xs sm:text-sm font-medium">
+                    Was trifft auf dich zu? *
+                  </Label>
+                  <Select value={selectedStatus} onValueChange={setSelectedStatus} required>
+                    <SelectTrigger id="status" className="mt-1 text-sm bg-background">
+                      <SelectValue placeholder="Bitte wählen..." />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background z-50">
+                      {options.map((option) => (
+                        <SelectItem key={option} value={option} className="text-sm">
+                          {option}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+              )}
               
               <div className="space-y-2 sm:space-y-3">
                 <Button 
