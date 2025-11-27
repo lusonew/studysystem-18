@@ -25,7 +25,7 @@ export const Hero = () => {
   return <section className={`
         min-h-screen flex items-center justify-center 
         bg-gradient-to-br from-amber-50 via-amber-50/50 to-white 
-        pt-[78px] pb-[10px] md:pt-[58px] md:pb-[10px]
+        pt-[30px] pb-[10px] md:py-[10px]
         ${isMobile ? 'mx-[-19px] px-[19px]' : ''}
       `}>
       <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
